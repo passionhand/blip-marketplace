@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1064661490451",
+    "project_id": "blip-9967b",
+    "storage_bucket": "blip-9967b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064661490451:android:e23f8f6d9d1e15e36a98e6",
+        "android_client_info": {
+          "package_name": "com.mycompany.blipmarketplace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8ZJeAQ4w1PWWnW8_Rz2W81EAZx8y7DgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
