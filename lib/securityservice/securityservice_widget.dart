@@ -3,8 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'securityservice_model.dart';
 export 'securityservice_model.dart';
 
@@ -61,23 +59,23 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                 ),
               ),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 56.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 56.0, 0.0, 0.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Stack(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(-1.0, 0.0),
+                              alignment: const AlignmentDirectional(-1.0, 0.0),
                               child: FlutterFlowIconButton(
                                 borderRadius: 20.0,
                                 borderWidth: 1.0,
                                 buttonSize: 40.0,
-                                icon: Icon(
+                                icon: const Icon(
                                   Icons.chevron_left,
                                   color: Colors.white,
                                   size: 24.0,
@@ -105,7 +103,7 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             0.0, 210.0, 0.0, 0.0),
                         child: Text(
                           'Protect your home \nwith our advanced \nsecurity drones.',
@@ -124,7 +122,7 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 9.0, 0.0, 21.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 9.0, 0.0, 21.0),
                         child: Text(
                           'Subscribe to our monthly plan for \n24/7 Drone Dispatch.',
                           textAlign: TextAlign.center,
@@ -146,7 +144,7 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(5.0),
                             bottomRight: Radius.circular(5.0),
                             topLeft: Radius.circular(30.0),
@@ -154,15 +152,15 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 30.0, 0.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(-1.0, 0.0),
+                                alignment: const AlignmentDirectional(-1.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       20.0, 0.0, 0.0, 17.0),
                                   child: Text(
                                     'Key Features',
@@ -179,7 +177,7 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     20.0, 0.0, 0.0, 2.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -192,9 +190,9 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                                     ),
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-1.0, 0.0),
+                                          const AlignmentDirectional(-1.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             10.0, 0.0, 0.0, 0.0),
                                         child: Text(
                                           'Birds eye Surveillance',
@@ -214,7 +212,7 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     20.0, 0.0, 0.0, 2.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -227,9 +225,9 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                                     ),
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-1.0, 0.0),
+                                          const AlignmentDirectional(-1.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             10.0, 0.0, 0.0, 0.0),
                                         child: Text(
                                           'Infrared Imaging ',
@@ -249,7 +247,7 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     20.0, 0.0, 0.0, 2.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -262,9 +260,9 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                                     ),
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-1.0, 0.0),
+                                          const AlignmentDirectional(-1.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             10.0, 0.0, 0.0, 0.0),
                                         child: Text(
                                           'Real-time Monitoring',
@@ -284,7 +282,7 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     20.0, 0.0, 0.0, 17.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -297,9 +295,9 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                                     ),
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-1.0, 0.0),
+                                          const AlignmentDirectional(-1.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             10.0, 0.0, 0.0, 0.0),
                                         child: Text(
                                           'Immediate Deployment on Request  ',
@@ -318,7 +316,7 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                                   ],
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 354.0,
                                 child: Divider(
                                   height: 1.0,
@@ -327,9 +325,9 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.0, 0.0),
+                                alignment: const AlignmentDirectional(-1.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       20.0, 16.0, 0.0, 15.0),
                                   child: Text(
                                     'Monthly Subscription:  ',
@@ -346,7 +344,7 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     20.0, 0.0, 0.0, 9.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -354,9 +352,9 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                                   children: [
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-1.0, 0.0),
+                                          const AlignmentDirectional(-1.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             10.0, 0.0, 0.0, 0.0),
                                         child: Text(
                                           '\$250',
@@ -373,7 +371,7 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           5.0, 0.0, 0.0, 5.0),
                                       child: Text(
                                         'per month',
@@ -390,7 +388,7 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 25.0),
                                 child: Text(
                                   'Includes unlimited drone deployments for select zip codes',
@@ -411,9 +409,9 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                                 options: FFButtonOptions(
                                   width: 354.0,
                                   height: 60.0,
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       24.0, 0.0, 24.0, 0.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
                                   color: FlutterFlowTheme.of(context).primary,
                                   textStyle: FlutterFlowTheme.of(context)
@@ -427,7 +425,7 @@ class _SecurityserviceWidgetState extends State<SecurityserviceWidget> {
                                         useGoogleFonts: false,
                                       ),
                                   elevation: 3.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Colors.transparent,
                                     width: 1.0,
                                   ),

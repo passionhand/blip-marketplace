@@ -1,14 +1,9 @@
 import '/components/custom_navbar_widget.dart';
 import '/components/featured_product_widget.dart';
 import '/components/menu_item_widget.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'office_supplies_widget.dart' show OfficeSuppliesWidget;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class OfficeSuppliesModel extends FlutterFlowModel<OfficeSuppliesWidget> {
   ///  State fields for stateful widgets in this page.

@@ -2,10 +2,7 @@ import '/flutter_flow/flutter_flow_google_map.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'popupkeyboard_model.dart';
 export 'popupkeyboard_model.dart';
 
@@ -62,7 +59,7 @@ class _PopupkeyboardWidgetState extends State<PopupkeyboardWidget> {
                 borderRadius: 30.0,
                 borderWidth: 1.0,
                 buttonSize: 54.0,
-                icon: Icon(
+                icon: const Icon(
                   Icons.chevron_left,
                   color: Colors.white,
                   size: 24.0,
@@ -73,7 +70,7 @@ class _PopupkeyboardWidgetState extends State<PopupkeyboardWidget> {
                   context.pop();
                 },
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 0.0,
             ),
@@ -82,7 +79,7 @@ class _PopupkeyboardWidgetState extends State<PopupkeyboardWidget> {
               children: [
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 16.0),
+                      const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 16.0),
                   child: TextFormField(
                     controller: _model.textController,
                     focusNode: _model.textFieldFocusNode,
@@ -104,7 +101,7 @@ class _PopupkeyboardWidgetState extends State<PopupkeyboardWidget> {
                                 useGoogleFonts: false,
                               ),
                       enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0xFFF5F5F5),
                           width: 2.0,
                         ),
@@ -134,7 +131,7 @@ class _PopupkeyboardWidgetState extends State<PopupkeyboardWidget> {
                       filled: true,
                       fillColor: FlutterFlowTheme.of(context).primaryBackground,
                       contentPadding:
-                          EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                       suffixIcon: Icon(
                         Icons.search,
                         color: FlutterFlowTheme.of(context).primary,
@@ -150,7 +147,7 @@ class _PopupkeyboardWidgetState extends State<PopupkeyboardWidget> {
                   ),
                 ),
                 ClipRRect(
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(5.0),
                     bottomRight: Radius.circular(5.0),
                     topLeft: Radius.circular(30.0),
@@ -159,7 +156,7 @@ class _PopupkeyboardWidgetState extends State<PopupkeyboardWidget> {
                   child: Container(
                     width: double.infinity,
                     height: 732.0,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Color(0x5CFFFFFF),
                       borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(5.0),
@@ -173,7 +170,7 @@ class _PopupkeyboardWidgetState extends State<PopupkeyboardWidget> {
                       onCameraIdle: (latLng) =>
                           _model.googleMapsCenter = latLng,
                       initialLocation: _model.googleMapsCenter ??=
-                          LatLng(13.106061, -59.613158),
+                          const LatLng(13.106061, -59.613158),
                       markerColor: GoogleMarkerColor.violet,
                       mapType: MapType.normal,
                       style: GoogleMapStyle.standard,

@@ -4,10 +4,7 @@ import '/components/menu_item_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'office_supplies_model.dart';
 export 'office_supplies_model.dart';
 
@@ -60,7 +57,7 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                 borderRadius: 30.0,
                 borderWidth: 1.0,
                 buttonSize: 54.0,
-                icon: Icon(
+                icon: const Icon(
                   Icons.chevron_left,
                   color: Colors.white,
                   size: 24.0,
@@ -81,20 +78,21 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                       useGoogleFonts: false,
                     ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 0.0,
             ),
             body: Stack(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               children: [
                 SingleChildScrollView(
+                  primary: false,
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 10.0, 0.0, 20.0),
                         child: SingleChildScrollView(
                           scrollDirection: Axis.horizontal,
@@ -103,12 +101,12 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     13.0, 0.0, 37.0, 0.0),
                                 child: wrapWithModel(
                                   model: _model.menuItemModel1,
                                   updateCallback: () => setState(() {}),
-                                  child: MenuItemWidget(
+                                  child: const MenuItemWidget(
                                     imgwidth: 31.0,
                                     imgheight: 38.0,
                                     imgpath:
@@ -120,12 +118,12 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 37.0, 0.0),
                                 child: wrapWithModel(
                                   model: _model.menuItemModel2,
                                   updateCallback: () => setState(() {}),
-                                  child: MenuItemWidget(
+                                  child: const MenuItemWidget(
                                     imgwidth: 40.0,
                                     imgheight: 22.0,
                                     imgpath:
@@ -137,12 +135,12 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 37.0, 0.0),
                                 child: wrapWithModel(
                                   model: _model.menuItemModel3,
                                   updateCallback: () => setState(() {}),
-                                  child: MenuItemWidget(
+                                  child: const MenuItemWidget(
                                     imgwidth: 36.0,
                                     imgheight: 38.0,
                                     imgpath:
@@ -154,12 +152,12 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 37.0, 0.0),
                                 child: wrapWithModel(
                                   model: _model.menuItemModel4,
                                   updateCallback: () => setState(() {}),
-                                  child: MenuItemWidget(
+                                  child: const MenuItemWidget(
                                     imgwidth: 31.0,
                                     imgheight: 38.0,
                                     imgpath:
@@ -171,12 +169,12 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 37.0, 0.0),
                                 child: wrapWithModel(
                                   model: _model.menuItemModel5,
                                   updateCallback: () => setState(() {}),
-                                  child: MenuItemWidget(
+                                  child: const MenuItemWidget(
                                     imgwidth: 31.0,
                                     imgheight: 38.0,
                                     imgpath:
@@ -197,7 +195,7 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(0.0),
                             bottomRight: Radius.circular(0.0),
                             topLeft: Radius.circular(30.0),
@@ -205,7 +203,7 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 30.0, 0.0, 86.0),
                           child: SingleChildScrollView(
                             child: Column(
@@ -214,9 +212,9 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, -1.0),
+                                  alignment: const AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         23.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       'Featured Products',
@@ -233,7 +231,7 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       23.0, 0.0, 0.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -253,7 +251,7 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                                                   _model.featuredProductModel1,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/h9f1lij0pw2v/Notebooks.png',
                                                 name: 'Notebooks',
@@ -268,7 +266,7 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                                                   _model.featuredProductModel2,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/j63tr1grzgx5/Desks_and_Chairs.png',
                                                 name: 'Desks and Chairs',
@@ -283,7 +281,7 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                                                   _model.featuredProductModel3,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/5tu2to4x7v6t/Printers.png',
                                                 name: 'Printers',
@@ -293,10 +291,10 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                                                 soldOut: false,
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 17.0)),
+                                          ].divide(const SizedBox(width: 17.0)),
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 354.0,
                                         child: Divider(
                                           height: 0.0,
@@ -308,7 +306,7 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       23.0, 0.0, 0.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -317,7 +315,7 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 17.0, 0.0, 0.0),
                                         child: SingleChildScrollView(
                                           scrollDirection: Axis.horizontal,
@@ -331,7 +329,7 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                                                     .featuredProductModel4,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductWidget(
+                                                child: const FeaturedProductWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/54rbftf853l1/Printer_Ink.png',
                                                   name: 'Printer Ink',
@@ -346,7 +344,7 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                                                     .featuredProductModel5,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductWidget(
+                                                child: const FeaturedProductWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/ephhv6rkwlht/Binder.png',
                                                   name: 'Binder',
@@ -361,7 +359,7 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                                                     .featuredProductModel6,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductWidget(
+                                                child: const FeaturedProductWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/4apd44vfltdq/Pen.png',
                                                   name: 'Pen',
@@ -371,7 +369,7 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                                                   soldOut: false,
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 17.0)),
+                                            ].divide(const SizedBox(width: 17.0)),
                                           ),
                                         ),
                                       ),
@@ -389,7 +387,7 @@ class _OfficeSuppliesWidgetState extends State<OfficeSuppliesWidget> {
                 wrapWithModel(
                   model: _model.customNavbarModel,
                   updateCallback: () => setState(() {}),
-                  child: CustomNavbarWidget(),
+                  child: const CustomNavbarWidget(),
                 ),
               ],
             ),

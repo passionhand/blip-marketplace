@@ -6,8 +6,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'courier_services_model.dart';
 export 'courier_services_model.dart';
 
@@ -63,7 +61,7 @@ class _CourierServicesWidgetState extends State<CourierServicesWidget> {
                 borderRadius: 30.0,
                 borderWidth: 1.0,
                 buttonSize: 54.0,
-                icon: Icon(
+                icon: const Icon(
                   Icons.chevron_left,
                   color: Colors.white,
                   size: 24.0,
@@ -84,7 +82,7 @@ class _CourierServicesWidgetState extends State<CourierServicesWidget> {
                       useGoogleFonts: false,
                     ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 0.0,
             ),
@@ -93,7 +91,7 @@ class _CourierServicesWidgetState extends State<CourierServicesWidget> {
               height: double.infinity,
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).secondaryBackground,
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(5.0),
                   bottomRight: Radius.circular(5.0),
                   topLeft: Radius.circular(30.0),
@@ -101,14 +99,14 @@ class _CourierServicesWidgetState extends State<CourierServicesWidget> {
                 ),
               ),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(-1.0, 0.0),
+                      alignment: const AlignmentDirectional(-1.0, 0.0),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 0.0, 0.0, 16.0),
                         child: Text(
                           'Choose a common package type:',
@@ -125,7 +123,7 @@ class _CourierServicesWidgetState extends State<CourierServicesWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -173,7 +171,7 @@ class _CourierServicesWidgetState extends State<CourierServicesWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 17.0, 0.0),
                             child: wrapWithModel(
                               model: _model.packageItemModel4,
@@ -190,13 +188,13 @@ class _CourierServicesWidgetState extends State<CourierServicesWidget> {
                               ),
                             ),
                           ),
-                        ].divide(SizedBox(width: 14.0)),
+                        ].divide(const SizedBox(width: 14.0)),
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(-1.0, 0.0),
+                      alignment: const AlignmentDirectional(-1.0, 0.0),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 42.0, 0.0, 13.0),
                         child: Text(
                           'Or choose from more options:',
@@ -214,7 +212,7 @@ class _CourierServicesWidgetState extends State<CourierServicesWidget> {
                     FlutterFlowDropDown<String>(
                       controller: _model.dropDownValueController ??=
                           FormFieldController<String>(null),
-                      options: ['Container 1', 'Container 2', 'Container 3'],
+                      options: const ['Container 1', 'Container 2', 'Container 3'],
                       onChanged: (val) =>
                           setState(() => _model.dropDownValue = val),
                       width: 354.0,
@@ -244,22 +242,22 @@ class _CourierServicesWidgetState extends State<CourierServicesWidget> {
                         color: FlutterFlowTheme.of(context).secondaryText,
                         size: 24.0,
                       ),
-                      fillColor: Color(0xFFF5F5F5),
+                      fillColor: const Color(0xFFF5F5F5),
                       elevation: 2.0,
                       borderColor: FlutterFlowTheme.of(context).alternate,
                       borderWidth: 2.0,
                       borderRadius: 10.0,
                       margin:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 16.0, 4.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 16.0, 4.0),
                       hidesUnderline: true,
                       isOverButton: true,
                       isSearchable: true,
                       isMultiSelect: false,
                     ),
                     Align(
-                      alignment: AlignmentDirectional(-1.0, 0.0),
+                      alignment: const AlignmentDirectional(-1.0, 0.0),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 42.0, 0.0, 4.0),
                         child: Text(
                           'Package Weight',
@@ -275,7 +273,7 @@ class _CourierServicesWidgetState extends State<CourierServicesWidget> {
                       ),
                     ),
                     SliderTheme(
-                      data: SliderThemeData(
+                      data: const SliderThemeData(
                         showValueIndicator: ShowValueIndicator.always,
                       ),
                       child: Slider(
@@ -296,9 +294,9 @@ class _CourierServicesWidgetState extends State<CourierServicesWidget> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 42.0, 0.0, 13.0),
                             child: Text(
                               'Special Instructions',
@@ -315,9 +313,9 @@ class _CourierServicesWidgetState extends State<CourierServicesWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 42.0, 20.0, 13.0),
                             child: Text(
                               '0/200',
@@ -337,8 +335,8 @@ class _CourierServicesWidgetState extends State<CourierServicesWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 18.0),
-                      child: Container(
+                          const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 18.0),
+                      child: SizedBox(
                         width: 355.0,
                         child: TextFormField(
                           controller: _model.textController,
@@ -392,7 +390,7 @@ class _CourierServicesWidgetState extends State<CourierServicesWidget> {
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                             filled: true,
-                            fillColor: Color(0xFFF5F5F5),
+                            fillColor: const Color(0xFFF5F5F5),
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
@@ -408,7 +406,7 @@ class _CourierServicesWidgetState extends State<CourierServicesWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                       child: FFButtonWidget(
                         onPressed: () {
                           print('Button pressed ...');
@@ -417,9 +415,9 @@ class _CourierServicesWidgetState extends State<CourierServicesWidget> {
                         options: FFButtonOptions(
                           width: double.infinity,
                           height: 60.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               24.0, 0.0, 24.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).primary,
                           textStyle:
@@ -430,7 +428,7 @@ class _CourierServicesWidgetState extends State<CourierServicesWidget> {
                                     useGoogleFonts: false,
                                   ),
                           elevation: 3.0,
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Colors.transparent,
                             width: 1.0,
                           ),

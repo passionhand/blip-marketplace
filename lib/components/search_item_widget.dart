@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'search_item_model.dart';
 export 'search_item_model.dart';
 
@@ -41,7 +39,7 @@ class _SearchItemWidgetState extends State<SearchItemWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, -1.0),
+      alignment: const AlignmentDirectional(0.0, -1.0),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
@@ -59,13 +57,15 @@ class _SearchItemWidgetState extends State<SearchItemWidget> {
               print('IconButton pressed ...');
             },
           ),
-          Text(
-            'Clothing and Accessories',
-            style: FlutterFlowTheme.of(context).bodyMedium.override(
-                  fontFamily: 'Segoe UI',
-                  letterSpacing: 0.0,
-                  useGoogleFonts: false,
-                ),
+          Flexible(
+            child: Text(
+              'Clothing and Accessories',
+              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                    fontFamily: 'Segoe UI',
+                    letterSpacing: 0.0,
+                    useGoogleFonts: false,
+                  ),
+            ),
           ),
         ],
       ),

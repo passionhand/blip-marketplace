@@ -3,8 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'support_ticket_model.dart';
 export 'support_ticket_model.dart';
 
@@ -72,7 +70,7 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                 borderRadius: 30.0,
                 borderWidth: 1.0,
                 buttonSize: 60.0,
-                icon: Icon(
+                icon: const Icon(
                   Icons.chevron_left,
                   color: Color(0xFF252525),
                   size: 30.0,
@@ -87,18 +85,18 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                 'Support Ticket',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Segoe UI',
-                      color: Color(0xFF252525),
+                      color: const Color(0xFF252525),
                       fontSize: 18.0,
                       letterSpacing: 0.0,
                       useGoogleFonts: false,
                     ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 0.0,
             ),
             body: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(20.0, 15.0, 20.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(20.0, 15.0, 20.0, 0.0),
               child: SingleChildScrollView(
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
@@ -106,12 +104,12 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                       child: Text(
                         'Name',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Segoe UI',
-                              color: Color(0xFF252525),
+                              color: const Color(0xFF252525),
                               fontSize: 12.0,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.bold,
@@ -121,7 +119,7 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                       child: TextFormField(
                         controller: _model.nameTextController,
                         focusNode: _model.nameFocusNode,
@@ -142,7 +140,7 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                                     useGoogleFonts: false,
                                   ),
                           enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xFFBEBEBE),
                               width: 1.0,
                             ),
@@ -169,7 +167,7 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                             ),
                             borderRadius: BorderRadius.circular(10.0),
                           ),
-                          contentPadding: EdgeInsetsDirectional.fromSTEB(
+                          contentPadding: const EdgeInsetsDirectional.fromSTEB(
                               15.0, 8.0, 15.0, 8.0),
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -183,12 +181,12 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 10.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 10.0),
                       child: Text(
                         'Email Address',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Segoe UI',
-                              color: Color(0xFF252525),
+                              color: const Color(0xFF252525),
                               fontSize: 12.0,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.bold,
@@ -216,7 +214,7 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                                   useGoogleFonts: false,
                                 ),
                         enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Color(0xFFBEBEBE),
                             width: 1.0,
                           ),
@@ -243,7 +241,7 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                           ),
                           borderRadius: BorderRadius.circular(10.0),
                         ),
-                        contentPadding: EdgeInsetsDirectional.fromSTEB(
+                        contentPadding: const EdgeInsetsDirectional.fromSTEB(
                             15.0, 8.0, 15.0, 8.0),
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -256,12 +254,12 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 10.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 10.0),
                       child: Text(
                         'Subject',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Segoe UI',
-                              color: Color(0xFF252525),
+                              color: const Color(0xFF252525),
                               fontSize: 12.0,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.bold,
@@ -289,7 +287,7 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                                   useGoogleFonts: false,
                                 ),
                         enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Color(0xFFBEBEBE),
                             width: 1.0,
                           ),
@@ -316,7 +314,7 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                           ),
                           borderRadius: BorderRadius.circular(10.0),
                         ),
-                        contentPadding: EdgeInsetsDirectional.fromSTEB(
+                        contentPadding: const EdgeInsetsDirectional.fromSTEB(
                             15.0, 8.0, 15.0, 8.0),
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -329,12 +327,12 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 10.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 10.0),
                       child: Text(
                         'Description',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Segoe UI',
-                              color: Color(0xFF252525),
+                              color: const Color(0xFF252525),
                               fontSize: 12.0,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.bold,
@@ -362,7 +360,7 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                                   useGoogleFonts: false,
                                 ),
                         enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Color(0xFFBEBEBE),
                             width: 1.0,
                           ),
@@ -389,7 +387,7 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                           ),
                           borderRadius: BorderRadius.circular(10.0),
                         ),
-                        contentPadding: EdgeInsetsDirectional.fromSTEB(
+                        contentPadding: const EdgeInsetsDirectional.fromSTEB(
                             15.0, 8.0, 15.0, 8.0),
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -404,12 +402,12 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 10.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 10.0),
                       child: Text(
                         'Attachment (Optional)',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Segoe UI',
-                              color: Color(0xFF252525),
+                              color: const Color(0xFF252525),
                               fontSize: 12.0,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.bold,
@@ -419,7 +417,7 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -445,7 +443,7 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                                       letterSpacing: 0.0,
                                       useGoogleFonts: false,
                                     ),
-                                enabledBorder: OutlineInputBorder(
+                                enabledBorder: const OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color(0xFFBEBEBE),
                                     width: 1.0,
@@ -462,7 +460,7 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                                     color: FlutterFlowTheme.of(context).primary,
                                     width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.only(
+                                  borderRadius: const BorderRadius.only(
                                     bottomLeft: Radius.circular(10.0),
                                     bottomRight: Radius.circular(0.0),
                                     topLeft: Radius.circular(10.0),
@@ -474,7 +472,7 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                                     color: FlutterFlowTheme.of(context).error,
                                     width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.only(
+                                  borderRadius: const BorderRadius.only(
                                     bottomLeft: Radius.circular(10.0),
                                     bottomRight: Radius.circular(0.0),
                                     topLeft: Radius.circular(10.0),
@@ -486,14 +484,14 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                                     color: FlutterFlowTheme.of(context).error,
                                     width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.only(
+                                  borderRadius: const BorderRadius.only(
                                     bottomLeft: Radius.circular(10.0),
                                     bottomRight: Radius.circular(0.0),
                                     topLeft: Radius.circular(10.0),
                                     topRight: Radius.circular(0.0),
                                   ),
                                 ),
-                                prefixIcon: Icon(
+                                prefixIcon: const Icon(
                                   Icons.attach_file_outlined,
                                 ),
                               ),
@@ -516,9 +514,9 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                             text: 'Browse',
                             options: FFButtonOptions(
                               height: 51.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
                               color: FlutterFlowTheme.of(context).primary,
                               textStyle: FlutterFlowTheme.of(context)
@@ -530,11 +528,11 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                                     useGoogleFonts: false,
                                   ),
                               elevation: 3.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),
-                              borderRadius: BorderRadius.only(
+                              borderRadius: const BorderRadius.only(
                                 bottomLeft: Radius.circular(0.0),
                                 bottomRight: Radius.circular(10.0),
                                 topLeft: Radius.circular(0.0),
@@ -553,10 +551,10 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                       options: FFButtonOptions(
                         width: 353.0,
                         height: 60.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 15.0, 24.0, 15.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
@@ -567,7 +565,7 @@ class _SupportTicketWidgetState extends State<SupportTicketWidget> {
                                   useGoogleFonts: false,
                                 ),
                         elevation: 3.0,
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),

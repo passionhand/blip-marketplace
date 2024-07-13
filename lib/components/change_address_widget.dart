@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'change_address_model.dart';
 export 'change_address_model.dart';
 
@@ -11,7 +9,7 @@ class ChangeAddressWidget extends StatefulWidget {
   const ChangeAddressWidget({
     super.key,
     Color? background,
-  }) : this.background = background ?? Colors.white;
+  }) : background = background ?? Colors.white;
 
   final Color background;
 
@@ -58,7 +56,7 @@ class _ChangeAddressWidgetState extends State<ChangeAddressWidget> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 12.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 12.0),
             child: Text(
               'CHANGE ADDRESS',
               textAlign: TextAlign.center,
@@ -72,7 +70,7 @@ class _ChangeAddressWidgetState extends State<ChangeAddressWidget> {
             ),
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 13.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 13.0, 0.0),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               children: [
@@ -80,21 +78,21 @@ class _ChangeAddressWidgetState extends State<ChangeAddressWidget> {
                   width: 330.0,
                   height: 100.0,
                   decoration: BoxDecoration(
-                    color: Color(0xFFEEEEEE),
+                    color: const Color(0xFFEEEEEE),
                     borderRadius: BorderRadius.circular(10.0),
                     border: Border.all(
-                      color: Color(0xFF252525),
+                      color: const Color(0xFF252525),
                     ),
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 8.0),
                           child: Text(
                             'Home',
@@ -136,9 +134,9 @@ class _ChangeAddressWidgetState extends State<ChangeAddressWidget> {
                               ],
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     10.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   '4517 Washington Ave. Manchester, \nentucky 39495',
@@ -148,7 +146,7 @@ class _ChangeAddressWidgetState extends State<ChangeAddressWidget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Segoe UI',
-                                        color: Color(0xFF252525),
+                                        color: const Color(0xFF252525),
                                         letterSpacing: 0.0,
                                         useGoogleFonts: false,
                                       ),
@@ -170,13 +168,13 @@ class _ChangeAddressWidgetState extends State<ChangeAddressWidget> {
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 8.0),
                           child: Text(
                             'Office',
@@ -218,9 +216,9 @@ class _ChangeAddressWidgetState extends State<ChangeAddressWidget> {
                               ],
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     10.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   '3891 Ranchview Dr. Richardson,\nCalifornia 62639',
@@ -230,7 +228,7 @@ class _ChangeAddressWidgetState extends State<ChangeAddressWidget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Segoe UI',
-                                        color: Color(0xFF252525),
+                                        color: const Color(0xFF252525),
                                         letterSpacing: 0.0,
                                         useGoogleFonts: false,
                                       ),
@@ -243,7 +241,7 @@ class _ChangeAddressWidgetState extends State<ChangeAddressWidget> {
                     ),
                   ),
                 ),
-                Opacity(
+                const Opacity(
                   opacity: 0.5,
                   child: Divider(
                     thickness: 0.5,
@@ -255,31 +253,31 @@ class _ChangeAddressWidgetState extends State<ChangeAddressWidget> {
                     print('Button pressed ...');
                   },
                   text: 'Add New Address',
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.add_circle_outline,
                     size: 20.0,
                   ),
                   options: FFButtonOptions(
                     height: 40.0,
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                     iconPadding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).primaryBackground,
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                           fontFamily: 'Segoe UI',
-                          color: Color(0xFF252525),
+                          color: const Color(0xFF252525),
                           fontSize: 14.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.w600,
                           useGoogleFonts: false,
                         ),
                     elevation: 0.0,
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                       color: Colors.transparent,
                       width: 1.0,
                     ),
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(0.0),
                       bottomRight: Radius.circular(0.0),
                       topLeft: Radius.circular(0.0),
@@ -291,7 +289,7 @@ class _ChangeAddressWidgetState extends State<ChangeAddressWidget> {
             ),
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 1.0, 0.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 1.0, 0.0, 0.0),
             child: FFButtonWidget(
               onPressed: () {
                 print('Button pressed ...');
@@ -299,8 +297,8 @@ class _ChangeAddressWidgetState extends State<ChangeAddressWidget> {
               text: 'CONFIRM',
               options: FFButtonOptions(
                 height: 60.0,
-                padding: EdgeInsetsDirectional.fromSTEB(24.0, 15.0, 24.0, 15.0),
-                iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 15.0, 24.0, 15.0),
+                iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                 color: FlutterFlowTheme.of(context).primary,
                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                       fontFamily: 'Segoe UI',
@@ -311,11 +309,11 @@ class _ChangeAddressWidgetState extends State<ChangeAddressWidget> {
                       useGoogleFonts: false,
                     ),
                 elevation: 3.0,
-                borderSide: BorderSide(
+                borderSide: const BorderSide(
                   color: Colors.transparent,
                   width: 1.0,
                 ),
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(11.0),
                   bottomRight: Radius.circular(11.0),
                   topLeft: Radius.circular(0.0),

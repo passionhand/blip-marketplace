@@ -7,8 +7,6 @@ import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'googlepay_model.dart';
 export 'googlepay_model.dart';
 
@@ -74,7 +72,7 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
               backgroundColor: FlutterFlowTheme.of(context).primary,
               automaticallyImplyLeading: false,
               leading: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(21.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(21.0, 0.0, 0.0, 0.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: SvgPicture.asset(
@@ -84,14 +82,14 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                 ),
               ),
               title: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(230.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(230.0, 0.0, 0.0, 0.0),
                 child: Icon(
                   Icons.notifications_outlined,
                   color: FlutterFlowTheme.of(context).primaryBackground,
                   size: 24.0,
                 ),
               ),
-              actions: [
+              actions: const [
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                   child: Icon(
@@ -110,10 +108,10 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                 Stack(
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(-0.06, -6.04),
+                      alignment: const AlignmentDirectional(-0.06, -6.04),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                         child: FFButtonWidget(
                           onPressed: () {
                             print('Button pressed ...');
@@ -122,9 +120,9 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                           options: FFButtonOptions(
                             width: 347.0,
                             height: 45.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 0.0, 24.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
@@ -137,7 +135,7 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                                   useGoogleFonts: false,
                                 ),
                             elevation: 3.0,
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 1.0,
                             ),
@@ -147,10 +145,10 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(1.0, 20.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(1.0, 20.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(8.0),
                           child: Image.network(
@@ -165,7 +163,7 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                   ],
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 19.0, 0.0, 19.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 19.0, 0.0, 19.0),
                   child: Text(
                     'or pay using',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -181,7 +179,7 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                   child: Column(
                     children: [
                       Align(
-                        alignment: Alignment(0.0, 0),
+                        alignment: const Alignment(0.0, 0),
                         child: FlutterFlowButtonTabBar(
                           useToggleButtonStyle: false,
                           isScrollable: true,
@@ -193,23 +191,23 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                                     fontWeight: FontWeight.bold,
                                     useGoogleFonts: false,
                                   ),
-                          unselectedLabelStyle: TextStyle(),
+                          unselectedLabelStyle: const TextStyle(),
                           labelColor:
                               FlutterFlowTheme.of(context).primaryBackground,
                           unselectedLabelColor:
                               FlutterFlowTheme.of(context).primaryBackground,
-                          backgroundColor: Color(0xFF20BCED),
-                          unselectedBackgroundColor: Color(0xFF333333),
+                          backgroundColor: const Color(0xFF20BCED),
+                          unselectedBackgroundColor: const Color(0xFF333333),
                           borderColor: FlutterFlowTheme.of(context).primary,
                           borderWidth: 0.0,
                           borderRadius: 10.0,
                           elevation: 0.0,
-                          labelPadding: EdgeInsetsDirectional.fromSTEB(
+                          labelPadding: const EdgeInsetsDirectional.fromSTEB(
                               15.0, 0.0, 50.0, 0.0),
-                          buttonMargin: EdgeInsetsDirectional.fromSTEB(
+                          buttonMargin: const EdgeInsetsDirectional.fromSTEB(
                               7.0, 0.0, 7.0, 0.0),
-                          padding: EdgeInsets.all(4.0),
-                          tabs: [
+                          padding: const EdgeInsets.all(4.0),
+                          tabs: const [
                             Tab(
                               text: 'Card',
                               icon: FaIcon(
@@ -256,7 +254,7 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                           controller: _model.tabBarController,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 30.0, 0.0, 0.0),
                               child: Container(
                                 width: 100.0,
@@ -264,7 +262,7 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                                 decoration: BoxDecoration(
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
-                                  borderRadius: BorderRadius.only(
+                                  borderRadius: const BorderRadius.only(
                                     bottomLeft: Radius.circular(0.0),
                                     bottomRight: Radius.circular(0.0),
                                     topLeft: Radius.circular(30.0),
@@ -272,17 +270,17 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                                   ),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 30.0, 0.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-1.0, 0.0),
+                                            const AlignmentDirectional(-1.0, 0.0),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   20.0, 15.0, 0.0, 11.0),
                                           child: Text(
                                             'Card information',
@@ -299,7 +297,7 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             20.0, 0.0, 20.0, 18.0),
                                         child: TextFormField(
                                           controller: _model.textController1,
@@ -327,7 +325,7 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                                                       useGoogleFonts: false,
                                                     ),
                                             enabledBorder: OutlineInputBorder(
-                                              borderSide: BorderSide(
+                                              borderSide: const BorderSide(
                                                 color: Color(0xFFBEBEBE),
                                                 width: 1.0,
                                               ),
@@ -367,9 +365,9 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                                             ),
                                             filled: true,
                                             contentPadding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 0.0, 0.0, 0.0),
-                                            suffixIcon: Icon(
+                                            suffixIcon: const Icon(
                                               Icons.credit_card_outlined,
                                               color: Color(0xFF333333),
                                             ),
@@ -392,7 +390,7 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                                         children: [
                                           Expanded(
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       20.0, 0.0, 6.0, 0.0),
                                               child: TextFormField(
@@ -491,7 +489,7 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                                           ),
                                           Expanded(
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       6.0, 0.0, 20.0, 0.0),
                                               child: TextFormField(
@@ -572,7 +570,7 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                                                             8.0),
                                                   ),
                                                   filled: true,
-                                                  suffixIcon: FaIcon(
+                                                  suffixIcon: const FaIcon(
                                                     FontAwesomeIcons.idCard,
                                                   ),
                                                 ),
@@ -594,16 +592,16 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                                         ],
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 34.0, 0.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   -1.0, 0.0),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 0.0, 0.0, 0.0),
                                                 child: Text(
@@ -623,7 +621,7 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 11.0, 0.0, 9.0),
                                               child:
@@ -632,7 +630,7 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                                                         .dropDownValueController ??=
                                                     FormFieldController<String>(
                                                         null),
-                                                options: ['Option 1'],
+                                                options: const ['Option 1'],
                                                 onChanged: (val) => setState(
                                                     () => _model.dropDownValue =
                                                         val),
@@ -685,7 +683,7 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                                                         .alternate,
                                                 borderWidth: 2.0,
                                                 borderRadius: 10.0,
-                                                margin: EdgeInsetsDirectional
+                                                margin: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 4.0, 16.0, 4.0),
                                                 hidesUnderline: true,
@@ -695,7 +693,7 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       20.0, 0.0, 20.0, 23.0),
                                               child: TextFormField(
@@ -776,7 +774,7 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                                                             10.0),
                                                   ),
                                                   contentPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(15.0, 0.0,
                                                               0.0, 0.0),
                                                 ),
@@ -795,7 +793,7 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       20.0, 0.0, 20.0, 0.0),
                                               child: FFButtonWidget(
@@ -806,11 +804,11 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                                                 options: FFButtonOptions(
                                                   width: double.infinity,
                                                   height: 60.0,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           24.0, 0.0, 24.0, 0.0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
                                                   color: FlutterFlowTheme.of(
@@ -829,7 +827,7 @@ class _GooglepayWidgetState extends State<GooglepayWidget>
                                                         useGoogleFonts: false,
                                                       ),
                                                   elevation: 3.0,
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Colors.transparent,
                                                     width: 1.0,
                                                   ),

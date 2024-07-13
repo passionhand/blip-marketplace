@@ -5,8 +5,6 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'support_page_model.dart';
 export 'support_page_model.dart';
 
@@ -66,7 +64,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
               backgroundColor: Colors.white,
               automaticallyImplyLeading: false,
               leading: Align(
-                alignment: AlignmentDirectional(-1.0, -1.0),
+                alignment: const AlignmentDirectional(-1.0, -1.0),
                 child: FlutterFlowIconButton(
                   borderColor: Colors.transparent,
                   borderRadius: 30.0,
@@ -88,20 +86,20 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                 'Support',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Segoe UI',
-                      color: Color(0xFF252525),
+                      color: const Color(0xFF252525),
                       fontSize: 18.0,
                       letterSpacing: 0.0,
                       useGoogleFonts: false,
                     ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 0.0,
             ),
             body: Align(
-              alignment: AlignmentDirectional(-1.0, -1.0),
+              alignment: const AlignmentDirectional(-1.0, -1.0),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -125,7 +123,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                                 ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 18.0, 0.0, 0.0),
                             child: Container(
                               width: 353.0,
@@ -134,13 +132,13 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 10.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           13.0, 16.0, 13.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -169,7 +167,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           13.0, 0.0, 13.0, 0.0),
                                       child: Text(
                                         'Fusce purus lacus, pretium ac volutpat vel, dictum vitae sem. Sed porta finibus tellus vel efficitur. Phasellus varius sed quam sit amet pellentesque.',
@@ -188,7 +186,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 9.0, 0.0, 5.0),
                             child: Container(
                               width: 353.0,
@@ -197,7 +195,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     13.0, 16.0, 13.0, 17.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -228,7 +226,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                           ),
                         ],
                       ),
-                      Opacity(
+                      const Opacity(
                         opacity: 0.5,
                         child: Divider(
                           thickness: 1.0,
@@ -236,13 +234,13 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-1.0, -1.0),
+                        alignment: const AlignmentDirectional(-1.0, -1.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 10.0, 0.0, 0.0),
                               child: Text(
                                 'Contact',
@@ -267,9 +265,9 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(-1.0, -1.0),
+                                    alignment: const AlignmentDirectional(-1.0, -1.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 18.0, 0.0, 0.0),
                                       child: TextFormField(
                                         controller: _model.nameTextController,
@@ -295,7 +293,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                                                     useGoogleFonts: false,
                                                   ),
                                           enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFBEBEBE),
                                               width: 1.0,
                                             ),
@@ -334,7 +332,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                                                 BorderRadius.circular(10.0),
                                           ),
                                           contentPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   15.0, 8.0, 15.0, 8.0),
                                         ),
                                         style: FlutterFlowTheme.of(context)
@@ -351,9 +349,9 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(-1.0, -1.0),
+                                    alignment: const AlignmentDirectional(-1.0, -1.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 15.0, 0.0, 0.0),
                                       child: TextFormField(
                                         controller: _model.emailTextController,
@@ -379,7 +377,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                                                     useGoogleFonts: false,
                                                   ),
                                           enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFBEBEBE),
                                               width: 1.0,
                                             ),
@@ -418,7 +416,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                                                 BorderRadius.circular(10.0),
                                           ),
                                           contentPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   15.0, 8.0, 15.0, 8.0),
                                         ),
                                         style: FlutterFlowTheme.of(context)
@@ -435,9 +433,9 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(-1.0, -1.0),
+                                    alignment: const AlignmentDirectional(-1.0, -1.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 15.0, 0.0, 0.0),
                                       child: TextFormField(
                                         controller:
@@ -464,7 +462,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                                                     useGoogleFonts: false,
                                                   ),
                                           enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFBEBEBE),
                                               width: 1.0,
                                             ),
@@ -503,7 +501,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                                                 BorderRadius.circular(10.0),
                                           ),
                                           contentPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   13.0, 8.0, 0.0, 0.0),
                                         ),
                                         style: FlutterFlowTheme.of(context)
@@ -522,7 +520,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 15.0, 0.0, 20.0),
                                     child: FFButtonWidget(
                                       onPressed: () {
@@ -532,10 +530,10 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                                       options: FFButtonOptions(
                                         width: 353.0,
                                         height: 60.0,
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             24.0, 15.0, 24.0, 15.0),
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
                                         color: FlutterFlowTheme.of(context)
                                             .primary,
@@ -550,7 +548,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                                               useGoogleFonts: false,
                                             ),
                                         elevation: 3.0,
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Colors.transparent,
                                           width: 1.0,
                                         ),
@@ -565,7 +563,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                           ],
                         ),
                       ),
-                      Opacity(
+                      const Opacity(
                         opacity: 0.5,
                         child: Divider(
                           thickness: 1.0,
@@ -573,15 +571,15 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-1.0, -1.0),
+                        alignment: const AlignmentDirectional(-1.0, -1.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(-1.0, -1.0),
+                              alignment: const AlignmentDirectional(-1.0, -1.0),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 10.0, 0.0, 0.0),
                                 child: Text(
                                   'Feedback',
@@ -598,9 +596,9 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(-1.0, -1.0),
+                              alignment: const AlignmentDirectional(-1.0, -1.0),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 15.0, 0.0, 0.0),
                                 child: Text(
                                   'Rate Your Experience',
@@ -616,25 +614,25 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 10.0, 0.0, 0.0),
                               child: RatingBar.builder(
                                 onRatingUpdate: (newValue) => setState(
                                     () => _model.ratingBarValue = newValue),
-                                itemBuilder: (context, index) => Icon(
+                                itemBuilder: (context, index) => const Icon(
                                   Icons.star_rounded,
                                   color: Color(0xFFFFC700),
                                 ),
                                 direction: Axis.horizontal,
                                 initialRating: _model.ratingBarValue ??= 3.0,
-                                unratedColor: Color(0xFFE6E6E6),
+                                unratedColor: const Color(0xFFE6E6E6),
                                 itemCount: 5,
                                 itemSize: 40.0,
-                                glowColor: Color(0xFFFFC700),
+                                glowColor: const Color(0xFFFFC700),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 10.0, 0.0, 15.0),
                               child: TextFormField(
                                 controller: _model.commentsTextController,
@@ -658,7 +656,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                                         useGoogleFonts: false,
                                       ),
                                   enabledBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0xFFBEBEBE),
                                       width: 1.0,
                                     ),
@@ -687,7 +685,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                                     borderRadius: BorderRadius.circular(10.0),
                                   ),
                                   contentPadding:
-                                      EdgeInsetsDirectional.fromSTEB(
+                                      const EdgeInsetsDirectional.fromSTEB(
                                           15.0, 8.0, 15.0, 8.0),
                                 ),
                                 style: FlutterFlowTheme.of(context)
@@ -705,7 +703,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 15.0),
                               child: FFButtonWidget(
                                 onPressed: () {
@@ -715,9 +713,9 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                                 options: FFButtonOptions(
                                   width: 353.0,
                                   height: 60.0,
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       24.0, 0.0, 24.0, 0.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
                                   color: FlutterFlowTheme.of(context).primary,
                                   textStyle: FlutterFlowTheme.of(context)
@@ -731,7 +729,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                                         useGoogleFonts: false,
                                       ),
                                   elevation: 3.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Colors.transparent,
                                     width: 1.0,
                                   ),
@@ -742,7 +740,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                           ],
                         ),
                       ),
-                      Opacity(
+                      const Opacity(
                         opacity: 0.5,
                         child: Divider(
                           thickness: 1.0,
@@ -755,37 +753,37 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 10.0, 0.0, 10.0),
                             child: FFButtonWidget(
                               onPressed: () {
                                 print('livechat pressed ...');
                               },
                               text: 'LIVE CHAT',
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.headset_mic_outlined,
                                 size: 25.0,
                               ),
                               options: FFButtonOptions(
                                 width: 353.0,
                                 height: 60.0,
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     24.0, 15.0, 24.0, 15.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                                 color: FlutterFlowTheme.of(context).alternate,
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
                                       fontFamily: 'Segoe UI',
-                                      color: Color(0xFF2D3B4B),
+                                      color: const Color(0xFF2D3B4B),
                                       fontSize: 15.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.bold,
                                       useGoogleFonts: false,
                                     ),
                                 elevation: 3.0,
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),
@@ -794,7 +792,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 10.0, 0.0, 0.0),
                             child: FFButtonWidget(
                               onPressed: () {
@@ -804,23 +802,23 @@ class _SupportPageWidgetState extends State<SupportPageWidget> {
                               options: FFButtonOptions(
                                 width: 353.0,
                                 height: 60.0,
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     24.0, 15.0, 24.0, 15.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
-                                color: Color(0xFFEEEEEE),
+                                color: const Color(0xFFEEEEEE),
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
                                       fontFamily: 'Segoe UI',
-                                      color: Color(0xFF2D3B4B),
+                                      color: const Color(0xFF2D3B4B),
                                       fontSize: 15.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.bold,
                                       useGoogleFonts: false,
                                     ),
                                 elevation: 3.0,
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),

@@ -1,9 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'rest_search_model.dart';
 export 'rest_search_model.dart';
 
@@ -57,7 +54,7 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
               automaticallyImplyLeading: true,
               title: Container(
                 width: double.infinity,
-                decoration: BoxDecoration(),
+                decoration: const BoxDecoration(),
                 child: TextFormField(
                   controller: _model.textController,
                   focusNode: _model.textFieldFocusNode,
@@ -78,7 +75,7 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                               useGoogleFonts: false,
                             ),
                     enabledBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0x00000000),
                         width: 2.0,
                       ),
@@ -107,7 +104,7 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                     ),
                     filled: true,
                     fillColor: FlutterFlowTheme.of(context).accent4,
-                    suffixIcon: Icon(
+                    suffixIcon: const Icon(
                       Icons.search_rounded,
                     ),
                   ),
@@ -122,7 +119,7 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
               ),
               actions: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
                   child: Icon(
                     Icons.shopping_cart_outlined,
                     color: FlutterFlowTheme.of(context).primaryText,
@@ -134,15 +131,15 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
               elevation: 0.0,
             ),
             body: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
               child: GridView(
-                padding: EdgeInsets.fromLTRB(
+                padding: const EdgeInsets.fromLTRB(
                   0,
                   0.0,
                   0,
                   0.0,
                 ),
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 4,
                   mainAxisSpacing: 10.0,
                   childAspectRatio: 0.7,
@@ -157,15 +154,15 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                         width: 70.0,
                         height: 70.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFE3C7A7),
+                          color: const Color(0xFFE3C7A7),
                           borderRadius: BorderRadius.circular(100.0),
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Color(0xFFE3C7A7),
+                            color: const Color(0xFFE3C7A7),
                           ),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(0.0),
                             child: Image.asset(
@@ -195,15 +192,15 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                         width: 70.0,
                         height: 70.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFFFF1A7),
+                          color: const Color(0xFFFFF1A7),
                           borderRadius: BorderRadius.circular(100.0),
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Color(0xFFFFF1A7),
+                            color: const Color(0xFFFFF1A7),
                           ),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(0.0),
                             child: Image.asset(
@@ -244,15 +241,15 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                           width: 70.0,
                           height: 70.0,
                           decoration: BoxDecoration(
-                            color: Color(0xFFBDE4F2),
+                            color: const Color(0xFFBDE4F2),
                             borderRadius: BorderRadius.circular(100.0),
                             shape: BoxShape.rectangle,
                             border: Border.all(
-                              color: Color(0xFFBDE4F2),
+                              color: const Color(0xFFBDE4F2),
                             ),
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(0.0),
                               child: Image.asset(
@@ -284,15 +281,15 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                         width: 70.0,
                         height: 70.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFEDF9A6),
+                          color: const Color(0xFFEDF9A6),
                           borderRadius: BorderRadius.circular(100.0),
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Color(0xFFEDF9A6),
+                            color: const Color(0xFFEDF9A6),
                           ),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(0.0),
                             child: Image.asset(
@@ -322,15 +319,15 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                         width: 70.0,
                         height: 70.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFE9DCF3),
+                          color: const Color(0xFFE9DCF3),
                           borderRadius: BorderRadius.circular(100.0),
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Color(0xFFE9DCF3),
+                            color: const Color(0xFFE9DCF3),
                           ),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(0.0),
                             child: Image.asset(
@@ -360,15 +357,15 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                         width: 70.0,
                         height: 70.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFDDD39F),
+                          color: const Color(0xFFDDD39F),
                           borderRadius: BorderRadius.circular(100.0),
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Color(0xFFDDD39F),
+                            color: const Color(0xFFDDD39F),
                           ),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(0.0),
                             child: Image.asset(
@@ -401,15 +398,15 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                         width: 70.0,
                         height: 70.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFECC29C),
+                          color: const Color(0xFFECC29C),
                           borderRadius: BorderRadius.circular(100.0),
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Color(0xFFECC29C),
+                            color: const Color(0xFFECC29C),
                           ),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(0.0),
                             child: Image.asset(
@@ -439,15 +436,15 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                         width: 70.0,
                         height: 70.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFFCEDC8),
+                          color: const Color(0xFFFCEDC8),
                           borderRadius: BorderRadius.circular(100.0),
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Color(0xFFFCEDC8),
+                            color: const Color(0xFFFCEDC8),
                           ),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(0.0),
                             child: Image.asset(
@@ -489,15 +486,15 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                           width: 70.0,
                           height: 70.0,
                           decoration: BoxDecoration(
-                            color: Color(0xFFB4E8E5),
+                            color: const Color(0xFFB4E8E5),
                             borderRadius: BorderRadius.circular(100.0),
                             shape: BoxShape.rectangle,
                             border: Border.all(
-                              color: Color(0xFFB4E8E5),
+                              color: const Color(0xFFB4E8E5),
                             ),
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(0.0),
                               child: Image.asset(
@@ -541,15 +538,15 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                           width: 70.0,
                           height: 70.0,
                           decoration: BoxDecoration(
-                            color: Color(0xFFCDDD9F),
+                            color: const Color(0xFFCDDD9F),
                             borderRadius: BorderRadius.circular(100.0),
                             shape: BoxShape.rectangle,
                             border: Border.all(
-                              color: Color(0xFFCDDD9F),
+                              color: const Color(0xFFCDDD9F),
                             ),
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(0.0),
                               child: Image.asset(
@@ -593,15 +590,15 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                           width: 70.0,
                           height: 70.0,
                           decoration: BoxDecoration(
-                            color: Color(0xFFFDD3FE),
+                            color: const Color(0xFFFDD3FE),
                             borderRadius: BorderRadius.circular(100.0),
                             shape: BoxShape.rectangle,
                             border: Border.all(
-                              color: Color(0xFFFDD3FE),
+                              color: const Color(0xFFFDD3FE),
                             ),
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(0.0),
                               child: Image.asset(
@@ -645,11 +642,11 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                           width: 70.0,
                           height: 70.0,
                           decoration: BoxDecoration(
-                            color: Color(0xFFF1E5B9),
+                            color: const Color(0xFFF1E5B9),
                             borderRadius: BorderRadius.circular(100.0),
                             shape: BoxShape.rectangle,
                             border: Border.all(
-                              color: Color(0xFFF1E5B9),
+                              color: const Color(0xFFF1E5B9),
                             ),
                           ),
                           child: ClipRRect(
@@ -694,11 +691,11 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                           width: 70.0,
                           height: 70.0,
                           decoration: BoxDecoration(
-                            color: Color(0xFFDCD3E2),
+                            color: const Color(0xFFDCD3E2),
                             borderRadius: BorderRadius.circular(100.0),
                             shape: BoxShape.rectangle,
                             border: Border.all(
-                              color: Color(0xFFDCD3E2),
+                              color: const Color(0xFFDCD3E2),
                             ),
                           ),
                           child: ClipRRect(
@@ -732,11 +729,11 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                         width: 70.0,
                         height: 70.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFF3CEAC),
+                          color: const Color(0xFFF3CEAC),
                           borderRadius: BorderRadius.circular(100.0),
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Color(0xFFF3CEAC),
+                            color: const Color(0xFFF3CEAC),
                           ),
                         ),
                         child: ClipRRect(
@@ -768,11 +765,11 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                         width: 70.0,
                         height: 70.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFD8C2AD),
+                          color: const Color(0xFFD8C2AD),
                           borderRadius: BorderRadius.circular(100.0),
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Color(0xFFD8C2AD),
+                            color: const Color(0xFFD8C2AD),
                           ),
                         ),
                         child: ClipRRect(
@@ -815,11 +812,11 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                           width: 70.0,
                           height: 70.0,
                           decoration: BoxDecoration(
-                            color: Color(0xFFDBC3EE),
+                            color: const Color(0xFFDBC3EE),
                             borderRadius: BorderRadius.circular(100.0),
                             shape: BoxShape.rectangle,
                             border: Border.all(
-                              color: Color(0xFFDBC3EE),
+                              color: const Color(0xFFDBC3EE),
                             ),
                           ),
                           child: ClipRRect(
@@ -864,11 +861,11 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                           width: 70.0,
                           height: 70.0,
                           decoration: BoxDecoration(
-                            color: Color(0xFFC9DEEB),
+                            color: const Color(0xFFC9DEEB),
                             borderRadius: BorderRadius.circular(100.0),
                             shape: BoxShape.rectangle,
                             border: Border.all(
-                              color: Color(0xFFC9DEEB),
+                              color: const Color(0xFFC9DEEB),
                             ),
                           ),
                           child: ClipRRect(
@@ -902,11 +899,11 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                         width: 70.0,
                         height: 70.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFC1C1C1),
+                          color: const Color(0xFFC1C1C1),
                           borderRadius: BorderRadius.circular(100.0),
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Color(0xFFC1C1C1),
+                            color: const Color(0xFFC1C1C1),
                           ),
                         ),
                         child: ClipRRect(
@@ -938,11 +935,11 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                         width: 70.0,
                         height: 70.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFD4CAB5),
+                          color: const Color(0xFFD4CAB5),
                           borderRadius: BorderRadius.circular(100.0),
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Color(0xFFD4CAB5),
+                            color: const Color(0xFFD4CAB5),
                           ),
                         ),
                         child: ClipRRect(
@@ -985,11 +982,11 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                           width: 70.0,
                           height: 70.0,
                           decoration: BoxDecoration(
-                            color: Color(0xFFDCECF3),
+                            color: const Color(0xFFDCECF3),
                             borderRadius: BorderRadius.circular(100.0),
                             shape: BoxShape.rectangle,
                             border: Border.all(
-                              color: Color(0xFFDCECF3),
+                              color: const Color(0xFFDCECF3),
                             ),
                           ),
                           child: ClipRRect(
@@ -1034,11 +1031,11 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                           width: 70.0,
                           height: 70.0,
                           decoration: BoxDecoration(
-                            color: Color(0xFFCAD7A6),
+                            color: const Color(0xFFCAD7A6),
                             borderRadius: BorderRadius.circular(100.0),
                             shape: BoxShape.rectangle,
                             border: Border.all(
-                              color: Color(0xFFCAD7A6),
+                              color: const Color(0xFFCAD7A6),
                             ),
                           ),
                           child: ClipRRect(
@@ -1072,11 +1069,11 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                         width: 70.0,
                         height: 70.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFD2C2B3),
+                          color: const Color(0xFFD2C2B3),
                           borderRadius: BorderRadius.circular(100.0),
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Color(0xFFD2C2B3),
+                            color: const Color(0xFFD2C2B3),
                           ),
                         ),
                         child: ClipRRect(
@@ -1108,11 +1105,11 @@ class _RestSearchWidgetState extends State<RestSearchWidget> {
                         width: 70.0,
                         height: 70.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFB4D6FA),
+                          color: const Color(0xFFB4D6FA),
                           borderRadius: BorderRadius.circular(100.0),
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Color(0xFFB4D6FA),
+                            color: const Color(0xFFB4D6FA),
                           ),
                         ),
                         child: ClipRRect(

@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'service_item1_model.dart';
 export 'service_item1_model.dart';
 
@@ -57,7 +55,7 @@ class _ServiceItem1WidgetState extends State<ServiceItem1Widget> {
     return Container(
       width: widget.componentWidth,
       height: widget.componentHeight,
-      decoration: BoxDecoration(),
+      decoration: const BoxDecoration(),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
@@ -70,19 +68,21 @@ class _ServiceItem1WidgetState extends State<ServiceItem1Widget> {
               fit: BoxFit.cover,
             ),
           ),
-          Text(
-            valueOrDefault<String>(
-              widget.itemName,
-              'ServiceName',
+          Flexible(
+            child: Text(
+              valueOrDefault<String>(
+                widget.itemName,
+                'ServiceName',
+              ),
+              textAlign: TextAlign.center,
+              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                    fontFamily: 'Segoe UI',
+                    color: FlutterFlowTheme.of(context).primary,
+                    fontSize: 14.0,
+                    letterSpacing: 0.0,
+                    useGoogleFonts: false,
+                  ),
             ),
-            textAlign: TextAlign.center,
-            style: FlutterFlowTheme.of(context).bodyMedium.override(
-                  fontFamily: 'Segoe UI',
-                  color: FlutterFlowTheme.of(context).primary,
-                  fontSize: 14.0,
-                  letterSpacing: 0.0,
-                  useGoogleFonts: false,
-                ),
           ),
         ],
       ),

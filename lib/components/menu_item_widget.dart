@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'menu_item_model.dart';
 export 'menu_item_model.dart';
 
@@ -57,7 +55,7 @@ class _MenuItemWidgetState extends State<MenuItemWidget> {
     return Container(
       width: widget.componentWidth,
       height: widget.componentHeight,
-      decoration: BoxDecoration(),
+      decoration: const BoxDecoration(),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
@@ -70,21 +68,23 @@ class _MenuItemWidgetState extends State<MenuItemWidget> {
               fit: BoxFit.cover,
             ),
           ),
-          Text(
-            valueOrDefault<String>(
-              widget.itemName,
-              'ItemName',
+          Flexible(
+            child: Text(
+              valueOrDefault<String>(
+                widget.itemName,
+                'ItemName',
+              ),
+              textAlign: TextAlign.center,
+              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                    fontFamily: 'Segoe UI',
+                    color: FlutterFlowTheme.of(context).primaryBackground,
+                    fontSize: 12.0,
+                    letterSpacing: 0.0,
+                    useGoogleFonts: false,
+                  ),
             ),
-            textAlign: TextAlign.center,
-            style: FlutterFlowTheme.of(context).bodyMedium.override(
-                  fontFamily: 'Segoe UI',
-                  color: FlutterFlowTheme.of(context).primaryBackground,
-                  fontSize: 12.0,
-                  letterSpacing: 0.0,
-                  useGoogleFonts: false,
-                ),
           ),
-        ].divide(SizedBox(height: 10.0)),
+        ].divide(const SizedBox(height: 10.0)),
       ),
     );
   }

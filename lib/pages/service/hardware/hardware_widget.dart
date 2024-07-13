@@ -5,10 +5,7 @@ import '/components/service_item1_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'hardware_model.dart';
 export 'hardware_model.dart';
 
@@ -60,7 +57,7 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                 borderRadius: 30.0,
                 borderWidth: 1.0,
                 buttonSize: 54.0,
-                icon: Icon(
+                icon: const Icon(
                   Icons.chevron_left,
                   color: Colors.white,
                   size: 24.0,
@@ -81,30 +78,30 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                       useGoogleFonts: false,
                     ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 0.0,
             ),
             body: Stack(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               children: [
                 SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 10.0, 20.0, 20.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   23.0, 0.0, 45.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.menuItemModel1,
                                 updateCallback: () => setState(() {}),
-                                child: MenuItemWidget(
+                                child: const MenuItemWidget(
                                   imgwidth: 42.0,
                                   imgheight: 42.0,
                                   imgpath:
@@ -116,12 +113,12 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 45.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.menuItemModel2,
                                 updateCallback: () => setState(() {}),
-                                child: MenuItemWidget(
+                                child: const MenuItemWidget(
                                   imgwidth: 39.0,
                                   imgheight: 42.0,
                                   imgpath:
@@ -135,7 +132,7 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                             wrapWithModel(
                               model: _model.menuItemModel3,
                               updateCallback: () => setState(() {}),
-                              child: MenuItemWidget(
+                              child: const MenuItemWidget(
                                 imgwidth: 53.0,
                                 imgheight: 42.0,
                                 imgpath:
@@ -154,7 +151,7 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(0.0),
                             bottomRight: Radius.circular(0.0),
                             topLeft: Radius.circular(30.0),
@@ -162,7 +159,7 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 30.0, 0.0, 86.0),
                           child: SingleChildScrollView(
                             primary: false,
@@ -172,9 +169,9 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, -1.0),
+                                  alignment: const AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         23.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       'Featured Products',
@@ -191,7 +188,7 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       23.0, 0.0, 0.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -211,7 +208,7 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                                                   _model.featuredProductModel1,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/2tktif5rx0cj/Frame_48_(2).png',
                                                 name: 'Hammers',
@@ -226,7 +223,7 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                                                   _model.featuredProductModel2,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/bb59hl6953az/Nails_and_Screws.png',
                                                 name: 'Nails and Screws',
@@ -241,7 +238,7 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                                                   _model.featuredProductModel3,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/z8coe2wutlp5/Safety_Helmets.png',
                                                 name: 'Safety Helmets',
@@ -251,10 +248,10 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                                                 soldOut: false,
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 17.0)),
+                                          ].divide(const SizedBox(width: 17.0)),
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 354.0,
                                         child: Divider(
                                           height: 0.0,
@@ -266,7 +263,7 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       23.0, 0.0, 0.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -275,7 +272,7 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 17.0, 0.0, 0.0),
                                         child: SingleChildScrollView(
                                           scrollDirection: Axis.horizontal,
@@ -289,7 +286,7 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                                                     .featuredProductModel4,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductWidget(
+                                                child: const FeaturedProductWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/nknv5hghds7w/Gloves.png',
                                                   name: 'Gloves',
@@ -304,7 +301,7 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                                                     .featuredProductModel5,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductWidget(
+                                                child: const FeaturedProductWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/hk45xj6q5ap3/Wood_Glue.png',
                                                   name: 'Wood Glue',
@@ -319,7 +316,7 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                                                     .featuredProductModel6,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductWidget(
+                                                child: const FeaturedProductWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/z4b99qdhx5al/Nail_Gun.png',
                                                   name: 'Nail Gun',
@@ -329,11 +326,11 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                                                   soldOut: false,
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 17.0)),
+                                            ].divide(const SizedBox(width: 17.0)),
                                           ),
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 354.0,
                                         child: Divider(
                                           height: 0.0,
@@ -345,9 +342,9 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, -1.0),
+                                  alignment: const AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         23.0, 25.0, 0.0, 0.0),
                                     child: Text(
                                       'Services',
@@ -364,7 +361,7 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       20.0, 16.0, 20.0, 1.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -372,12 +369,12 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             3.0, 0.0, 18.0, 0.0),
                                         child: wrapWithModel(
                                           model: _model.serviceItem1Model1,
                                           updateCallback: () => setState(() {}),
-                                          child: ServiceItem1Widget(
+                                          child: const ServiceItem1Widget(
                                             imgwidth: 36.0,
                                             imgheight: 36.0,
                                             imgpath:
@@ -389,12 +386,12 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 26.0, 0.0),
                                         child: wrapWithModel(
                                           model: _model.serviceItem1Model2,
                                           updateCallback: () => setState(() {}),
-                                          child: ServiceItem1Widget(
+                                          child: const ServiceItem1Widget(
                                             imgwidth: 39.0,
                                             imgheight: 39.0,
                                             imgpath:
@@ -408,7 +405,7 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                                       wrapWithModel(
                                         model: _model.serviceItem1Model3,
                                         updateCallback: () => setState(() {}),
-                                        child: ServiceItem1Widget(
+                                        child: const ServiceItem1Widget(
                                           imgwidth: 41.0,
                                           imgheight: 41.0,
                                           imgpath:
@@ -432,7 +429,7 @@ class _HardwareWidgetState extends State<HardwareWidget> {
                 wrapWithModel(
                   model: _model.customNavbarModel,
                   updateCallback: () => setState(() {}),
-                  child: CustomNavbarWidget(),
+                  child: const CustomNavbarWidget(),
                 ),
               ],
             ),

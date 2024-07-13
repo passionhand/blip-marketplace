@@ -1,8 +1,6 @@
 import 'dart:convert';
-import 'dart:typed_data';
 import 'package:flutter/foundation.dart';
 
-import '/flutter_flow/flutter_flow_util.dart';
 import 'api_manager.dart';
 
 export 'api_manager.dart' show ApiCallResponse;
@@ -12,7 +10,7 @@ const _kPrivateApiFunctionName = 'ffPrivateApiCall';
 /// Start OpenAPI definition Group Code
 
 class OpenAPIDefinitionGroup {
-  static String getBaseUrl() => 'http://api.blip-delivery.com/v1';
+  static String getBaseUrl() => 'https://api.blip-delivery.com/v1';
   static Map<String, String> headers = {};
   static VerifyPhoneNumberWithCodeCall verifyPhoneNumberWithCodeCall =
       VerifyPhoneNumberWithCodeCall();
@@ -21,16 +19,20 @@ class OpenAPIDefinitionGroup {
   static CreateSetupIntentCall createSetupIntentCall = CreateSetupIntentCall();
   static CreatePaymentIntentCall createPaymentIntentCall =
       CreatePaymentIntentCall();
-  static CreateUpdateCall createUpdateCall = CreateUpdateCall();
-  static CreateUpdate1Call createUpdate1Call = CreateUpdate1Call();
+  static CreateUpdateStoreSettingCall createUpdateStoreSettingCall =
+      CreateUpdateStoreSettingCall();
+  static CreateUpdateProductsCall createUpdateProductsCall =
+      CreateUpdateProductsCall();
   static RequestPhoneNumberVerificationCall requestPhoneNumberVerificationCall =
       RequestPhoneNumberVerificationCall();
   static AddPaymentMethodCall addPaymentMethodCall = AddPaymentMethodCall();
-  static AuthenticateCall authenticateCall = AuthenticateCall();
+  static CustomersAuthenticateCall customersAuthenticateCall =
+      CustomersAuthenticateCall();
   static CreateCall createCall = CreateCall();
   static CreateUpdateSubCategoryCall createUpdateSubCategoryCall =
       CreateUpdateSubCategoryCall();
-  static CreateUpdate2Call createUpdate2Call = CreateUpdate2Call();
+  static CreateUpdatecategoryCall createUpdatecategoryCall =
+      CreateUpdatecategoryCall();
   static SaveItemsToCartCall saveItemsToCartCall = SaveItemsToCartCall();
   static GetS3PresignedUrlCall getS3PresignedUrlCall = GetS3PresignedUrlCall();
   static PingCall pingCall = PingCall();
@@ -44,7 +46,7 @@ class VerifyPhoneNumberWithCodeCall {
   }) async {
     final baseUrl = OpenAPIDefinitionGroup.getBaseUrl();
 
-    final ffApiRequestBody = '''
+    const ffApiRequestBody = '''
 {
   "countryCode": 0,
   "phoneNumber": 0,
@@ -52,10 +54,10 @@ class VerifyPhoneNumberWithCodeCall {
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'verifyPhoneNumberWithCode',
-      apiUrl: '${baseUrl}/customers/${uuid}/phonenumber/verification',
+      apiUrl: '$baseUrl/customers/$uuid/phonenumber/verification',
       callType: ApiCallType.PUT,
       headers: {
-        'token': '${token}',
+        'token': '$token',
       },
       params: {},
       body: ffApiRequestBody,
@@ -73,23 +75,25 @@ class VerifyPhoneNumberWithCodeCall {
 class SignUpCall {
   Future<ApiCallResponse> call({
     String? token = '',
+    String? email = '',
+    String? password = '',
+    String? username = '',
   }) async {
     final baseUrl = OpenAPIDefinitionGroup.getBaseUrl();
 
     final ffApiRequestBody = '''
 {
-  "firstName": "",
-  "lastName": "",
+  "userName": "$username",
   "phoneNumber": "",
-  "email": "",
-  "password": ""
+  "email": "$email",
+  "password": "$password"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'signUp',
-      apiUrl: '${baseUrl}/users/signup',
+      apiUrl: '$baseUrl/users/signup',
       callType: ApiCallType.POST,
       headers: {
-        'token': '${token}',
+        'token': '$token',
       },
       params: {},
       body: ffApiRequestBody,
@@ -110,17 +114,17 @@ class SignInCall {
   }) async {
     final baseUrl = OpenAPIDefinitionGroup.getBaseUrl();
 
-    final ffApiRequestBody = '''
+    const ffApiRequestBody = '''
 {
   "email": "",
   "password": ""
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'signIn',
-      apiUrl: '${baseUrl}/users/signin',
+      apiUrl: '$baseUrl/users/signin',
       callType: ApiCallType.POST,
       headers: {
-        'x-api-key': '${xApiKey}',
+        'x-api-key': '$xApiKey',
       },
       params: {},
       body: ffApiRequestBody,
@@ -141,16 +145,16 @@ class CreateSetupIntentCall {
   }) async {
     final baseUrl = OpenAPIDefinitionGroup.getBaseUrl();
 
-    final ffApiRequestBody = '''
+    const ffApiRequestBody = '''
 {
   "customerUuid": ""
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'createSetupIntent',
-      apiUrl: '${baseUrl}/stripe/setupintent',
+      apiUrl: '$baseUrl/stripe/setupintent',
       callType: ApiCallType.POST,
       headers: {
-        'token': '${token}',
+        'token': '$token',
       },
       params: {},
       body: ffApiRequestBody,
@@ -171,7 +175,7 @@ class CreatePaymentIntentCall {
   }) async {
     final baseUrl = OpenAPIDefinitionGroup.getBaseUrl();
 
-    final ffApiRequestBody = '''
+    const ffApiRequestBody = '''
 {
   "customerUuid": "",
   "paymentIntentId": "",
@@ -183,10 +187,10 @@ class CreatePaymentIntentCall {
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'createPaymentIntent',
-      apiUrl: '${baseUrl}/stripe/paymentintent',
+      apiUrl: '$baseUrl/stripe/paymentintent',
       callType: ApiCallType.POST,
       headers: {
-        'token': '${token}',
+        'token': '$token',
       },
       params: {},
       body: ffApiRequestBody,
@@ -201,13 +205,13 @@ class CreatePaymentIntentCall {
   }
 }
 
-class CreateUpdateCall {
+class CreateUpdateStoreSettingCall {
   Future<ApiCallResponse> call({
     String? token = '',
   }) async {
     final baseUrl = OpenAPIDefinitionGroup.getBaseUrl();
 
-    final ffApiRequestBody = '''
+    const ffApiRequestBody = '''
 {
   "uuid": "",
   "expeditedDelivery": false,
@@ -215,11 +219,11 @@ class CreateUpdateCall {
   "adjustDeliveryTime": 0
 }''';
     return ApiManager.instance.makeApiCall(
-      callName: 'createUpdate',
-      apiUrl: '${baseUrl}/store-settings/create-update',
+      callName: 'createUpdateStoreSetting',
+      apiUrl: '$baseUrl/store-settings/create-update',
       callType: ApiCallType.POST,
       headers: {
-        'token': '${token}',
+        'token': '$token',
       },
       params: {},
       body: ffApiRequestBody,
@@ -234,13 +238,13 @@ class CreateUpdateCall {
   }
 }
 
-class CreateUpdate1Call {
+class CreateUpdateProductsCall {
   Future<ApiCallResponse> call({
     String? token = '',
   }) async {
     final baseUrl = OpenAPIDefinitionGroup.getBaseUrl();
 
-    final ffApiRequestBody = '''
+    const ffApiRequestBody = '''
 {
   "uuid": "",
   "name": "",
@@ -263,11 +267,11 @@ class CreateUpdate1Call {
   }
 }''';
     return ApiManager.instance.makeApiCall(
-      callName: 'createUpdate_1',
-      apiUrl: '${baseUrl}/products/create-update',
+      callName: 'createUpdateProducts',
+      apiUrl: '$baseUrl/products/create-update',
       callType: ApiCallType.POST,
       headers: {
-        'token': '${token}',
+        'token': '$token',
       },
       params: {},
       body: ffApiRequestBody,
@@ -289,7 +293,7 @@ class RequestPhoneNumberVerificationCall {
   }) async {
     final baseUrl = OpenAPIDefinitionGroup.getBaseUrl();
 
-    final ffApiRequestBody = '''
+    const ffApiRequestBody = '''
 {
   "countryCode": 0,
   "phoneNumber": 0,
@@ -297,10 +301,10 @@ class RequestPhoneNumberVerificationCall {
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'requestPhoneNumberVerification',
-      apiUrl: '${baseUrl}/customers/${uuid}/phonenumber/request-verification',
+      apiUrl: '$baseUrl/customers/$uuid/phonenumber/request-verification',
       callType: ApiCallType.POST,
       headers: {
-        'token': '${token}',
+        'token': '$token',
       },
       params: {},
       body: ffApiRequestBody,
@@ -322,16 +326,16 @@ class AddPaymentMethodCall {
   }) async {
     final baseUrl = OpenAPIDefinitionGroup.getBaseUrl();
 
-    final ffApiRequestBody = '''
+    const ffApiRequestBody = '''
 {
   "setupIntentId": ""
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'addPaymentMethod',
-      apiUrl: '${baseUrl}/customers/${uuid}/paymentmethod',
+      apiUrl: '$baseUrl/customers/$uuid/paymentmethod',
       callType: ApiCallType.POST,
       headers: {
-        'token': '${token}',
+        'token': '$token',
       },
       params: {},
       body: ffApiRequestBody,
@@ -346,24 +350,27 @@ class AddPaymentMethodCall {
   }
 }
 
-class AuthenticateCall {
+class CustomersAuthenticateCall {
   Future<ApiCallResponse> call({
     String? xApiKey = '',
+    String? name = '',
+    String? token = '',
+    bool? rememberMe = true,
   }) async {
     final baseUrl = OpenAPIDefinitionGroup.getBaseUrl();
 
     final ffApiRequestBody = '''
 {
-  "name": "",
-  "token": "",
-  "rememberMe": false
+  "name": "$name",
+  "token": "$token",
+  "rememberMe": $rememberMe
 }''';
     return ApiManager.instance.makeApiCall(
-      callName: 'authenticate',
-      apiUrl: '${baseUrl}/customers/authenticate',
+      callName: 'customersAuthenticate',
+      apiUrl: '$baseUrl/customers/authenticate',
       callType: ApiCallType.POST,
       headers: {
-        'x-api-key': '${xApiKey}',
+        'x-api-key': '$xApiKey',
       },
       params: {},
       body: ffApiRequestBody,
@@ -384,7 +391,7 @@ class CreateCall {
   }) async {
     final baseUrl = OpenAPIDefinitionGroup.getBaseUrl();
 
-    final ffApiRequestBody = '''
+    const ffApiRequestBody = '''
 {
   "uuid": "",
   "pickupAddress": {
@@ -423,10 +430,10 @@ class CreateCall {
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'create',
-      apiUrl: '${baseUrl}/courier-services/create-update',
+      apiUrl: '$baseUrl/courier-services/create-update',
       callType: ApiCallType.POST,
       headers: {
-        'token': '${token}',
+        'token': '$token',
       },
       params: {},
       body: ffApiRequestBody,
@@ -447,7 +454,7 @@ class CreateUpdateSubCategoryCall {
   }) async {
     final baseUrl = OpenAPIDefinitionGroup.getBaseUrl();
 
-    final ffApiRequestBody = '''
+    const ffApiRequestBody = '''
 {
   "uuid": "",
   "name": "",
@@ -459,10 +466,10 @@ class CreateUpdateSubCategoryCall {
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'createUpdateSubCategory',
-      apiUrl: '${baseUrl}/categories/subcategory/create-update',
+      apiUrl: '$baseUrl/categories/subcategory/create-update',
       callType: ApiCallType.POST,
       headers: {
-        'token': '${token}',
+        'token': '$token',
       },
       params: {},
       body: ffApiRequestBody,
@@ -477,13 +484,13 @@ class CreateUpdateSubCategoryCall {
   }
 }
 
-class CreateUpdate2Call {
+class CreateUpdatecategoryCall {
   Future<ApiCallResponse> call({
     String? token = '',
   }) async {
     final baseUrl = OpenAPIDefinitionGroup.getBaseUrl();
 
-    final ffApiRequestBody = '''
+    const ffApiRequestBody = '''
 {
   "uuid": "",
   "name": "",
@@ -491,11 +498,11 @@ class CreateUpdate2Call {
   "iconUrl": ""
 }''';
     return ApiManager.instance.makeApiCall(
-      callName: 'createUpdate_2',
-      apiUrl: '${baseUrl}/categories/create-update',
+      callName: 'createUpdatecategory',
+      apiUrl: '$baseUrl/categories/create-update',
       callType: ApiCallType.POST,
       headers: {
-        'token': '${token}',
+        'token': '$token',
       },
       params: {},
       body: ffApiRequestBody,
@@ -516,7 +523,7 @@ class SaveItemsToCartCall {
   }) async {
     final baseUrl = OpenAPIDefinitionGroup.getBaseUrl();
 
-    final ffApiRequestBody = '''
+    const ffApiRequestBody = '''
 {
   "customer": {
     "uuid": ""
@@ -565,10 +572,10 @@ class SaveItemsToCartCall {
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'saveItemsToCart',
-      apiUrl: '${baseUrl}/carts/save',
+      apiUrl: '$baseUrl/carts/save',
       callType: ApiCallType.POST,
       headers: {
-        'token': '${token}',
+        'token': '$token',
       },
       params: {},
       body: ffApiRequestBody,
@@ -593,10 +600,10 @@ class GetS3PresignedUrlCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'getS3PresignedUrl',
-      apiUrl: '${baseUrl}/s3-files/generate-presigned-url',
+      apiUrl: '$baseUrl/s3-files/generate-presigned-url',
       callType: ApiCallType.GET,
       headers: {
-        'token': '${token}',
+        'token': '$token',
       },
       params: {
         'fileEntityName': fileEntityName,
@@ -618,7 +625,7 @@ class PingCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'ping',
-      apiUrl: '${baseUrl}/ping',
+      apiUrl: '$baseUrl/ping',
       callType: ApiCallType.GET,
       headers: {},
       params: {},
@@ -640,10 +647,10 @@ class SignOutCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'signOut',
-      apiUrl: '${baseUrl}/customers/signout',
+      apiUrl: '$baseUrl/customers/signout',
       callType: ApiCallType.DELETE,
       headers: {
-        'token': '${token}',
+        'token': '$token',
       },
       params: {},
       returnBody: true,
@@ -675,9 +682,6 @@ class ApiPagingParams {
 }
 
 String _toEncodable(dynamic item) {
-  if (item is DocumentReference) {
-    return item.path;
-  }
   return item;
 }
 

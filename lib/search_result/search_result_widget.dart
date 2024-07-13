@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'search_result_model.dart';
 export 'search_result_model.dart';
 
@@ -72,7 +69,7 @@ class _SearchResultWidgetState extends State<SearchResultWidget> {
                 },
               ),
               title: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 2.0, 0.0, 2.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 2.0, 0.0, 2.0),
                 child: TextFormField(
                   controller: _model.textController,
                   focusNode: _model.textFieldFocusNode,
@@ -121,7 +118,7 @@ class _SearchResultWidgetState extends State<SearchResultWidget> {
                       borderRadius: BorderRadius.circular(50.0),
                     ),
                     filled: true,
-                    suffixIcon: Icon(
+                    suffixIcon: const Icon(
                       Icons.search_rounded,
                     ),
                   ),
@@ -136,7 +133,7 @@ class _SearchResultWidgetState extends State<SearchResultWidget> {
               ),
               actions: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
                   child: Icon(
                     Icons.shopping_cart_outlined,
                     color: FlutterFlowTheme.of(context).primaryText,
@@ -152,7 +149,7 @@ class _SearchResultWidgetState extends State<SearchResultWidget> {
               children: [
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
@@ -169,17 +166,18 @@ class _SearchResultWidgetState extends State<SearchResultWidget> {
                                   ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 20.0, 0.0, 0.0),
                           child: ListView(
                             padding: EdgeInsets.zero,
+                            primary: false,
                             shrinkWrap: true,
                             scrollDirection: Axis.vertical,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 1.0),
                                   child: Container(
                                     width: double.infinity,
@@ -195,7 +193,7 @@ class _SearchResultWidgetState extends State<SearchResultWidget> {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.center,
                                       children: [
-                                        Align(
+                                        const Align(
                                           alignment:
                                               AlignmentDirectional(0.0, -1.0),
                                           child: Icon(
@@ -207,7 +205,7 @@ class _SearchResultWidgetState extends State<SearchResultWidget> {
                                         Expanded(
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     12.0, 0.0, 16.0, 0.0),
                                             child: Text(
                                               'Heavy Duty Garbage Bags - 100 Pack  ',
@@ -227,7 +225,7 @@ class _SearchResultWidgetState extends State<SearchResultWidget> {
                                             ),
                                           ),
                                         ),
-                                        Icon(
+                                        const Icon(
                                           Icons.arrow_outward,
                                           color: Color(0xFF57636C),
                                           size: 24.0,
@@ -238,9 +236,9 @@ class _SearchResultWidgetState extends State<SearchResultWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 1.0),
                                   child: Container(
                                     width: double.infinity,
@@ -256,7 +254,7 @@ class _SearchResultWidgetState extends State<SearchResultWidget> {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.center,
                                       children: [
-                                        Align(
+                                        const Align(
                                           alignment:
                                               AlignmentDirectional(0.0, -1.0),
                                           child: Icon(
@@ -268,7 +266,7 @@ class _SearchResultWidgetState extends State<SearchResultWidget> {
                                         Expanded(
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     12.0, 0.0, 16.0, 0.0),
                                             child: Text(
                                               'Garbage Bags - 20 Count',
@@ -284,7 +282,7 @@ class _SearchResultWidgetState extends State<SearchResultWidget> {
                                             ),
                                           ),
                                         ),
-                                        Icon(
+                                        const Icon(
                                           Icons.arrow_outward,
                                           color: Color(0xFF57636C),
                                           size: 24.0,
@@ -295,9 +293,9 @@ class _SearchResultWidgetState extends State<SearchResultWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 1.0),
                                   child: Container(
                                     width: double.infinity,
@@ -313,7 +311,7 @@ class _SearchResultWidgetState extends State<SearchResultWidget> {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.center,
                                       children: [
-                                        Align(
+                                        const Align(
                                           alignment:
                                               AlignmentDirectional(0.0, -1.0),
                                           child: Icon(
@@ -325,7 +323,7 @@ class _SearchResultWidgetState extends State<SearchResultWidget> {
                                         Expanded(
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     12.0, 0.0, 16.0, 0.0),
                                             child: Text(
                                               'Eco-Friendly Garbage Bags - 50 Pack ',
@@ -341,7 +339,7 @@ class _SearchResultWidgetState extends State<SearchResultWidget> {
                                             ),
                                           ),
                                         ),
-                                        Icon(
+                                        const Icon(
                                           Icons.arrow_outward,
                                           color: Color(0xFF57636C),
                                           size: 24.0,
@@ -351,7 +349,7 @@ class _SearchResultWidgetState extends State<SearchResultWidget> {
                                   ),
                                 ),
                               ),
-                            ].divide(SizedBox(height: 10.0)),
+                            ].divide(const SizedBox(height: 10.0)),
                           ),
                         ),
                       ],

@@ -4,8 +4,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'schedule_dialog_model.dart';
 export 'schedule_dialog_model.dart';
 
@@ -54,7 +52,7 @@ class _ScheduleDialogWidgetState extends State<ScheduleDialogWidget> {
         children: [
           Expanded(
             child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
               child: SingleChildScrollView(
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
@@ -82,7 +80,7 @@ class _ScheduleDialogWidgetState extends State<ScheduleDialogWidget> {
                           ),
                     ),
                     FlutterFlowChoiceChips(
-                      options: [
+                      options: const [
                         ChipData('Today - Jun 10'),
                         ChipData('Tomorrow - Jun 11'),
                         ChipData('Thurs - Jun 13'),
@@ -103,7 +101,7 @@ class _ScheduleDialogWidgetState extends State<ScheduleDialogWidget> {
                                 ),
                         iconColor: FlutterFlowTheme.of(context).primaryText,
                         iconSize: 18.0,
-                        labelPadding: EdgeInsetsDirectional.fromSTEB(
+                        labelPadding: const EdgeInsetsDirectional.fromSTEB(
                             10.0, 0.0, 10.0, 0.0),
                         elevation: 4.0,
                         borderRadius: BorderRadius.circular(10.0),
@@ -118,7 +116,7 @@ class _ScheduleDialogWidgetState extends State<ScheduleDialogWidget> {
                                 ),
                         iconColor: FlutterFlowTheme.of(context).secondaryText,
                         iconSize: 18.0,
-                        labelPadding: EdgeInsetsDirectional.fromSTEB(
+                        labelPadding: const EdgeInsetsDirectional.fromSTEB(
                             10.0, 0.0, 10.0, 0.0),
                         elevation: 0.0,
                         borderRadius: BorderRadius.circular(10.0),
@@ -143,7 +141,7 @@ class _ScheduleDialogWidgetState extends State<ScheduleDialogWidget> {
                             useGoogleFonts: false,
                           ),
                     ),
-                    Divider(
+                    const Divider(
                       thickness: 0.5,
                       color: Color(0xFF16283E),
                     ),
@@ -170,18 +168,18 @@ class _ScheduleDialogWidgetState extends State<ScheduleDialogWidget> {
                                 borderRadius: BorderRadius.circular(4.0),
                               ),
                             ),
-                            unselectedWidgetColor: Color(0xFFEEEEEE),
+                            unselectedWidgetColor: const Color(0xFFEEEEEE),
                           ),
                           child: Checkbox(
                             value: _model.checkboxValue1 ??= false,
                             onChanged: (newValue) async {
                               setState(() => _model.checkboxValue1 = newValue!);
                             },
-                            side: BorderSide(
+                            side: const BorderSide(
                               width: 2,
                               color: Color(0xFFEEEEEE),
                             ),
-                            activeColor: Color(0xFF92DFAC),
+                            activeColor: const Color(0xFF92DFAC),
                             checkColor:
                                 FlutterFlowTheme.of(context).primaryText,
                           ),
@@ -218,18 +216,18 @@ class _ScheduleDialogWidgetState extends State<ScheduleDialogWidget> {
                                 borderRadius: BorderRadius.circular(4.0),
                               ),
                             ),
-                            unselectedWidgetColor: Color(0xFFEEEEEE),
+                            unselectedWidgetColor: const Color(0xFFEEEEEE),
                           ),
                           child: Checkbox(
                             value: _model.checkboxValue2 ??= false,
                             onChanged: (newValue) async {
                               setState(() => _model.checkboxValue2 = newValue!);
                             },
-                            side: BorderSide(
+                            side: const BorderSide(
                               width: 2,
                               color: Color(0xFFEEEEEE),
                             ),
-                            activeColor: Color(0xFF92DFAC),
+                            activeColor: const Color(0xFF92DFAC),
                             checkColor:
                                 FlutterFlowTheme.of(context).primaryText,
                           ),
@@ -266,18 +264,18 @@ class _ScheduleDialogWidgetState extends State<ScheduleDialogWidget> {
                                 borderRadius: BorderRadius.circular(4.0),
                               ),
                             ),
-                            unselectedWidgetColor: Color(0xFFEEEEEE),
+                            unselectedWidgetColor: const Color(0xFFEEEEEE),
                           ),
                           child: Checkbox(
                             value: _model.checkboxValue3 ??= false,
                             onChanged: (newValue) async {
                               setState(() => _model.checkboxValue3 = newValue!);
                             },
-                            side: BorderSide(
+                            side: const BorderSide(
                               width: 2,
                               color: Color(0xFFEEEEEE),
                             ),
-                            activeColor: Color(0xFF92DFAC),
+                            activeColor: const Color(0xFF92DFAC),
                             checkColor:
                                 FlutterFlowTheme.of(context).primaryText,
                           ),
@@ -314,18 +312,18 @@ class _ScheduleDialogWidgetState extends State<ScheduleDialogWidget> {
                                 borderRadius: BorderRadius.circular(4.0),
                               ),
                             ),
-                            unselectedWidgetColor: Color(0xFFEEEEEE),
+                            unselectedWidgetColor: const Color(0xFFEEEEEE),
                           ),
                           child: Checkbox(
                             value: _model.checkboxValue4 ??= false,
                             onChanged: (newValue) async {
                               setState(() => _model.checkboxValue4 = newValue!);
                             },
-                            side: BorderSide(
+                            side: const BorderSide(
                               width: 2,
                               color: Color(0xFFEEEEEE),
                             ),
-                            activeColor: Color(0xFF92DFAC),
+                            activeColor: const Color(0xFF92DFAC),
                             checkColor:
                                 FlutterFlowTheme.of(context).primaryText,
                           ),
@@ -362,18 +360,18 @@ class _ScheduleDialogWidgetState extends State<ScheduleDialogWidget> {
                                 borderRadius: BorderRadius.circular(4.0),
                               ),
                             ),
-                            unselectedWidgetColor: Color(0xFFEEEEEE),
+                            unselectedWidgetColor: const Color(0xFFEEEEEE),
                           ),
                           child: Checkbox(
                             value: _model.checkboxValue5 ??= false,
                             onChanged: (newValue) async {
                               setState(() => _model.checkboxValue5 = newValue!);
                             },
-                            side: BorderSide(
+                            side: const BorderSide(
                               width: 2,
                               color: Color(0xFFEEEEEE),
                             ),
-                            activeColor: Color(0xFF92DFAC),
+                            activeColor: const Color(0xFF92DFAC),
                             checkColor:
                                 FlutterFlowTheme.of(context).primaryText,
                           ),
@@ -399,7 +397,7 @@ class _ScheduleDialogWidgetState extends State<ScheduleDialogWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -413,7 +411,7 @@ class _ScheduleDialogWidgetState extends State<ScheduleDialogWidget> {
                                   borderRadius: BorderRadius.circular(4.0),
                                 ),
                               ),
-                              unselectedWidgetColor: Color(0xFFEEEEEE),
+                              unselectedWidgetColor: const Color(0xFFEEEEEE),
                             ),
                             child: Checkbox(
                               value: _model.checkboxValue6 ??= false,
@@ -421,11 +419,11 @@ class _ScheduleDialogWidgetState extends State<ScheduleDialogWidget> {
                                 setState(
                                     () => _model.checkboxValue6 = newValue!);
                               },
-                              side: BorderSide(
+                              side: const BorderSide(
                                 width: 2,
                                 color: Color(0xFFEEEEEE),
                               ),
-                              activeColor: Color(0xFF92DFAC),
+                              activeColor: const Color(0xFF92DFAC),
                               checkColor:
                                   FlutterFlowTheme.of(context).primaryText,
                             ),
@@ -463,8 +461,8 @@ class _ScheduleDialogWidgetState extends State<ScheduleDialogWidget> {
             options: FFButtonOptions(
               width: double.infinity,
               height: 55.0,
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 15.0),
-              iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 15.0),
+              iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
               color: FlutterFlowTheme.of(context).primary,
               textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
                     fontFamily: 'Segoe UI',
@@ -475,11 +473,11 @@ class _ScheduleDialogWidgetState extends State<ScheduleDialogWidget> {
                     useGoogleFonts: false,
                   ),
               elevation: 3.0,
-              borderSide: BorderSide(
+              borderSide: const BorderSide(
                 color: Colors.transparent,
                 width: 1.0,
               ),
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                 bottomLeft: Radius.circular(10.0),
                 bottomRight: Radius.circular(10.0),
                 topLeft: Radius.circular(0.0),

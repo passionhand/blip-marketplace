@@ -1,13 +1,7 @@
 import '/flutter_flow/flutter_flow_google_map.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'pickuplocation_widget.dart' show PickuplocationWidget;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:pointer_interceptor/pointer_interceptor.dart';
-import 'package:provider/provider.dart';
 
 class PickuplocationModel extends FlutterFlowModel<PickuplocationWidget> {
   ///  State fields for stateful widgets in this page.

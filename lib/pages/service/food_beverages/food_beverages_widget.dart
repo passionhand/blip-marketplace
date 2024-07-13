@@ -4,10 +4,7 @@ import '/components/menu_item_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'food_beverages_model.dart';
 export 'food_beverages_model.dart';
 
@@ -60,7 +57,7 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                 borderRadius: 30.0,
                 borderWidth: 1.0,
                 buttonSize: 60.0,
-                icon: Icon(
+                icon: const Icon(
                   Icons.chevron_left,
                   color: Colors.white,
                   size: 24.0,
@@ -81,31 +78,32 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                       useGoogleFonts: false,
                     ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 0.0,
             ),
             body: Stack(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               children: [
                 SingleChildScrollView(
+                  primary: false,
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 10.0, 20.0, 20.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 23.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.menuItemModel1,
                                 updateCallback: () => setState(() {}),
-                                child: MenuItemWidget(
+                                child: const MenuItemWidget(
                                   imgwidth: 37.0,
                                   imgheight: 37.0,
                                   imgpath:
@@ -117,12 +115,12 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 15.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.menuItemModel2,
                                 updateCallback: () => setState(() {}),
-                                child: MenuItemWidget(
+                                child: const MenuItemWidget(
                                   imgwidth: 29.0,
                                   imgheight: 37.0,
                                   imgpath:
@@ -134,12 +132,12 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 28.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.menuItemModel3,
                                 updateCallback: () => setState(() {}),
-                                child: MenuItemWidget(
+                                child: const MenuItemWidget(
                                   imgwidth: 23.0,
                                   imgheight: 36.0,
                                   imgpath:
@@ -151,11 +149,11 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(-1.0, 0.0),
+                              alignment: const AlignmentDirectional(-1.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.menuItemModel4,
                                 updateCallback: () => setState(() {}),
-                                child: MenuItemWidget(
+                                child: const MenuItemWidget(
                                   imgwidth: 39.0,
                                   imgheight: 40.0,
                                   imgpath:
@@ -175,7 +173,7 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(0.0),
                             bottomRight: Radius.circular(0.0),
                             topLeft: Radius.circular(30.0),
@@ -188,16 +186,16 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 30.0, 0.0, 86.0),
                           child: SingleChildScrollView(
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, -1.0),
+                                  alignment: const AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         23.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       'Featured Products',
@@ -214,7 +212,7 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       23.0, 0.0, 0.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -233,7 +231,7 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                                                   _model.featuredProductModel1,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/x2muzot764c9/Organic_Vegetables.png',
                                                 name: 'Organic Vegetables',
@@ -248,7 +246,7 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                                                   _model.featuredProductModel2,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/xez5753ftc1z/Dairy_Products.png',
                                                 name: 'Dairy Products',
@@ -263,7 +261,7 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                                                   _model.featuredProductModel3,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/kjajbvzq6hfb/Soft_Drinks.png',
                                                 name: 'Soft Drinks',
@@ -273,10 +271,10 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                                                 soldOut: false,
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 13.0)),
+                                          ].divide(const SizedBox(width: 13.0)),
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 354.0,
                                         child: Divider(
                                           height: 0.0,
@@ -294,7 +292,7 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                                                   _model.featuredProductModel4,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/yklx43iioeeq/Snack.png',
                                                 name: 'Snack',
@@ -309,7 +307,7 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                                                   _model.featuredProductModel5,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/u2nxkh7stmsd/Meat.png',
                                                 name: 'Meat',
@@ -324,7 +322,7 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                                                   _model.featuredProductModel6,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/76sh3asopdbc/Wine.png',
                                                 name: 'Wine',
@@ -334,10 +332,10 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                                                 soldOut: true,
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 13.0)),
+                                          ].divide(const SizedBox(width: 13.0)),
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 354.0,
                                         child: Divider(
                                           height: 0.0,
@@ -349,9 +347,9 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, -1.0),
+                                  alignment: const AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         28.0, 23.0, 0.0, 0.0),
                                     child: Text(
                                       'Promotions',
@@ -368,12 +366,12 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 15.0, 0.0, 15.0),
                                   child: Container(
                                     width: 350.0,
                                     height: 111.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0xFFCDDD9F),
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(15.0),
@@ -386,7 +384,7 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   136.0, 0.0, 0.0, 0.0),
                                           child: ClipRRect(
                                             borderRadius:
@@ -401,10 +399,10 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, -1.0),
+                                              const AlignmentDirectional(-1.0, -1.0),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 16.0, 0.0, 0.0),
                                             child: Text(
                                               'Free delivery \non orders \nover \$50  ',
@@ -438,7 +436,7 @@ class _FoodBeveragesWidgetState extends State<FoodBeveragesWidget> {
                 wrapWithModel(
                   model: _model.customNavbarModel,
                   updateCallback: () => setState(() {}),
-                  child: CustomNavbarWidget(),
+                  child: const CustomNavbarWidget(),
                 ),
               ],
             ),

@@ -4,10 +4,7 @@ import '/components/menu_item_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'personal_care_items_model.dart';
 export 'personal_care_items_model.dart';
 
@@ -61,7 +58,7 @@ class _PersonalCareItemsWidgetState extends State<PersonalCareItemsWidget> {
                 borderRadius: 30.0,
                 borderWidth: 1.0,
                 buttonSize: 54.0,
-                icon: Icon(
+                icon: const Icon(
                   Icons.chevron_left,
                   color: Colors.white,
                   size: 24.0,
@@ -82,31 +79,32 @@ class _PersonalCareItemsWidgetState extends State<PersonalCareItemsWidget> {
                       useGoogleFonts: false,
                     ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 0.0,
             ),
             body: Stack(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               children: [
                 SingleChildScrollView(
+                  primary: false,
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 10.0, 20.0, 20.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 45.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.menuItemModel1,
                                 updateCallback: () => setState(() {}),
-                                child: MenuItemWidget(
+                                child: const MenuItemWidget(
                                   imgwidth: 40.0,
                                   imgheight: 44.0,
                                   imgpath:
@@ -118,12 +116,12 @@ class _PersonalCareItemsWidgetState extends State<PersonalCareItemsWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 43.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.menuItemModel2,
                                 updateCallback: () => setState(() {}),
-                                child: MenuItemWidget(
+                                child: const MenuItemWidget(
                                   imgwidth: 40.0,
                                   imgheight: 44.0,
                                   imgpath:
@@ -137,7 +135,7 @@ class _PersonalCareItemsWidgetState extends State<PersonalCareItemsWidget> {
                             wrapWithModel(
                               model: _model.menuItemModel3,
                               updateCallback: () => setState(() {}),
-                              child: MenuItemWidget(
+                              child: const MenuItemWidget(
                                 imgwidth: 42.0,
                                 imgheight: 44.0,
                                 imgpath:
@@ -156,7 +154,7 @@ class _PersonalCareItemsWidgetState extends State<PersonalCareItemsWidget> {
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(0.0),
                             bottomRight: Radius.circular(0.0),
                             topLeft: Radius.circular(30.0),
@@ -165,16 +163,16 @@ class _PersonalCareItemsWidgetState extends State<PersonalCareItemsWidget> {
                           shape: BoxShape.rectangle,
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 30.0, 0.0, 86.0),
                           child: SingleChildScrollView(
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, -1.0),
+                                  alignment: const AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         23.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       'Featured Products',
@@ -191,7 +189,7 @@ class _PersonalCareItemsWidgetState extends State<PersonalCareItemsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       20.0, 0.0, 0.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -213,7 +211,7 @@ class _PersonalCareItemsWidgetState extends State<PersonalCareItemsWidget> {
                                                   _model.featuredProductModel1,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/ct8apzcjx411/Moisturizers.png',
                                                 name: 'Moisturizers',
@@ -228,7 +226,7 @@ class _PersonalCareItemsWidgetState extends State<PersonalCareItemsWidget> {
                                                   _model.featuredProductModel2,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/f89izat3n930/Shampoos.png',
                                                 name: 'Shampoos',
@@ -243,7 +241,7 @@ class _PersonalCareItemsWidgetState extends State<PersonalCareItemsWidget> {
                                                   _model.featuredProductModel3,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/7g0zl26fd0eh/Toothpaste.png',
                                                 name: 'Toothpaste',
@@ -253,10 +251,10 @@ class _PersonalCareItemsWidgetState extends State<PersonalCareItemsWidget> {
                                                 soldOut: false,
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 13.0)),
+                                          ].divide(const SizedBox(width: 13.0)),
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 354.0,
                                         child: Divider(
                                           height: 0.0,
@@ -265,7 +263,7 @@ class _PersonalCareItemsWidgetState extends State<PersonalCareItemsWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 13.0, 0.0, 0.0),
                                         child: SingleChildScrollView(
                                           scrollDirection: Axis.horizontal,
@@ -279,7 +277,7 @@ class _PersonalCareItemsWidgetState extends State<PersonalCareItemsWidget> {
                                                     .featuredProductModel4,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductWidget(
+                                                child: const FeaturedProductWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/vxjciwamf6hj/Sunscreen.png',
                                                   name: 'Sunscreen',
@@ -294,7 +292,7 @@ class _PersonalCareItemsWidgetState extends State<PersonalCareItemsWidget> {
                                                     .featuredProductModel5,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductWidget(
+                                                child: const FeaturedProductWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/kjxahxi27b3c/Body_Lotion.png',
                                                   name: 'Body Lotion',
@@ -309,7 +307,7 @@ class _PersonalCareItemsWidgetState extends State<PersonalCareItemsWidget> {
                                                     .featuredProductModel6,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductWidget(
+                                                child: const FeaturedProductWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/3cseet04age6/Razors.png',
                                                   name: 'Razors',
@@ -319,11 +317,11 @@ class _PersonalCareItemsWidgetState extends State<PersonalCareItemsWidget> {
                                                   soldOut: false,
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 13.0)),
+                                            ].divide(const SizedBox(width: 13.0)),
                                           ),
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 354.0,
                                         child: Divider(
                                           height: 0.0,
@@ -335,9 +333,9 @@ class _PersonalCareItemsWidgetState extends State<PersonalCareItemsWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, -1.0),
+                                  alignment: const AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         23.0, 13.0, 0.0, 0.0),
                                     child: Text(
                                       'Promotions',
@@ -354,13 +352,13 @@ class _PersonalCareItemsWidgetState extends State<PersonalCareItemsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 15.0, 0.0, 20.0),
                                   child: Container(
                                     width: 350.0,
                                     height: 111.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFFDBC3EE),
+                                      color: const Color(0xFFDBC3EE),
                                       image: DecorationImage(
                                         fit: BoxFit.cover,
                                         image: Image.asset(
@@ -369,14 +367,14 @@ class _PersonalCareItemsWidgetState extends State<PersonalCareItemsWidget> {
                                       ),
                                       borderRadius: BorderRadius.circular(15.0),
                                     ),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: 350.0,
                                       height: 111.0,
                                       child: Stack(
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     21.0, 29.0, 0.0, 0.0),
                                             child: Text(
                                               '15% off on \nfirst order',
@@ -409,7 +407,7 @@ class _PersonalCareItemsWidgetState extends State<PersonalCareItemsWidget> {
                 wrapWithModel(
                   model: _model.customNavbarModel,
                   updateCallback: () => setState(() {}),
-                  child: CustomNavbarWidget(),
+                  child: const CustomNavbarWidget(),
                 ),
               ],
             ),

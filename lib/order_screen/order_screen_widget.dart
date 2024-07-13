@@ -6,8 +6,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'order_screen_model.dart';
 export 'order_screen_model.dart';
 
@@ -81,13 +79,14 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                       useGoogleFonts: false,
                     ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 0.0,
             ),
             body: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 45.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 45.0),
               child: SingleChildScrollView(
+                primary: false,
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -107,7 +106,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                   ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 15.0, 0.0, 25.0),
                           child: ListView(
                             padding: EdgeInsets.zero,
@@ -117,7 +116,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                               wrapWithModel(
                                 model: _model.orderedProductModel1,
                                 updateCallback: () => setState(() {}),
-                                child: OrderedProductWidget(
+                                child: const OrderedProductWidget(
                                   image:
                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/juk4hh5qrc10/chip.png',
                                   name: 'French Fries',
@@ -127,17 +126,17 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                               wrapWithModel(
                                 model: _model.orderedProductModel2,
                                 updateCallback: () => setState(() {}),
-                                child: OrderedProductWidget(
+                                child: const OrderedProductWidget(
                                   image:
                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/9oarinrmn79d/burger.png',
                                   name: 'Burger',
                                   prise: 30,
                                 ),
                               ),
-                            ].divide(SizedBox(height: 15.0)),
+                            ].divide(const SizedBox(height: 15.0)),
                           ),
                         ),
-                        Divider(
+                        const Divider(
                           thickness: 0.6,
                           color: Color(0xFF16283E),
                         ),
@@ -145,7 +144,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -161,7 +160,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                     ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 8.0, 0.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -171,7 +170,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                   width: 105.0,
                                   height: 105.0,
                                   decoration: BoxDecoration(
-                                    gradient: LinearGradient(
+                                    gradient: const LinearGradient(
                                       colors: [
                                         Color(0xFFEEEEEE),
                                         Color(0xFFEEEEEE)
@@ -183,7 +182,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                     borderRadius: BorderRadius.circular(10.0),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         6.0, 14.0, 0.0, 12.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -194,7 +193,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, -1.0),
+                                              const AlignmentDirectional(-1.0, -1.0),
                                           child: Text(
                                             'Schedule',
                                             style: FlutterFlowTheme.of(context)
@@ -226,7 +225,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                   width: 105.0,
                                   height: 105.0,
                                   decoration: BoxDecoration(
-                                    gradient: LinearGradient(
+                                    gradient: const LinearGradient(
                                       colors: [
                                         Color(0xFFEEEEEE),
                                         Color(0xFFEEEEEE)
@@ -237,11 +236,11 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                     ),
                                     borderRadius: BorderRadius.circular(10.0),
                                     border: Border.all(
-                                      color: Color(0xFF252525),
+                                      color: const Color(0xFF252525),
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         6.0, 14.0, 0.0, 12.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -252,7 +251,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, -1.0),
+                                              const AlignmentDirectional(-1.0, -1.0),
                                           child: Text(
                                             'Fast',
                                             style: FlutterFlowTheme.of(context)
@@ -284,7 +283,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                   width: 105.0,
                                   height: 105.0,
                                   decoration: BoxDecoration(
-                                    gradient: LinearGradient(
+                                    gradient: const LinearGradient(
                                       colors: [
                                         Color(0xFF20BCED),
                                         Color(0xFF20BCED)
@@ -298,7 +297,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                   child: Stack(
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             6.0, 14.0, 0.0, 12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -308,7 +307,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   -1.0, -1.0),
                                               child: Text(
                                                 'Fastest',
@@ -344,10 +343,10 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(1.0, -1.0),
+                                            const AlignmentDirectional(1.0, -1.0),
                                         child: Stack(
                                           alignment:
-                                              AlignmentDirectional(1.0, -1.0),
+                                              const AlignmentDirectional(1.0, -1.0),
                                           children: [
                                             ClipRRect(
                                               borderRadius:
@@ -356,10 +355,6 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                                 'assets/images/drone_delivery_2_(1).png',
                                                 fit: BoxFit.cover,
                                               ),
-                                            ),
-                                            Row(
-                                              mainAxisSize: MainAxisSize.max,
-                                              children: [],
                                             ),
                                           ],
                                         ),
@@ -371,7 +366,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 20.0, 0.0, 10.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -396,7 +391,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                       Builder(
                                         builder: (context) => Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 7.0, 0.0, 0.0),
                                           child: FFButtonWidget(
                                             onPressed: () async {
@@ -414,7 +409,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                                     backgroundColor:
                                                         Colors.transparent,
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                                 0.0, 0.0)
                                                             .resolve(
                                                                 Directionality.of(
@@ -430,7 +425,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                                           : FocusScope.of(
                                                                   context)
                                                               .unfocus(),
-                                                      child: Container(
+                                                      child: const SizedBox(
                                                         height: 80.0,
                                                         width: 80.0,
                                                         child:
@@ -443,17 +438,17 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                                   (value) => setState(() {}));
                                             },
                                             text: 'Select Date',
-                                            icon: Icon(
+                                            icon: const Icon(
                                               Icons.calendar_today_outlined,
                                               size: 15.0,
                                             ),
                                             options: FFButtonOptions(
                                               width: double.infinity,
                                               height: 40.0,
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       15.0, 0.0, 15.0, 0.0),
-                                              iconPadding: EdgeInsetsDirectional
+                                              iconPadding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 0.0, 0.0, 0.0),
                                               color:
                                                   FlutterFlowTheme.of(context)
@@ -467,7 +462,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                                         useGoogleFonts: false,
                                                       ),
                                               elevation: 0.0,
-                                              borderSide: BorderSide(
+                                              borderSide: const BorderSide(
                                                 color: Colors.transparent,
                                                 width: 0.0,
                                               ),
@@ -500,7 +495,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                       Builder(
                                         builder: (context) => Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 7.0, 0.0, 0.0),
                                           child: FFButtonWidget(
                                             onPressed: () async {
@@ -518,7 +513,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                                     backgroundColor:
                                                         Colors.transparent,
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                                 0.0, 0.0)
                                                             .resolve(
                                                                 Directionality.of(
@@ -534,7 +529,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                                           : FocusScope.of(
                                                                   context)
                                                               .unfocus(),
-                                                      child: Container(
+                                                      child: SizedBox(
                                                         height:
                                                             MediaQuery.sizeOf(
                                                                         context)
@@ -546,7 +541,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                                                     .width *
                                                                 0.8,
                                                         child:
-                                                            ScheduleDialogWidget(),
+                                                            const ScheduleDialogWidget(),
                                                       ),
                                                     ),
                                                   );
@@ -555,17 +550,17 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                                   (value) => setState(() {}));
                                             },
                                             text: 'Select Time',
-                                            icon: Icon(
+                                            icon: const Icon(
                                               Icons.access_time_sharp,
                                               size: 15.0,
                                             ),
                                             options: FFButtonOptions(
                                               width: double.infinity,
                                               height: 40.0,
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       15.0, 0.0, 15.0, 0.0),
-                                              iconPadding: EdgeInsetsDirectional
+                                              iconPadding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 0.0, 0.0, 0.0),
                                               color:
                                                   FlutterFlowTheme.of(context)
@@ -579,7 +574,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                                         useGoogleFonts: false,
                                                       ),
                                               elevation: 0.0,
-                                              borderSide: BorderSide(
+                                              borderSide: const BorderSide(
                                                 color: Colors.transparent,
                                                 width: 0.0,
                                               ),
@@ -592,10 +587,10 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 10.0)),
+                              ].divide(const SizedBox(width: 10.0)),
                             ),
                           ),
-                          Divider(
+                          const Divider(
                             thickness: 0.6,
                             color: Color(0xFF16283E),
                           ),
@@ -604,7 +599,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -621,14 +616,14 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                 // confir_address
                                 logFirebaseEvent('Row_confir_address');
                                 await showDialog(
-                                  barrierColor: Color(0x3F000000),
+                                  barrierColor: const Color(0x3F000000),
                                   context: context,
                                   builder: (dialogContext) {
                                     return Dialog(
                                       elevation: 0,
                                       insetPadding: EdgeInsets.zero,
                                       backgroundColor: Colors.transparent,
-                                      alignment: AlignmentDirectional(0.0, 0.0)
+                                      alignment: const AlignmentDirectional(0.0, 0.0)
                                           .resolve(Directionality.of(context)),
                                       child: GestureDetector(
                                         onTap: () => _model
@@ -637,7 +632,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                                 .requestFocus(
                                                     _model.unfocusNode)
                                             : FocusScope.of(context).unfocus(),
-                                        child: Container(
+                                        child: const SizedBox(
                                           height: 360.0,
                                           width: 330.0,
                                           child: ChangeAddressWidget(),
@@ -674,7 +669,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 15.0, 0.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -686,7 +681,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                   size: 24.0,
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     '4517 Washington Ave. Manchester, Kentucky 39495',
@@ -703,7 +698,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 25.0, 0.0, 0.0),
                             child: Text(
                               'Contact Number',
@@ -718,7 +713,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 15.0, 0.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -730,7 +725,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                   size: 24.0,
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     '0823 255 4356',
@@ -746,7 +741,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                               ],
                             ),
                           ),
-                          Divider(
+                          const Divider(
                             thickness: 0.6,
                             color: Color(0xFF16283E),
                           ),
@@ -755,7 +750,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -771,7 +766,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                     ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 10.0, 0.0, 0.0),
                             child: Text(
                               'Fusce purus lacus, pretium ac volutpat vel, dictum vitae sem. Sed porta finibus tellus vel efficitur. Phasellus varius sed quam sit amet pellentesque.',
@@ -797,7 +792,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                       borderRadius: BorderRadius.circular(4.0),
                                     ),
                                   ),
-                                  unselectedWidgetColor: Color(0xFFEEEEEE),
+                                  unselectedWidgetColor: const Color(0xFFEEEEEE),
                                 ),
                                 child: Checkbox(
                                   value: _model.checkboxValue ??= false,
@@ -805,11 +800,11 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                     setState(
                                         () => _model.checkboxValue = newValue!);
                                   },
-                                  side: BorderSide(
+                                  side: const BorderSide(
                                     width: 2,
                                     color: Color(0xFFEEEEEE),
                                   ),
-                                  activeColor: Color(0xFF92DFAC),
+                                  activeColor: const Color(0xFF92DFAC),
                                   checkColor:
                                       FlutterFlowTheme.of(context).primaryText,
                                 ),
@@ -826,7 +821,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                               ),
                             ],
                           ),
-                          Divider(
+                          const Divider(
                             thickness: 0.6,
                             color: Color(0xFF16283E),
                           ),
@@ -835,7 +830,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -851,17 +846,17 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                     ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 20.0, 0.0, 0.0),
                             child: ListView(
                               padding: EdgeInsets.zero,
                               shrinkWrap: true,
                               scrollDirection: Axis.vertical,
-                              children: [],
+                              children: const [],
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 20.0, 0.0, 15.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -874,7 +869,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                   size: 24.0,
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       10.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     'Add New Payment Methods',
@@ -891,7 +886,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                               ],
                             ),
                           ),
-                          Divider(
+                          const Divider(
                             thickness: 0.6,
                             color: Color(0xFF16283E),
                           ),
@@ -900,7 +895,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                       child: TextFormField(
                         controller: _model.textController,
                         focusNode: _model.textFieldFocusNode,
@@ -951,7 +946,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                           ),
                           filled: true,
                           fillColor: FlutterFlowTheme.of(context).accent4,
-                          contentPadding: EdgeInsetsDirectional.fromSTEB(
+                          contentPadding: const EdgeInsetsDirectional.fromSTEB(
                               18.0, 0.0, 18.0, 0.0),
                         ),
                         style: FlutterFlowTheme.of(context).bodySmall.override(
@@ -965,7 +960,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 15.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 15.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -993,7 +988,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                         ],
                       ),
                     ),
-                    Divider(
+                    const Divider(
                       thickness: 0.6,
                       color: Color(0xFF16283E),
                     ),
@@ -1007,7 +1002,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -1090,7 +1085,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                             ],
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 20.0, 0.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1121,12 +1116,12 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                               ],
                             ),
                           ),
-                        ].divide(SizedBox(height: 3.0)),
+                        ].divide(const SizedBox(height: 3.0)),
                       ),
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -1139,9 +1134,9 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                               text: 'Place Order',
                               options: FFButtonOptions(
                                 height: 40.0,
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 15.0, 0.0, 15.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                                 color: FlutterFlowTheme.of(context).primaryText,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -1155,7 +1150,7 @@ class _OrderScreenWidgetState extends State<OrderScreenWidget> {
                                       useGoogleFonts: false,
                                     ),
                                 elevation: 3.0,
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),

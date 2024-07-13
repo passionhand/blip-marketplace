@@ -2,14 +2,9 @@ import '/components/service_item_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'home_page_model.dart';
 export 'home_page_model.dart';
 
@@ -42,8 +37,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -83,15 +78,15 @@ class _HomePageWidgetState extends State<HomePageWidget>
               ),
               actions: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 25.0, 0.0),
-                  child: Icon(
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 25.0, 0.0),
+                  child: const Icon(
                     Icons.search_rounded,
                     color: Colors.white,
                     size: 24.0,
                   ).animateOnPageLoad(
                       animationsMap['iconOnPageLoadAnimation']!),
                 ),
-                Padding(
+                const Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 25.0, 0.0),
                   child: Icon(
                     Icons.notifications_none,
@@ -99,7 +94,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                     size: 24.0,
                   ),
                 ),
-                Padding(
+                const Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 25.0, 0.0),
                   child: Icon(
                     Icons.shopping_cart_outlined,
@@ -119,7 +114,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -128,7 +123,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                           width: 70.0,
                           height: 70.0,
                           clipBehavior: Clip.antiAlias,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                           ),
                           child: Image.asset(
@@ -137,7 +132,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               15.0, 0.0, 0.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -155,7 +150,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 5.0, 0.0, 0.0),
                                 child: Text(
                                   'Your one-stop solution for instant deliveries.',
@@ -178,11 +173,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   ),
                   Flexible(
                     child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
+                      padding: const EdgeInsetsDirectional.fromSTEB(
                           20.0, 25.0, 20.0, 35.0),
                       child: GridView(
                         padding: EdgeInsets.zero,
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 3,
                           crossAxisSpacing: 10.0,
                           mainAxisSpacing: 10.0,
@@ -198,9 +193,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                               image:
                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/o47uhjdhpx83/service1.svg',
                               service: 'Medical\nSupplies',
-                              backColor: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
-                              showFav: false,
+                              backgroundColor: FlutterFlowTheme.of(context)
+                                  .primaryBackground,
                             ),
                           ),
                           wrapWithModel(
@@ -210,9 +204,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                               image:
                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/lyquxc1q1nwh/service2.svg',
                               service: 'Food &\nBeverages',
-                              backColor: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
-                              showFav: false,
+                              backgroundColor: FlutterFlowTheme.of(context)
+                                  .primaryBackground,
                             ),
                           ),
                           wrapWithModel(
@@ -222,9 +215,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                               image:
                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/vfzeyf3tj3t6/service3.svg',
                               service: 'Flowers and\nGifts',
-                              backColor: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
-                              showFav: false,
+                              backgroundColor: FlutterFlowTheme.of(context)
+                                  .primaryBackground,
                             ),
                           ),
                           wrapWithModel(
@@ -234,8 +226,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                               image:
                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/2fgc3gdh8yhv/service4.svg',
                               service: 'Pet Supplies',
-                              backColor: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
+                              backgroundColor: FlutterFlowTheme.of(context)
+                                  .primaryBackground,
                             ),
                           ),
                           wrapWithModel(
@@ -245,8 +237,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                               image:
                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/pf8gcxslnimv/service5.svg',
                               service: 'Electronics',
-                              backColor: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
+                              backgroundColor: FlutterFlowTheme.of(context)
+                                  .primaryBackground,
                             ),
                           ),
                           wrapWithModel(
@@ -256,8 +248,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                               image:
                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/slaux4318dgn/service6.svg',
                               service: 'Groceries',
-                              backColor: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
+                              backgroundColor: FlutterFlowTheme.of(context)
+                                  .primaryBackground,
                             ),
                           ),
                         ],
@@ -267,12 +259,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   Flexible(
                     child: Container(
                       width: double.infinity,
+                      height: 835.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        borderRadius: BorderRadius.circular(30.0),
+                        borderRadius: const BorderRadius.only(
+                          bottomLeft: Radius.circular(5.0),
+                          bottomRight: Radius.circular(5.0),
+                          topLeft: Radius.circular(30.0),
+                          topRight: Radius.circular(30.0),
+                        ),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 45.0, 20.0, 50.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -315,7 +313,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-0.79, 0.02),
+                                              const AlignmentDirectional(-0.79, 0.02),
                                           child: Text(
                                             'Save 20% on\nyour first delivery!',
                                             style: FlutterFlowTheme.of(context)
@@ -324,13 +322,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                   fontFamily: 'Segoe UI',
                                                   color: Colors.black,
                                                   letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.w500,
                                                   useGoogleFonts: false,
                                                 ),
                                           ),
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.98, 0.42),
+                                              const AlignmentDirectional(0.98, 0.42),
                                           child: ClipRRect(
                                             borderRadius:
                                                 BorderRadius.circular(8.0),
@@ -360,11 +359,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     ),
                                     child: Align(
                                       alignment:
-                                          AlignmentDirectional(1.0, -1.0),
+                                          const AlignmentDirectional(1.0, -1.0),
                                       child: Stack(
                                         children: [
                                           Align(
-                                            alignment: AlignmentDirectional(
+                                            alignment: const AlignmentDirectional(
                                                 -0.79, 0.02),
                                             child: Text(
                                               'Monthly subscription\nfor unlimited instant\ndelivery.',
@@ -375,12 +374,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         fontFamily: 'Segoe UI',
                                                         color: Colors.black,
                                                         letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FontWeight.w500,
                                                         useGoogleFonts: false,
                                                       ),
                                             ),
                                           ),
                                           Align(
-                                            alignment: AlignmentDirectional(
+                                            alignment: const AlignmentDirectional(
                                                 0.98, 0.42),
                                             child: ClipRRect(
                                               borderRadius:
@@ -395,14 +396,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       ),
                                     ),
                                   ),
-                                ].divide(SizedBox(width: 12.0)),
+                                ].divide(const SizedBox(width: 12.0)),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 40.0, 0.0, 0.0),
                               child: Text(
-                                'Popular Services',
+                                'Popular Products and Services',
                                 style: FlutterFlowTheme.of(context)
                                     .titleLarge
                                     .override(
@@ -416,14 +417,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                               ),
                             ),
                             Container(
-                              decoration: BoxDecoration(),
+                              decoration: const BoxDecoration(),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 10.0, 0.0, 10.0),
                                 child: GridView(
                                   padding: EdgeInsets.zero,
                                   gridDelegate:
-                                      SliverGridDelegateWithFixedCrossAxisCount(
+                                      const SliverGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 3,
                                     crossAxisSpacing: 10.0,
                                     mainAxisSpacing: 10.0,
@@ -435,73 +436,91 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     wrapWithModel(
                                       model: _model.serviceItemModel7,
                                       updateCallback: () => setState(() {}),
-                                      child: ServiceItemWidget(
+                                      child: const ServiceItemWidget(
                                         image:
                                             'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/o47uhjdhpx83/service1.svg',
                                         service: 'Medical\nSupplies',
-                                        backColor: FlutterFlowTheme.of(context)
-                                            .alternate,
-                                        showFav: true,
+                                        backgroundColor: Color(0xFFEEEEEE),
                                       ),
                                     ),
                                     wrapWithModel(
                                       model: _model.serviceItemModel8,
                                       updateCallback: () => setState(() {}),
-                                      child: ServiceItemWidget(
+                                      child: const ServiceItemWidget(
                                         image:
                                             'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/lyquxc1q1nwh/service2.svg',
                                         service: 'Food &\nBeverages',
-                                        backColor: FlutterFlowTheme.of(context)
-                                            .alternate,
-                                        showFav: true,
+                                        backgroundColor: Color(0xFFEEEEEE),
                                       ),
                                     ),
                                     wrapWithModel(
                                       model: _model.serviceItemModel9,
                                       updateCallback: () => setState(() {}),
-                                      child: ServiceItemWidget(
+                                      child: const ServiceItemWidget(
                                         image:
                                             'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/vfzeyf3tj3t6/service3.svg',
                                         service: 'Flowers and\nGifts',
-                                        backColor: FlutterFlowTheme.of(context)
-                                            .alternate,
-                                        showFav: true,
+                                        backgroundColor: Color(0xFFEEEEEE),
                                       ),
                                     ),
                                     wrapWithModel(
                                       model: _model.serviceItemModel10,
                                       updateCallback: () => setState(() {}),
-                                      child: ServiceItemWidget(
+                                      child: const ServiceItemWidget(
                                         image:
                                             'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/2fgc3gdh8yhv/service4.svg',
                                         service: 'Pet Supplies',
-                                        backColor: FlutterFlowTheme.of(context)
-                                            .alternate,
-                                        showFav: true,
+                                        backgroundColor: Color(0xFFEEEEEE),
                                       ),
                                     ),
                                     wrapWithModel(
                                       model: _model.serviceItemModel11,
                                       updateCallback: () => setState(() {}),
-                                      child: ServiceItemWidget(
+                                      child: const ServiceItemWidget(
                                         image:
                                             'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/pf8gcxslnimv/service5.svg',
                                         service: 'Electronics',
-                                        backColor: FlutterFlowTheme.of(context)
-                                            .alternate,
-                                        showFav: true,
+                                        backgroundColor: Color(0xFFEEEEEE),
                                       ),
                                     ),
                                     wrapWithModel(
                                       model: _model.serviceItemModel12,
                                       updateCallback: () => setState(() {}),
-                                      child: ServiceItemWidget(
+                                      child: const ServiceItemWidget(
                                         image:
                                             'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/slaux4318dgn/service6.svg',
                                         service: 'Groceries',
-                                        backColor: FlutterFlowTheme.of(context)
-                                            .alternate,
-                                        showFav: true,
+                                        backgroundColor: Color(0xFFEEEEEE),
+                                      ),
+                                    ),
+                                    wrapWithModel(
+                                      model: _model.serviceItemModel13,
+                                      updateCallback: () => setState(() {}),
+                                      child: const ServiceItemWidget(
+                                        image:
+                                            'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/slaux4318dgn/service6.svg',
+                                        service: 'Groceries',
+                                        backgroundColor: Color(0xFFEEEEEE),
+                                      ),
+                                    ),
+                                    wrapWithModel(
+                                      model: _model.serviceItemModel14,
+                                      updateCallback: () => setState(() {}),
+                                      child: const ServiceItemWidget(
+                                        image:
+                                            'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/slaux4318dgn/service6.svg',
+                                        service: 'Groceries',
+                                        backgroundColor: Color(0xFFEEEEEE),
+                                      ),
+                                    ),
+                                    wrapWithModel(
+                                      model: _model.serviceItemModel15,
+                                      updateCallback: () => setState(() {}),
+                                      child: const ServiceItemWidget(
+                                        image:
+                                            'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/slaux4318dgn/service6.svg',
+                                        service: 'Groceries',
+                                        backgroundColor: Color(0xFFEEEEEE),
                                       ),
                                     ),
                                   ],

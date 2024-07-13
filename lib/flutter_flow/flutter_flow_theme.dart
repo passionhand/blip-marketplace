@@ -225,7 +225,7 @@ class ThemeTypography extends Typography {
         fontSize: 24.0,
       );
   String get titleLargeFamily => 'Segoe UI';
-  TextStyle get titleLarge => TextStyle(
+  TextStyle get titleLarge => const TextStyle(
         fontFamily: 'Segoe UI',
         color: Colors.black,
         fontWeight: FontWeight.w600,
@@ -326,6 +326,7 @@ extension TextStyleHelper on TextStyle {
     bool useGoogleFonts = true,
     TextDecoration? decoration,
     double? lineHeight,
+    List<Shadow>? shadows,
   }) =>
       useGoogleFonts
           ? GoogleFonts.getFont(
@@ -337,6 +338,7 @@ extension TextStyleHelper on TextStyle {
               fontStyle: fontStyle ?? this.fontStyle,
               decoration: decoration,
               height: lineHeight,
+              shadows: shadows,
             )
           : copyWith(
               fontFamily: fontFamily,
@@ -347,5 +349,6 @@ extension TextStyleHelper on TextStyle {
               fontStyle: fontStyle,
               decoration: decoration,
               height: lineHeight,
+              shadows: shadows,
             );
 }

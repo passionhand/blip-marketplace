@@ -5,9 +5,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pointer_interceptor/pointer_interceptor.dart';
-import 'package:provider/provider.dart';
 import 'confirmation_model.dart';
 export 'confirmation_model.dart';
 
@@ -61,7 +59,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                 borderRadius: 30.0,
                 borderWidth: 1.0,
                 buttonSize: 54.0,
-                icon: Icon(
+                icon: const Icon(
                   Icons.chevron_left,
                   color: Colors.white,
                   size: 24.0,
@@ -82,21 +80,21 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                       useGoogleFonts: false,
                     ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 0.0,
             ),
             body: Stack(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 86.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 86.0),
                   child: Container(
                     width: double.infinity,
                     height: double.infinity,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(0.0),
                         bottomRight: Radius.circular(0.0),
                         topLeft: Radius.circular(30.0),
@@ -105,20 +103,20 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                     ),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                       child: SingleChildScrollView(
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(-1.0, 0.0),
+                              alignment: const AlignmentDirectional(-1.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(-1.0, 0.0),
+                                    alignment: const AlignmentDirectional(-1.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           20.0, 0.0, 0.0, 10.0),
                                       child: Text(
                                         'Package Details',
@@ -135,7 +133,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         20.0, 0.0, 20.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -144,7 +142,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 4.0),
                                           child: Text(
                                             'Package Type',
@@ -173,7 +171,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         20.0, 0.0, 20.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -182,7 +180,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 4.0),
                                           child: Text(
                                             'Package Weight',
@@ -211,7 +209,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         20.0, 0.0, 20.0, 14.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -222,7 +220,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 4.0),
                                           child: Text(
                                             'Special Instructions',
@@ -251,7 +249,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 353.0,
                                     child: Divider(
                                       height: 0.0,
@@ -263,18 +261,18 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(-1.0, 0.0),
+                              alignment: const AlignmentDirectional(-1.0, 0.0),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 14.0, 0.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-1.0, 0.0),
+                                          const AlignmentDirectional(-1.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             20.0, 0.0, 0.0, 10.0),
                                         child: Text(
                                           'Delivery Details',
@@ -291,7 +289,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           20.0, 0.0, 20.0, 10.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -302,7 +300,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Text(
                                               'Pickup Location',
@@ -334,7 +332,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           20.0, 0.0, 20.0, 10.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -345,7 +343,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Text(
                                               'Delivery Location',
@@ -377,7 +375,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           20.0, 0.0, 20.0, 14.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -388,7 +386,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Text(
                                               'Scheduled Time',
@@ -419,7 +417,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                         ],
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 353.0,
                                       child: Divider(
                                         height: 0.0,
@@ -432,18 +430,18 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(-1.0, 0.0),
+                              alignment: const AlignmentDirectional(-1.0, 0.0),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 14.0, 0.0, 42.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-1.0, 0.0),
+                                          const AlignmentDirectional(-1.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             20.0, 0.0, 0.0, 10.0),
                                         child: Text(
                                           'Payment Summary',
@@ -460,7 +458,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           20.0, 0.0, 20.0, 2.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -471,7 +469,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Text(
                                               'Base Price',
@@ -503,7 +501,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           20.0, 0.0, 20.0, 2.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -514,7 +512,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Text(
                                               'Weight Surcharge',
@@ -546,7 +544,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           20.0, 0.0, 20.0, 14.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -557,7 +555,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 4.0),
                                             child: Text(
                                               'Total',
@@ -593,7 +591,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                               ),
                             ),
                             ClipRRect(
-                              borderRadius: BorderRadius.only(
+                              borderRadius: const BorderRadius.only(
                                 bottomLeft: Radius.circular(0.0),
                                 bottomRight: Radius.circular(0.0),
                                 topLeft: Radius.circular(30.0),
@@ -602,7 +600,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                               child: Container(
                                 width: double.infinity,
                                 height: 382.0,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0xFFDADADA),
                                   borderRadius: BorderRadius.only(
                                     bottomLeft: Radius.circular(0.0),
@@ -612,7 +610,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                   ),
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 1.0),
+                                  alignment: const AlignmentDirectional(0.0, 1.0),
                                   child: Stack(
                                     children: [
                                       FlutterFlowGoogleMap(
@@ -621,7 +619,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                             _model.googleMapsCenter = latLng,
                                         initialLocation:
                                             _model.googleMapsCenter ??=
-                                                LatLng(13.106061, -59.613158),
+                                                const LatLng(13.106061, -59.613158),
                                         markerColor: GoogleMarkerColor.violet,
                                         mapType: MapType.normal,
                                         style: GoogleMapStyle.standard,
@@ -637,12 +635,12 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.87),
+                                            const AlignmentDirectional(0.0, 0.87),
                                         child: PointerInterceptor(
                                           intercepting: isWeb,
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 0.0, 20.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
@@ -652,11 +650,11 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                               options: FFButtonOptions(
                                                 width: double.infinity,
                                                 height: 60.0,
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         24.0, 0.0, 24.0, 0.0),
                                                 iconPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -676,7 +674,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                                                           useGoogleFonts: false,
                                                         ),
                                                 elevation: 3.0,
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Colors.transparent,
                                                   width: 1.0,
                                                 ),
@@ -701,7 +699,7 @@ class _ConfirmationWidgetState extends State<ConfirmationWidget> {
                 wrapWithModel(
                   model: _model.customNavbarModel,
                   updateCallback: () => setState(() {}),
-                  child: CustomNavbarWidget(),
+                  child: const CustomNavbarWidget(),
                 ),
               ],
             ),

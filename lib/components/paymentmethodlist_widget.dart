@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'paymentmethodlist_model.dart';
 export 'paymentmethodlist_model.dart';
 
@@ -47,7 +45,7 @@ class _PaymentmethodlistWidgetState extends State<PaymentmethodlistWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(-1.0, 0.0),
+      alignment: const AlignmentDirectional(-1.0, 0.0),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -61,15 +59,17 @@ class _PaymentmethodlistWidgetState extends State<PaymentmethodlistWidget> {
               fit: BoxFit.cover,
             ),
           ),
-          Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
-            child: Text(
-              '2141434**********',
-              style: FlutterFlowTheme.of(context).bodyMedium.override(
-                    fontFamily: 'Segoe UI',
-                    letterSpacing: 0.0,
-                    useGoogleFonts: false,
-                  ),
+          Flexible(
+            child: Padding(
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+              child: Text(
+                '2141434**********',
+                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                      fontFamily: 'Segoe UI',
+                      letterSpacing: 0.0,
+                      useGoogleFonts: false,
+                    ),
+              ),
             ),
           ),
         ],

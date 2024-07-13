@@ -5,11 +5,8 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_radio_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'flowers_gifts_model.dart';
 export 'flowers_gifts_model.dart';
 
@@ -68,7 +65,7 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                 borderRadius: 30.0,
                 borderWidth: 1.0,
                 buttonSize: 54.0,
-                icon: Icon(
+                icon: const Icon(
                   Icons.chevron_left,
                   color: Colors.white,
                   size: 24.0,
@@ -89,31 +86,31 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                       useGoogleFonts: false,
                     ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 0.0,
             ),
             body: Stack(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               children: [
                 SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             22.0, 10.0, 46.0, 20.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   23.0, 0.0, 45.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.menuItemModel1,
                                 updateCallback: () => setState(() {}),
-                                child: MenuItemWidget(
+                                child: const MenuItemWidget(
                                   imgwidth: 32.0,
                                   imgheight: 41.0,
                                   imgpath:
@@ -125,12 +122,12 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 47.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.menuItemModel2,
                                 updateCallback: () => setState(() {}),
-                                child: MenuItemWidget(
+                                child: const MenuItemWidget(
                                   imgwidth: 42.0,
                                   imgheight: 42.0,
                                   imgpath:
@@ -144,7 +141,7 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                             wrapWithModel(
                               model: _model.menuItemModel3,
                               updateCallback: () => setState(() {}),
-                              child: MenuItemWidget(
+                              child: const MenuItemWidget(
                                 imgwidth: 33.0,
                                 imgheight: 38.0,
                                 imgpath:
@@ -166,9 +163,9 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                           borderRadius: BorderRadius.circular(30.0),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, -1.0),
+                          alignment: const AlignmentDirectional(0.0, -1.0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 30.0, 0.0, 86.0),
                             child: SingleChildScrollView(
                               primary: false,
@@ -178,9 +175,9 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(-1.0, -1.0),
+                                    alignment: const AlignmentDirectional(-1.0, -1.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           23.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         'Featured Products',
@@ -197,7 +194,7 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         23.0, 0.0, 0.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -208,7 +205,7 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 10.0, 0.0, 0.0),
                                           child: SingleChildScrollView(
                                             scrollDirection: Axis.horizontal,
@@ -224,7 +221,7 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                                                       .featuredProductModel1,
                                                   updateCallback: () =>
                                                       setState(() {}),
-                                                  child: FeaturedProductWidget(
+                                                  child: const FeaturedProductWidget(
                                                     imgUrl:
                                                         'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/1994hhkw1kdv/Rose.png',
                                                     name: 'Rose',
@@ -239,7 +236,7 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                                                       .featuredProductModel2,
                                                   updateCallback: () =>
                                                       setState(() {}),
-                                                  child: FeaturedProductWidget(
+                                                  child: const FeaturedProductWidget(
                                                     imgUrl:
                                                         'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/hgg39my2z8j2/Chocolate_Hampers.png',
                                                     name: 'Chocolate Hampers',
@@ -254,7 +251,7 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                                                       .featuredProductModel3,
                                                   updateCallback: () =>
                                                       setState(() {}),
-                                                  child: FeaturedProductWidget(
+                                                  child: const FeaturedProductWidget(
                                                     imgUrl:
                                                         'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/2x2rj010r912/Customized_Mugs.png',
                                                     name: 'Customized \nMugs',
@@ -264,11 +261,11 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                                                     soldOut: false,
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(width: 17.0)),
+                                              ].divide(const SizedBox(width: 17.0)),
                                             ),
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           width: 354.0,
                                           child: Divider(
                                             height: 0.0,
@@ -280,7 +277,7 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         23.0, 0.0, 23.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -291,32 +288,35 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 16.0, 0.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
-                                              Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        0.0, 0.0, 90.0, 0.0),
-                                                child: Text(
-                                                  'Is this a gift?',
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Segoe UI',
-                                                        fontSize: 20.0,
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w600,
-                                                        useGoogleFonts: false,
-                                                      ),
+                                              Flexible(
+                                                child: Padding(
+                                                  padding: const EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          0.0, 0.0, 90.0, 0.0),
+                                                  child: Text(
+                                                    'Is this a gift?',
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily:
+                                                              'Segoe UI',
+                                                          fontSize: 20.0,
+                                                          letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          useGoogleFonts: false,
+                                                        ),
+                                                  ),
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 25.0, 0.0),
                                                 child: FlutterFlowRadioButton(
@@ -352,16 +352,16 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                                                                 false,
                                                           ),
                                                   textPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               10.0, 0.0),
                                                   buttonPosition:
                                                       RadioButtonPosition.left,
                                                   direction: Axis.horizontal,
                                                   radioButtonColor:
-                                                      Color(0xFF92DFAC),
+                                                      const Color(0xFF92DFAC),
                                                   inactiveRadioButtonColor:
-                                                      Color(0xFFDEDEDE),
+                                                      const Color(0xFFDEDEDE),
                                                   toggleable: false,
                                                   horizontalAlignment:
                                                       WrapAlignment.start,
@@ -374,13 +374,13 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 16.0, 0.0, 0.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, -1.0),
                                                 child: Text(
                                                   'Recipients address',
@@ -394,7 +394,7 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                                                       ),
                                                 ),
                                               ),
-                                              Container(
+                                              SizedBox(
                                                 width: 350.0,
                                                 child: TextFormField(
                                                   controller:
@@ -427,7 +427,7 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                                                         ),
                                                     enabledBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0xFFE3E3E3),
                                                         width: 2.0,
@@ -492,7 +492,7 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                                                 ),
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, -1.0),
                                                 child: Text(
                                                   'Note to recipient',
@@ -507,10 +507,10 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 10.0),
-                                                child: Container(
+                                                child: SizedBox(
                                                   width: 350.0,
                                                   child: TextFormField(
                                                     controller:
@@ -549,7 +549,7 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                                                               ),
                                                       enabledBorder:
                                                           OutlineInputBorder(
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color:
                                                               Color(0xFFE3E3E3),
                                                           width: 2.0,
@@ -612,7 +612,7 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 10.0)),
+                                            ].divide(const SizedBox(height: 10.0)),
                                           ),
                                         ),
                                       ],
@@ -630,7 +630,7 @@ class _FlowersGiftsWidgetState extends State<FlowersGiftsWidget> {
                 wrapWithModel(
                   model: _model.customNavbarModel,
                   updateCallback: () => setState(() {}),
-                  child: CustomNavbarWidget(),
+                  child: const CustomNavbarWidget(),
                 ),
               ],
             ),

@@ -1,18 +1,16 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
+import '/custom_code/actions/index.dart' as actions;
 import '/custom_code/widgets/index.dart' as custom_widgets;
 import 'package:easy_debounce/easy_debounce.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'signup_model.dart';
 export 'signup_model.dart';
@@ -54,9 +52,9 @@ class _SignupWidgetState extends State<SignupWidget>
           RotateEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
-            duration: 600.0.ms,
+            duration: 1000.0.ms,
             begin: 0.0,
-            end: 1.0,
+            end: 3.0,
           ),
         ],
       ),
@@ -74,6 +72,8 @@ class _SignupWidgetState extends State<SignupWidget>
 
   @override
   Widget build(BuildContext context) {
+    context.watch<FFAppState>();
+
     return Title(
         title: 'signup',
         color: FlutterFlowTheme.of(context).primary.withAlpha(0XFF),
@@ -91,14 +91,14 @@ class _SignupWidgetState extends State<SignupWidget>
                 color: Colors.black,
                 image: DecorationImage(
                   fit: BoxFit.fitWidth,
-                  alignment: AlignmentDirectional(0.0, -1.0),
+                  alignment: const AlignmentDirectional(0.0, -1.0),
                   image: Image.asset(
                     'assets/images/back1.png',
                   ).image,
                 ),
               ),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 50.0, 20.0, 15.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 50.0, 20.0, 15.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -130,15 +130,16 @@ class _SignupWidgetState extends State<SignupWidget>
                         children: [
                           Container(
                             decoration: BoxDecoration(
-                              color: Color(0xE6FFFFFF),
+                              color: const Color(0xE6FFFFFF),
                               borderRadius: BorderRadius.circular(10.0),
                               shape: BoxShape.rectangle,
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(20.0),
+                              padding: const EdgeInsets.all(20.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.stretch,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Text(
                                     'Register',
@@ -154,14 +155,14 @@ class _SignupWidgetState extends State<SignupWidget>
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 14.0, 0.0, 0.0),
                                     child: TextFormField(
                                       controller: _model.nameTextController,
                                       focusNode: _model.nameFocusNode,
                                       onChanged: (_) => EasyDebounce.debounce(
                                         '_model.nameTextController',
-                                        Duration(milliseconds: 2000),
+                                        const Duration(milliseconds: 2000),
                                         () => setState(() {}),
                                       ),
                                       autofocus: true,
@@ -172,7 +173,7 @@ class _SignupWidgetState extends State<SignupWidget>
                                             .labelSmall
                                             .override(
                                               fontFamily: 'Segoe UI',
-                                              color: Color(0xFF95A1AC),
+                                              color: const Color(0xFF95A1AC),
                                               letterSpacing: 0.0,
                                               useGoogleFonts: false,
                                             ),
@@ -180,12 +181,12 @@ class _SignupWidgetState extends State<SignupWidget>
                                             .labelSmall
                                             .override(
                                               fontFamily: 'Segoe UI',
-                                              color: Color(0xFF95A1AC),
+                                              color: const Color(0xFF95A1AC),
                                               letterSpacing: 0.0,
                                               useGoogleFonts: false,
                                             ),
                                         enabledBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Color(0xFFE3E3E3),
                                             width: 1.0,
                                           ),
@@ -222,7 +223,7 @@ class _SignupWidgetState extends State<SignupWidget>
                                         filled: true,
                                         fillColor: Colors.white,
                                         contentPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 15.0, 8.0, 0.0, 8.0),
                                       ),
                                       style: FlutterFlowTheme.of(context)
@@ -240,7 +241,7 @@ class _SignupWidgetState extends State<SignupWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 13.0, 0.0, 0.0),
                                     child: TextFormField(
                                       controller: _model.emailTextController,
@@ -253,7 +254,7 @@ class _SignupWidgetState extends State<SignupWidget>
                                             .labelSmall
                                             .override(
                                               fontFamily: 'Segoe UI',
-                                              color: Color(0xFF95A1AC),
+                                              color: const Color(0xFF95A1AC),
                                               letterSpacing: 0.0,
                                               useGoogleFonts: false,
                                             ),
@@ -261,12 +262,12 @@ class _SignupWidgetState extends State<SignupWidget>
                                             .labelSmall
                                             .override(
                                               fontFamily: 'Segoe UI',
-                                              color: Color(0xFF95A1AC),
+                                              color: const Color(0xFF95A1AC),
                                               letterSpacing: 0.0,
                                               useGoogleFonts: false,
                                             ),
                                         enabledBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Color(0xFFE3E3E3),
                                             width: 1.0,
                                           ),
@@ -303,7 +304,7 @@ class _SignupWidgetState extends State<SignupWidget>
                                         filled: true,
                                         fillColor: Colors.white,
                                         contentPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 15.0, 8.0, 0.0, 8.0),
                                       ),
                                       style: FlutterFlowTheme.of(context)
@@ -321,7 +322,7 @@ class _SignupWidgetState extends State<SignupWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 13.0, 0.0, 0.0),
                                     child: TextFormField(
                                       controller: _model.passwordTextController,
@@ -334,7 +335,7 @@ class _SignupWidgetState extends State<SignupWidget>
                                             .labelSmall
                                             .override(
                                               fontFamily: 'Segoe UI',
-                                              color: Color(0xFF95A1AC),
+                                              color: const Color(0xFF95A1AC),
                                               letterSpacing: 0.0,
                                               useGoogleFonts: false,
                                             ),
@@ -342,12 +343,12 @@ class _SignupWidgetState extends State<SignupWidget>
                                             .labelSmall
                                             .override(
                                               fontFamily: 'Segoe UI',
-                                              color: Color(0xFF95A1AC),
+                                              color: const Color(0xFF95A1AC),
                                               letterSpacing: 0.0,
                                               useGoogleFonts: false,
                                             ),
                                         enabledBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Color(0xFFE3E3E3),
                                             width: 1.0,
                                           ),
@@ -384,7 +385,7 @@ class _SignupWidgetState extends State<SignupWidget>
                                         filled: true,
                                         fillColor: Colors.white,
                                         contentPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 15.0, 8.0, 0.0, 8.0),
                                         suffixIcon: InkWell(
                                           onTap: () => setState(
@@ -418,14 +419,14 @@ class _SignupWidgetState extends State<SignupWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 10.0, 0.0, 0.0),
-                                    child: Container(
-                                      width: double.infinity,
-                                      height: 40.0,
+                                    child: SizedBox(
+                                      width: 353.0,
+                                      height: 50.0,
                                       child: custom_widgets.PasswordState(
-                                        width: double.infinity,
-                                        height: 40.0,
+                                        width: 353.0,
+                                        height: 50.0,
                                         password:
                                             _model.passwordTextController.text,
                                       ),
@@ -436,7 +437,7 @@ class _SignupWidgetState extends State<SignupWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 20.0, 0.0, 0.0),
                             child: FFButtonWidget(
                               onPressed: () async {
@@ -455,17 +456,53 @@ class _SignupWidgetState extends State<SignupWidget>
                                   return;
                                 }
 
-                                context.goNamedAuth(
-                                    'HomePageExp', context.mounted);
+                                logFirebaseEvent('Button_custom_action');
+                                _model.token = await actions.getFirebaseToken();
+                                logFirebaseEvent('Button_backend_call');
+                                _model.signupResult =
+                                    await OpenAPIDefinitionGroup
+                                        .customersAuthenticateCall
+                                        .call(
+                                  xApiKey: FFAppState().xapikey,
+                                  name: _model.nameTextController.text,
+                                  token: _model.token,
+                                  rememberMe: true,
+                                );
+
+                                if ((_model.signupResult?.succeeded ?? true)) {
+                                  logFirebaseEvent('Button_navigate_to');
+
+                                  context.pushNamedAuth(
+                                      'HomePageExp', context.mounted);
+                                } else {
+                                  logFirebaseEvent('Button_show_snack_bar');
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(
+                                      content: Text(
+                                        'signup failed.',
+                                        style: TextStyle(
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryText,
+                                        ),
+                                      ),
+                                      duration: const Duration(milliseconds: 4000),
+                                      backgroundColor:
+                                          FlutterFlowTheme.of(context)
+                                              .secondary,
+                                    ),
+                                  );
+                                }
+
+                                setState(() {});
                               },
                               text: 'Register',
                               options: FFButtonOptions(
                                 height: 50.0,
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     24.0, 15.0, 24.0, 15.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
-                                color: Color(0xFFF2DFBB),
+                                color: const Color(0xFFF2DFBB),
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
@@ -477,7 +514,7 @@ class _SignupWidgetState extends State<SignupWidget>
                                       useGoogleFonts: false,
                                     ),
                                 elevation: 3.0,
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),
@@ -486,7 +523,7 @@ class _SignupWidgetState extends State<SignupWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 25.0, 0.0, 0.0),
                             child: Text(
                               'Or Register With',
@@ -502,71 +539,84 @@ class _SignupWidgetState extends State<SignupWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 15.0, 0.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                FaIcon(
+                                const FaIcon(
                                   FontAwesomeIcons.google,
                                   color: Colors.white,
                                   size: 35.0,
                                 ),
-                                Icon(
+                                const Icon(
                                   Icons.apple,
                                   color: Colors.white,
                                   size: 40.0,
                                 ).animateOnPageLoad(
                                     animationsMap['iconOnPageLoadAnimation']!),
-                                FaIcon(
+                                const FaIcon(
                                   FontAwesomeIcons.facebook,
                                   color: Color(0xFF1877F2),
                                   size: 35.0,
                                 ),
-                              ].divide(SizedBox(width: 45.0)),
+                              ].divide(const SizedBox(width: 45.0)),
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 40.0, 0.0, 0.0),
-                            child: RichText(
-                              textScaler: MediaQuery.of(context).textScaler,
-                              text: TextSpan(
-                                children: [
-                                  TextSpan(
-                                    text: 'Already a Member?',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Segoe UI',
-                                          color: Color(0xFFFFFCFC),
-                                          letterSpacing: 0.0,
-                                          fontWeight: FontWeight.w600,
-                                          useGoogleFonts: false,
-                                        ),
-                                  ),
-                                  TextSpan(
-                                    text: ' Login',
-                                    style: TextStyle(
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryBackground,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 14.0,
+                            child: InkWell(
+                              splashColor: Colors.transparent,
+                              focusColor: Colors.transparent,
+                              hoverColor: Colors.transparent,
+                              highlightColor: Colors.transparent,
+                              onTap: () async {
+                                logFirebaseEvent(
+                                    'SIGNUP_PAGE_RichText_c0p1gmfu_ON_TAP');
+                                logFirebaseEvent('RichText_navigate_to');
+
+                                context.pushNamed('login');
+                              },
+                              child: RichText(
+                                textScaler: MediaQuery.of(context).textScaler,
+                                text: TextSpan(
+                                  children: [
+                                    TextSpan(
+                                      text: 'Already a Member?',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Segoe UI',
+                                            color: const Color(0xFFFFFCFC),
+                                            letterSpacing: 0.0,
+                                            fontWeight: FontWeight.w600,
+                                            useGoogleFonts: false,
+                                          ),
                                     ),
-                                  )
-                                ],
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: 'Segoe UI',
-                                      color: Colors.white,
-                                      letterSpacing: 0.0,
-                                      fontWeight: FontWeight.w600,
-                                      useGoogleFonts: false,
-                                    ),
+                                    TextSpan(
+                                      text: ' Login',
+                                      style: TextStyle(
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryBackground,
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 14.0,
+                                      ),
+                                    )
+                                  ],
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .override(
+                                        fontFamily: 'Segoe UI',
+                                        color: Colors.white,
+                                        letterSpacing: 0.0,
+                                        fontWeight: FontWeight.w600,
+                                        useGoogleFonts: false,
+                                      ),
+                                ),
+                                textAlign: TextAlign.center,
                               ),
-                              textAlign: TextAlign.center,
                             ),
                           ),
                         ],

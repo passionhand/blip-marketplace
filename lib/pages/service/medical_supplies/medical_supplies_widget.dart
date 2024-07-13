@@ -4,10 +4,7 @@ import '/components/menu_item_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'medical_supplies_model.dart';
 export 'medical_supplies_model.dart';
 
@@ -60,7 +57,7 @@ class _MedicalSuppliesWidgetState extends State<MedicalSuppliesWidget> {
                 borderRadius: 30.0,
                 borderWidth: 1.0,
                 buttonSize: 54.0,
-                icon: Icon(
+                icon: const Icon(
                   Icons.chevron_left,
                   color: Colors.white,
                   size: 24.0,
@@ -81,20 +78,21 @@ class _MedicalSuppliesWidgetState extends State<MedicalSuppliesWidget> {
                       useGoogleFonts: false,
                     ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 0.0,
             ),
             body: Stack(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               children: [
                 SingleChildScrollView(
+                  primary: false,
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 10.0, 20.0, 20.0),
                         child: SingleChildScrollView(
                           scrollDirection: Axis.horizontal,
@@ -103,12 +101,12 @@ class _MedicalSuppliesWidgetState extends State<MedicalSuppliesWidget> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 23.0, 0.0),
                                 child: wrapWithModel(
                                   model: _model.menuItemModel1,
                                   updateCallback: () => setState(() {}),
-                                  child: MenuItemWidget(
+                                  child: const MenuItemWidget(
                                     imgwidth: 43.0,
                                     imgheight: 43.0,
                                     imgpath:
@@ -120,12 +118,12 @@ class _MedicalSuppliesWidgetState extends State<MedicalSuppliesWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 15.0, 0.0),
                                 child: wrapWithModel(
                                   model: _model.menuItemModel2,
                                   updateCallback: () => setState(() {}),
-                                  child: MenuItemWidget(
+                                  child: const MenuItemWidget(
                                     imgwidth: 38.0,
                                     imgheight: 35.0,
                                     imgpath:
@@ -137,12 +135,12 @@ class _MedicalSuppliesWidgetState extends State<MedicalSuppliesWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 28.0, 0.0),
                                 child: wrapWithModel(
                                   model: _model.menuItemModel3,
                                   updateCallback: () => setState(() {}),
-                                  child: MenuItemWidget(
+                                  child: const MenuItemWidget(
                                     imgwidth: 37.0,
                                     imgheight: 41.0,
                                     imgpath:
@@ -156,7 +154,7 @@ class _MedicalSuppliesWidgetState extends State<MedicalSuppliesWidget> {
                               wrapWithModel(
                                 model: _model.menuItemModel4,
                                 updateCallback: () => setState(() {}),
-                                child: MenuItemWidget(
+                                child: const MenuItemWidget(
                                   imgwidth: 37.0,
                                   imgheight: 28.0,
                                   imgpath:
@@ -179,7 +177,7 @@ class _MedicalSuppliesWidgetState extends State<MedicalSuppliesWidget> {
                           borderRadius: BorderRadius.circular(30.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 30.0, 0.0, 86.0),
                           child: SingleChildScrollView(
                             child: Column(
@@ -188,9 +186,9 @@ class _MedicalSuppliesWidgetState extends State<MedicalSuppliesWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, -1.0),
+                                  alignment: const AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         23.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       'Featured Products',
@@ -207,7 +205,7 @@ class _MedicalSuppliesWidgetState extends State<MedicalSuppliesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       23.0, 0.0, 0.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -229,7 +227,7 @@ class _MedicalSuppliesWidgetState extends State<MedicalSuppliesWidget> {
                                                   _model.featuredProductModel1,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/pr5j7nwpoe1a/Blood_Pressure_.png',
                                                 name: 'Blood \nPressure ',
@@ -244,7 +242,7 @@ class _MedicalSuppliesWidgetState extends State<MedicalSuppliesWidget> {
                                                   _model.featuredProductModel2,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/851epf8kqjfj/Thermometers.png',
                                                 name: 'Thermometers',
@@ -259,7 +257,7 @@ class _MedicalSuppliesWidgetState extends State<MedicalSuppliesWidget> {
                                                   _model.featuredProductModel3,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/o5y0ko14g3nl/Surgical_Masks.png',
                                                 name: 'Surgical Masks',
@@ -269,10 +267,10 @@ class _MedicalSuppliesWidgetState extends State<MedicalSuppliesWidget> {
                                                 soldOut: false,
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 17.0)),
+                                          ].divide(const SizedBox(width: 17.0)),
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 354.0,
                                         child: Divider(
                                           height: 0.0,
@@ -284,7 +282,7 @@ class _MedicalSuppliesWidgetState extends State<MedicalSuppliesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       23.0, 0.0, 0.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -293,7 +291,7 @@ class _MedicalSuppliesWidgetState extends State<MedicalSuppliesWidget> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 17.0, 0.0, 0.0),
                                         child: SingleChildScrollView(
                                           scrollDirection: Axis.horizontal,
@@ -307,7 +305,7 @@ class _MedicalSuppliesWidgetState extends State<MedicalSuppliesWidget> {
                                                     .featuredProductModel4,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductWidget(
+                                                child: const FeaturedProductWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/s4zq14gp0iay/Interlac.png',
                                                   name: 'Interlac',
@@ -322,7 +320,7 @@ class _MedicalSuppliesWidgetState extends State<MedicalSuppliesWidget> {
                                                     .featuredProductModel5,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductWidget(
+                                                child: const FeaturedProductWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/huo33cx3t3i1/Ginkgo.png',
                                                   name: 'Ginkgo',
@@ -337,7 +335,7 @@ class _MedicalSuppliesWidgetState extends State<MedicalSuppliesWidget> {
                                                     .featuredProductModel6,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductWidget(
+                                                child: const FeaturedProductWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/2y9k1yda87qp/HerbaVit.png',
                                                   name: 'HerbaVit',
@@ -347,7 +345,7 @@ class _MedicalSuppliesWidgetState extends State<MedicalSuppliesWidget> {
                                                   soldOut: false,
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 17.0)),
+                                            ].divide(const SizedBox(width: 17.0)),
                                           ),
                                         ),
                                       ),
@@ -365,7 +363,7 @@ class _MedicalSuppliesWidgetState extends State<MedicalSuppliesWidget> {
                 wrapWithModel(
                   model: _model.customNavbarModel,
                   updateCallback: () => setState(() {}),
-                  child: CustomNavbarWidget(),
+                  child: const CustomNavbarWidget(),
                 ),
               ],
             ),

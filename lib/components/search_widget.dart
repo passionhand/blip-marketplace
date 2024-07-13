@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'search_model.dart';
 export 'search_model.dart';
 
@@ -49,13 +47,13 @@ class _SearchWidgetState extends State<SearchWidget> {
         color: FlutterFlowTheme.of(context).secondaryBackground,
       ),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 2.0, 0.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 2.0, 0.0),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           children: [
             Expanded(
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(8.0, 5.0, 8.0, 5.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(8.0, 5.0, 8.0, 5.0),
                 child: TextFormField(
                   controller: _model.textController,
                   focusNode: _model.textFieldFocusNode,
@@ -106,8 +104,8 @@ class _SearchWidgetState extends State<SearchWidget> {
                       borderRadius: BorderRadius.circular(20.0),
                     ),
                     filled: true,
-                    fillColor: Color(0xFFF5F5F5),
-                    suffixIcon: Icon(
+                    fillColor: const Color(0xFFF5F5F5),
+                    suffixIcon: const Icon(
                       Icons.search_outlined,
                     ),
                   ),
@@ -129,12 +127,12 @@ class _SearchWidgetState extends State<SearchWidget> {
                 color: FlutterFlowTheme.of(context).secondaryBackground,
               ),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 3.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 3.0, 0.0),
                 child: Stack(
-                  alignment: AlignmentDirectional(1.0, -1.0),
+                  alignment: const AlignmentDirectional(1.0, -1.0),
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(-1.0, 1.0),
+                      alignment: const AlignmentDirectional(-1.0, 1.0),
                       child: Icon(
                         Icons.shopping_cart_outlined,
                         color: FlutterFlowTheme.of(context).secondaryText,
@@ -149,7 +147,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                         shape: BoxShape.circle,
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Text(
                           '3',
                           style:

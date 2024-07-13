@@ -6,8 +6,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'construction_services_model.dart';
 export 'construction_services_model.dart';
 
@@ -74,21 +72,21 @@ class _ConstructionServicesWidgetState
                 ),
               ),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 56.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 56.0, 0.0, 0.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Stack(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         children: [
                           Align(
-                            alignment: AlignmentDirectional(-1.0, 0.0),
+                            alignment: const AlignmentDirectional(-1.0, 0.0),
                             child: FlutterFlowIconButton(
                               borderRadius: 20.0,
                               borderWidth: 1.0,
                               buttonSize: 40.0,
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.chevron_left,
                                 color: Colors.white,
                                 size: 24.0,
@@ -115,7 +113,7 @@ class _ConstructionServicesWidgetState
                         ],
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             0.0, 18.0, 0.0, 281.0),
                         child: Text(
                           'Our drones can lift and place \nlarge items on rooftops. ',
@@ -138,7 +136,7 @@ class _ConstructionServicesWidgetState
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(5.0),
                             bottomRight: Radius.circular(5.0),
                             topLeft: Radius.circular(30.0),
@@ -149,7 +147,7 @@ class _ConstructionServicesWidgetState
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             ClipRRect(
-                              borderRadius: BorderRadius.only(
+                              borderRadius: const BorderRadius.only(
                                 bottomLeft: Radius.circular(0.0),
                                 bottomRight: Radius.circular(0.0),
                                 topLeft: Radius.circular(30.0),
@@ -158,7 +156,7 @@ class _ConstructionServicesWidgetState
                               child: Container(
                                 width: double.infinity,
                                 height: 337.0,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0xFFC0C0C0),
                                   borderRadius: BorderRadius.only(
                                     bottomLeft: Radius.circular(0.0),
@@ -172,7 +170,7 @@ class _ConstructionServicesWidgetState
                                   onCameraIdle: (latLng) =>
                                       _model.googleMapsCenter = latLng,
                                   initialLocation: _model.googleMapsCenter ??=
-                                      LatLng(13.106061, -59.613158),
+                                      const LatLng(13.106061, -59.613158),
                                   markerColor: GoogleMarkerColor.violet,
                                   mapType: MapType.normal,
                                   style: GoogleMapStyle.standard,
@@ -189,15 +187,15 @@ class _ConstructionServicesWidgetState
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 32.0, 20.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(-1.0, 0.0),
+                                    alignment: const AlignmentDirectional(-1.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 13.0),
                                       child: Text(
                                         'Item Details',
@@ -214,7 +212,7 @@ class _ConstructionServicesWidgetState
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(-1.0, 0.0),
+                                    alignment: const AlignmentDirectional(-1.0, 0.0),
                                     child: Text(
                                       'Item Description',
                                       style: FlutterFlowTheme.of(context)
@@ -229,9 +227,9 @@ class _ConstructionServicesWidgetState
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         8.0, 13.0, 8.0, 19.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: 350.0,
                                       child: TextFormField(
                                         controller: _model.textController1,
@@ -261,7 +259,7 @@ class _ConstructionServicesWidgetState
                                                     useGoogleFonts: false,
                                                   ),
                                           enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0x009C9B9B),
                                               width: 0.1,
                                             ),
@@ -300,9 +298,9 @@ class _ConstructionServicesWidgetState
                                                 BorderRadius.circular(10.0),
                                           ),
                                           filled: true,
-                                          fillColor: Color(0xFFF5F5F5),
+                                          fillColor: const Color(0xFFF5F5F5),
                                           contentPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   15.0, 15.0, 0.0, 0.0),
                                         ),
                                         style: FlutterFlowTheme.of(context)
@@ -321,7 +319,7 @@ class _ConstructionServicesWidgetState
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(-1.0, 0.0),
+                                    alignment: const AlignmentDirectional(-1.0, 0.0),
                                     child: Text(
                                       'Weight',
                                       style: FlutterFlowTheme.of(context)
@@ -336,13 +334,13 @@ class _ConstructionServicesWidgetState
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         8.0, 13.0, 8.0, 19.0),
                                     child: FlutterFlowDropDown<String>(
                                       controller:
                                           _model.dropDownValueController ??=
                                               FormFieldController<String>(null),
-                                      options: ['Option 1'],
+                                      options: const ['Option 1'],
                                       onChanged: (val) => setState(
                                           () => _model.dropDownValue = val),
                                       width: double.infinity,
@@ -378,13 +376,13 @@ class _ConstructionServicesWidgetState
                                             .secondaryText,
                                         size: 24.0,
                                       ),
-                                      fillColor: Color(0xFFF5F5F5),
+                                      fillColor: const Color(0xFFF5F5F5),
                                       elevation: 2.0,
                                       borderColor: FlutterFlowTheme.of(context)
                                           .alternate,
                                       borderWidth: 2.0,
                                       borderRadius: 8.0,
-                                      margin: EdgeInsetsDirectional.fromSTEB(
+                                      margin: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 4.0, 16.0, 4.0),
                                       hidesUnderline: true,
                                       isOverButton: true,
@@ -399,7 +397,7 @@ class _ConstructionServicesWidgetState
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-1.0, 0.0),
+                                            const AlignmentDirectional(-1.0, 0.0),
                                         child: Text(
                                           'Special Instructions',
                                           style: FlutterFlowTheme.of(context)
@@ -426,9 +424,9 @@ class _ConstructionServicesWidgetState
                                     ],
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         8.0, 13.0, 8.0, 11.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: 350.0,
                                       child: TextFormField(
                                         controller: _model.textController2,
@@ -458,7 +456,7 @@ class _ConstructionServicesWidgetState
                                                     useGoogleFonts: false,
                                                   ),
                                           enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0x009C9B9B),
                                               width: 0.1,
                                             ),
@@ -497,9 +495,9 @@ class _ConstructionServicesWidgetState
                                                 BorderRadius.circular(10.0),
                                           ),
                                           filled: true,
-                                          fillColor: Color(0xFFF5F5F5),
+                                          fillColor: const Color(0xFFF5F5F5),
                                           contentPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   15.0, 15.0, 0.0, 0.0),
                                         ),
                                         style: FlutterFlowTheme.of(context)
@@ -525,10 +523,10 @@ class _ConstructionServicesWidgetState
                                     options: FFButtonOptions(
                                       width: double.infinity,
                                       height: 60.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           24.0, 0.0, 24.0, 0.0),
                                       iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
                                       color:
                                           FlutterFlowTheme.of(context).primary,
@@ -543,7 +541,7 @@ class _ConstructionServicesWidgetState
                                             useGoogleFonts: false,
                                           ),
                                       elevation: 3.0,
-                                      borderSide: BorderSide(
+                                      borderSide: const BorderSide(
                                         color: Colors.transparent,
                                         width: 1.0,
                                       ),

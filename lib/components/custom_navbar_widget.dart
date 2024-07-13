@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'custom_navbar_model.dart';
 export 'custom_navbar_model.dart';
 
@@ -44,7 +42,7 @@ class _CustomNavbarWidgetState extends State<CustomNavbarWidget> {
       height: 86.0,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).primary,
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(5.0),
           bottomRight: Radius.circular(5.0),
           topLeft: Radius.circular(0.0),
@@ -55,7 +53,7 @@ class _CustomNavbarWidgetState extends State<CustomNavbarWidget> {
         ),
       ),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(48.0, 10.0, 48.0, 10.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(48.0, 10.0, 48.0, 10.0),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -77,11 +75,11 @@ class _CustomNavbarWidgetState extends State<CustomNavbarWidget> {
                 size: 35.0,
               ),
             ),
-            Container(
+            SizedBox(
               width: 50.0,
               height: 59.0,
               child: Stack(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 children: [
                   InkWell(
                     splashColor: Colors.transparent,
@@ -102,7 +100,7 @@ class _CustomNavbarWidgetState extends State<CustomNavbarWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(1.0, -1.0),
+                    alignment: const AlignmentDirectional(1.0, -1.0),
                     child: Container(
                       width: 22.0,
                       height: 22.0,
@@ -111,7 +109,7 @@ class _CustomNavbarWidgetState extends State<CustomNavbarWidget> {
                         shape: BoxShape.circle,
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Text(
                           '5',
                           style:

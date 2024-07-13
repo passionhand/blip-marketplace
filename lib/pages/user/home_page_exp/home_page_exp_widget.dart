@@ -3,11 +3,8 @@ import '/components/featured_products_widget.dart';
 import '/components/service_item_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'home_page_exp_model.dart';
 export 'home_page_exp_model.dart';
 
@@ -62,7 +59,7 @@ class _HomePageExpWidgetState extends State<HomePageExpWidget> {
                 ),
               ),
               actions: [
-                Padding(
+                const Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 25.0, 0.0),
                   child: Icon(
                     Icons.notifications_none,
@@ -71,7 +68,7 @@ class _HomePageExpWidgetState extends State<HomePageExpWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 25.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 25.0, 0.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -85,9 +82,9 @@ class _HomePageExpWidgetState extends State<HomePageExpWidget> {
                       await authManager.signOut();
                       GoRouter.of(context).clearRedirectLocation();
 
-                      context.goNamedAuth('signup', context.mounted);
+                      context.goNamedAuth('Splash1', context.mounted);
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.person,
                       color: Colors.white,
                       size: 24.0,
@@ -104,11 +101,11 @@ class _HomePageExpWidgetState extends State<HomePageExpWidget> {
                 children: [
                   Flexible(
                     child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
+                      padding: const EdgeInsetsDirectional.fromSTEB(
                           20.0, 25.0, 20.0, 35.0),
                       child: GridView(
                         padding: EdgeInsets.zero,
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 3,
                           crossAxisSpacing: 10.0,
                           mainAxisSpacing: 10.0,
@@ -123,21 +120,21 @@ class _HomePageExpWidgetState extends State<HomePageExpWidget> {
                             child: ServiceItemWidget(
                               image:
                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/o47uhjdhpx83/service1.svg',
-                              service: 'Medical\nSupplies',
-                              backColor: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
-                              showFav: false,
+                              service: 'Medical Supplies',
+                              backgroundColor: FlutterFlowTheme.of(context)
+                                  .primaryBackground,
                             ),
                           ),
                           wrapWithModel(
                             model: _model.serviceItemModel2,
                             updateCallback: () => setState(() {}),
+                            updateOnChange: true,
                             child: ServiceItemWidget(
                               image:
                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/lyquxc1q1nwh/service2.svg',
                               service: 'Food &\nBeverages',
-                              backColor: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
+                              backgroundColor: FlutterFlowTheme.of(context)
+                                  .primaryBackground,
                             ),
                           ),
                           wrapWithModel(
@@ -147,8 +144,8 @@ class _HomePageExpWidgetState extends State<HomePageExpWidget> {
                               image:
                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/vfzeyf3tj3t6/service3.svg',
                               service: 'Flowers and\nGifts',
-                              backColor: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
+                              backgroundColor: FlutterFlowTheme.of(context)
+                                  .primaryBackground,
                             ),
                           ),
                           wrapWithModel(
@@ -158,9 +155,8 @@ class _HomePageExpWidgetState extends State<HomePageExpWidget> {
                               image:
                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/2fgc3gdh8yhv/service4.svg',
                               service: 'Pet Supplies',
-                              backColor: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
-                              showFav: false,
+                              backgroundColor: FlutterFlowTheme.of(context)
+                                  .primaryBackground,
                             ),
                           ),
                           wrapWithModel(
@@ -170,9 +166,8 @@ class _HomePageExpWidgetState extends State<HomePageExpWidget> {
                               image:
                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/pf8gcxslnimv/service5.svg',
                               service: 'Electronics',
-                              backColor: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
-                              showFav: false,
+                              backgroundColor: FlutterFlowTheme.of(context)
+                                  .primaryBackground,
                             ),
                           ),
                           wrapWithModel(
@@ -182,8 +177,8 @@ class _HomePageExpWidgetState extends State<HomePageExpWidget> {
                               image:
                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/slaux4318dgn/service6.svg',
                               service: 'Groceries',
-                              backColor: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
+                              backgroundColor: FlutterFlowTheme.of(context)
+                                  .primaryBackground,
                             ),
                           ),
                         ],
@@ -193,107 +188,123 @@ class _HomePageExpWidgetState extends State<HomePageExpWidget> {
                   Flexible(
                     child: Container(
                       width: double.infinity,
+                      height: 650.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        borderRadius: BorderRadius.circular(30.0),
+                        borderRadius: const BorderRadius.only(
+                          bottomLeft: Radius.circular(5.0),
+                          bottomRight: Radius.circular(5.0),
+                          topLeft: Radius.circular(30.0),
+                          topRight: Radius.circular(30.0),
+                        ),
                       ),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                25.0, 40.0, 25.0, 20.0),
-                            child: SingleChildScrollView(
-                              scrollDirection: Axis.horizontal,
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  wrapWithModel(
-                                    model: _model.featuredProductsModel1,
-                                    updateCallback: () => setState(() {}),
-                                    child: FeaturedProductsWidget(
-                                      imgUrl:
-                                          'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/9oarinrmn79d/burger.png',
-                                      name: 'Burger',
-                                      description: 'Lorem ipsum dolor sit amet',
-                                      prize: 30,
-                                      soldOut: false,
+                          Flexible(
+                            child: Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  25.0, 40.0, 25.0, 20.0),
+                              child: SingleChildScrollView(
+                                scrollDirection: Axis.horizontal,
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    wrapWithModel(
+                                      model: _model.featuredProductsModel1,
+                                      updateCallback: () => setState(() {}),
+                                      child: const FeaturedProductsWidget(
+                                        imgUrl:
+                                            'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/9oarinrmn79d/burger.png',
+                                        name: 'Burger',
+                                        description:
+                                            'Lorem ipsum dolor sit amet',
+                                        prize: 30,
+                                        soldOut: false,
+                                      ),
                                     ),
-                                  ),
-                                  wrapWithModel(
-                                    model: _model.featuredProductsModel2,
-                                    updateCallback: () => setState(() {}),
-                                    child: FeaturedProductsWidget(
-                                      imgUrl:
-                                          'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/z10adsx3xq2w/medicine.png',
-                                      name: 'Medicine',
-                                      description: 'Lorem ipsum dolor sit amet',
-                                      prize: 30,
-                                      soldOut: false,
+                                    wrapWithModel(
+                                      model: _model.featuredProductsModel2,
+                                      updateCallback: () => setState(() {}),
+                                      child: const FeaturedProductsWidget(
+                                        imgUrl:
+                                            'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/z10adsx3xq2w/medicine.png',
+                                        name: 'Medicine',
+                                        description:
+                                            'Lorem ipsum dolor sit amet',
+                                        prize: 30,
+                                        soldOut: false,
+                                      ),
                                     ),
-                                  ),
-                                  wrapWithModel(
-                                    model: _model.featuredProductsModel3,
-                                    updateCallback: () => setState(() {}),
-                                    child: FeaturedProductsWidget(
-                                      imgUrl:
-                                          'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/5u9bs5q4opdc/drink.png',
-                                      name: 'Soft Drink',
-                                      description: 'Lorem ipsum dolor sit amet',
-                                      prize: 30,
-                                      soldOut: false,
+                                    wrapWithModel(
+                                      model: _model.featuredProductsModel3,
+                                      updateCallback: () => setState(() {}),
+                                      child: const FeaturedProductsWidget(
+                                        imgUrl:
+                                            'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/5u9bs5q4opdc/drink.png',
+                                        name: 'Soft Drink',
+                                        description:
+                                            'Lorem ipsum dolor sit amet',
+                                        prize: 30,
+                                        soldOut: false,
+                                      ),
                                     ),
-                                  ),
-                                ].divide(SizedBox(width: 15.0)),
+                                  ].divide(const SizedBox(width: 15.0)),
+                                ),
                               ),
                             ),
                           ),
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                25.0, 40.0, 25.0, 20.0),
-                            child: SingleChildScrollView(
-                              scrollDirection: Axis.horizontal,
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  wrapWithModel(
-                                    model: _model.featuredProductsModel4,
-                                    updateCallback: () => setState(() {}),
-                                    child: FeaturedProductsWidget(
-                                      imgUrl:
-                                          'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/6gw8nie5sl5i/water.png',
-                                      name: 'Water',
-                                      description: 'Lorem ipsum dolor sit amet',
-                                      prize: 30,
-                                      soldOut: false,
+                          Flexible(
+                            child: Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  25.0, 40.0, 25.0, 20.0),
+                              child: SingleChildScrollView(
+                                scrollDirection: Axis.horizontal,
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    wrapWithModel(
+                                      model: _model.featuredProductsModel4,
+                                      updateCallback: () => setState(() {}),
+                                      child: const FeaturedProductsWidget(
+                                        imgUrl:
+                                            'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/6gw8nie5sl5i/water.png',
+                                        name: 'Water',
+                                        description:
+                                            'Lorem ipsum dolor sit amet',
+                                        prize: 30,
+                                        soldOut: false,
+                                      ),
                                     ),
-                                  ),
-                                  wrapWithModel(
-                                    model: _model.featuredProductsModel5,
-                                    updateCallback: () => setState(() {}),
-                                    child: FeaturedProductsWidget(
-                                      imgUrl:
-                                          'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/wkvbaguxd2dh/toilet_paper.png',
-                                      name: 'Toilet Paper',
-                                      description: 'Lorem ipsum dolor sit amet',
-                                      prize: 30,
-                                      soldOut: false,
+                                    wrapWithModel(
+                                      model: _model.featuredProductsModel5,
+                                      updateCallback: () => setState(() {}),
+                                      child: const FeaturedProductsWidget(
+                                        imgUrl:
+                                            'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/wkvbaguxd2dh/toilet_paper.png',
+                                        name: 'Toilet Paper',
+                                        description:
+                                            'Lorem ipsum dolor sit amet',
+                                        prize: 30,
+                                        soldOut: false,
+                                      ),
                                     ),
-                                  ),
-                                  wrapWithModel(
-                                    model: _model.featuredProductsModel6,
-                                    updateCallback: () => setState(() {}),
-                                    child: FeaturedProductsWidget(
-                                      imgUrl:
-                                          'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/fle489vyzsp3/detergent.png',
-                                      name: 'Detergent',
-                                      description: 'Lorem ipsum dolor sit amet',
-                                      prize: 30,
-                                      soldOut: false,
+                                    wrapWithModel(
+                                      model: _model.featuredProductsModel6,
+                                      updateCallback: () => setState(() {}),
+                                      child: const FeaturedProductsWidget(
+                                        imgUrl:
+                                            'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/fle489vyzsp3/detergent.png',
+                                        name: 'Detergent',
+                                        description:
+                                            'Lorem ipsum dolor sit amet',
+                                        prize: 30,
+                                        soldOut: false,
+                                      ),
                                     ),
-                                  ),
-                                ].divide(SizedBox(width: 15.0)),
+                                  ].divide(const SizedBox(width: 15.0)),
+                                ),
                               ),
                             ),
                           ),

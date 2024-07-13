@@ -10,8 +10,6 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'product_selections_model.dart';
 export 'product_selections_model.dart';
 
@@ -85,20 +83,20 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
               title: wrapWithModel(
                 model: _model.searchModel,
                 updateCallback: () => setState(() {}),
-                child: SearchWidget(),
+                child: const SearchWidget(),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 0.0,
             ),
-            body: Container(
+            body: SizedBox(
               height: double.infinity,
               child: Stack(
-                alignment: AlignmentDirectional(0.0, 1.0),
+                alignment: const AlignmentDirectional(0.0, 1.0),
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.end,
@@ -107,7 +105,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                           child: Column(
                             children: [
                               Align(
-                                alignment: Alignment(0.0, 0),
+                                alignment: const Alignment(0.0, 0),
                                 child: FlutterFlowButtonTabBar(
                                   useToggleButtonStyle: false,
                                   isScrollable: true,
@@ -118,11 +116,11 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                         letterSpacing: 0.0,
                                         useGoogleFonts: false,
                                       ),
-                                  unselectedLabelStyle: TextStyle(),
+                                  unselectedLabelStyle: const TextStyle(),
                                   labelColor: FlutterFlowTheme.of(context)
                                       .primaryBackground,
-                                  unselectedLabelColor: Color(0xFF252525),
-                                  backgroundColor: Color(0xFF252525),
+                                  unselectedLabelColor: const Color(0xFF252525),
+                                  backgroundColor: const Color(0xFF252525),
                                   unselectedBackgroundColor:
                                       FlutterFlowTheme.of(context)
                                           .primaryBackground,
@@ -133,11 +131,11 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                   borderWidth: 0.0,
                                   borderRadius: 25.0,
                                   elevation: 0.0,
-                                  labelPadding: EdgeInsetsDirectional.fromSTEB(
+                                  labelPadding: const EdgeInsetsDirectional.fromSTEB(
                                       20.0, 0.0, 20.0, 0.0),
-                                  buttonMargin: EdgeInsetsDirectional.fromSTEB(
+                                  buttonMargin: const EdgeInsetsDirectional.fromSTEB(
                                       10.0, 0.0, 10.0, 0.0),
-                                  tabs: [
+                                  tabs: const [
                                     Tab(
                                       text: 'Medical',
                                     ),
@@ -168,14 +166,14 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                   children: [
                                     KeepAliveWidgetWrapper(
                                       builder: (context) => Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 86.0),
                                         child: SingleChildScrollView(
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         21.0, 10.0, 0.0, 20.0),
                                                 child: Row(
@@ -186,7 +184,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   3.0,
@@ -199,7 +197,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                                 .dropDownValueController1 ??=
                                                             FormFieldController<
                                                                 String>(null),
-                                                        options: ['Option 1'],
+                                                        options: const ['Option 1'],
                                                         onChanged: (val) =>
                                                             setState(() => _model
                                                                     .dropDownValue1 =
@@ -266,7 +264,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         borderWidth: 0.0,
                                                         borderRadius: 10.0,
                                                         margin:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     13.0,
                                                                     4.0,
@@ -280,7 +278,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   3.0,
@@ -293,7 +291,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                                 .dropDownValueController2 ??=
                                                             FormFieldController<
                                                                 String>(null),
-                                                        options: ['Option 1'],
+                                                        options: const ['Option 1'],
                                                         onChanged: (val) =>
                                                             setState(() => _model
                                                                     .dropDownValue2 =
@@ -360,7 +358,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         borderWidth: 0.0,
                                                         borderRadius: 10.0,
                                                         margin:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     13.0,
                                                                     4.0,
@@ -374,7 +372,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   3.0,
@@ -387,7 +385,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                                 .dropDownValueController3 ??=
                                                             FormFieldController<
                                                                 String>(null),
-                                                        options: ['Option 1'],
+                                                        options: const ['Option 1'],
                                                         onChanged: (val) =>
                                                             setState(() => _model
                                                                     .dropDownValue3 =
@@ -454,7 +452,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         borderWidth: 0.0,
                                                         borderRadius: 10.0,
                                                         margin:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     13.0,
                                                                     4.0,
@@ -470,7 +468,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 0.0, 0.0, 0.0),
                                                 child: SingleChildScrollView(
@@ -486,7 +484,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         updateCallback: () =>
                                                             setState(() {}),
                                                         child:
-                                                            FeaturedProductWidget(
+                                                            const FeaturedProductWidget(
                                                           imgUrl:
                                                               'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/3h2m8h83x8vm/Herbakof.png',
                                                           name: 'Herbakof',
@@ -502,7 +500,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         updateCallback: () =>
                                                             setState(() {}),
                                                         child:
-                                                            FeaturedProductWidget(
+                                                            const FeaturedProductWidget(
                                                           imgUrl:
                                                               'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/s4zq14gp0iay/Interlac.png',
                                                           name: 'Interlac',
@@ -518,7 +516,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         updateCallback: () =>
                                                             setState(() {}),
                                                         child:
-                                                            FeaturedProductWidget(
+                                                            const FeaturedProductWidget(
                                                           imgUrl:
                                                               'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/2y9k1yda87qp/HerbaVit.png',
                                                           name: 'HerbaVomit',
@@ -529,12 +527,12 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 12.0)),
+                                                        const SizedBox(width: 12.0)),
                                                   ),
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 12.0, 0.0, 0.0),
                                                 child: SingleChildScrollView(
@@ -550,7 +548,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         updateCallback: () =>
                                                             setState(() {}),
                                                         child:
-                                                            FeaturedProductWidget(
+                                                            const FeaturedProductWidget(
                                                           imgUrl:
                                                               'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/ogzzj16snelz/Stozzon.png',
                                                           name: 'Herbakof',
@@ -566,7 +564,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         updateCallback: () =>
                                                             setState(() {}),
                                                         child:
-                                                            FeaturedProductWidget(
+                                                            const FeaturedProductWidget(
                                                           imgUrl:
                                                               'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/juolz3neasi1/Pharmox.png',
                                                           name: 'Interlac',
@@ -582,7 +580,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         updateCallback: () =>
                                                             setState(() {}),
                                                         child:
-                                                            FeaturedProductWidget(
+                                                            const FeaturedProductWidget(
                                                           imgUrl:
                                                               'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/nsqwu1eydimz/Ginggo.png',
                                                           name: 'HerbaVomit',
@@ -593,12 +591,12 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 12.0)),
+                                                        const SizedBox(width: 12.0)),
                                                   ),
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 27.0, 20.0, 23.0),
                                                 child: FFButtonWidget(
@@ -610,11 +608,11 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                     width: double.infinity,
                                                     height: 60.0,
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(24.0, 0.0,
                                                                 24.0, 0.0),
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
                                                     color: FlutterFlowTheme.of(
@@ -634,7 +632,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                           useGoogleFonts: false,
                                                         ),
                                                     elevation: 3.0,
-                                                    borderSide: BorderSide(
+                                                    borderSide: const BorderSide(
                                                       color: Colors.transparent,
                                                       width: 1.0,
                                                     ),
@@ -651,14 +649,14 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                     ),
                                     KeepAliveWidgetWrapper(
                                       builder: (context) => Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 5.0, 0.0, 86.0),
                                         child: SingleChildScrollView(
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 7.0, 0.0, 0.0),
                                                 child: ClipRRect(
@@ -674,10 +672,10 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                 ),
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, 0.0),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           25.0, 20.0, 0.0, 0.0),
                                                   child: Text(
@@ -698,10 +696,10 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                 ),
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, -1.0),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(25.0, 20.0, 0.0,
                                                           14.0),
                                                   child: Text(
@@ -726,7 +724,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                 width: 355.0,
                                                 height: 48.0,
                                                 decoration: BoxDecoration(
-                                                  color: Color(0xFFCACACA),
+                                                  color: const Color(0xFFCACACA),
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           5.0),
@@ -737,7 +735,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   20.0,
                                                                   0.0,
@@ -776,7 +774,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 28.0, 0.0, 0.0),
                                                 child: Container(
@@ -792,7 +790,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 9.0),
                                                     child: Column(
@@ -801,7 +799,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                       children: [
                                                         Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   -1.0, 0.0),
                                                           child: Text(
                                                             'Description',
@@ -825,7 +823,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       11.0,
@@ -851,7 +849,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                   ),
                                                 ),
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 width: 354.0,
                                                 child: Divider(
                                                   height: 0.0,
@@ -860,7 +858,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 17.0, 0.0, 17.0),
                                                 child: Container(
@@ -880,7 +878,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                     children: [
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 -1.0, 0.0),
                                                         child: Text(
                                                           'Nutritional Info:',
@@ -903,11 +901,11 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                       ),
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 -1.0, 0.0),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       11.0,
@@ -934,7 +932,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 16.0),
                                                 child: FFButtonWidget(
@@ -942,7 +940,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                     print('Button pressed ...');
                                                   },
                                                   text: 'ADD TO BAG',
-                                                  icon: FaIcon(
+                                                  icon: const FaIcon(
                                                     FontAwesomeIcons
                                                         .cartArrowDown,
                                                   ),
@@ -950,11 +948,11 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                     width: 355.0,
                                                     height: 60.0,
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(24.0, 0.0,
                                                                 24.0, 0.0),
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
                                                     color: FlutterFlowTheme.of(
@@ -974,7 +972,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                           useGoogleFonts: false,
                                                         ),
                                                     elevation: 3.0,
-                                                    borderSide: BorderSide(
+                                                    borderSide: const BorderSide(
                                                       color: Colors.transparent,
                                                       width: 1.0,
                                                     ),
@@ -991,14 +989,14 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                     ),
                                     KeepAliveWidgetWrapper(
                                       builder: (context) => Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 86.0),
                                         child: SingleChildScrollView(
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         21.0, 10.0, 0.0, 20.0),
                                                 child: Row(
@@ -1009,7 +1007,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   3.0,
@@ -1022,7 +1020,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                                 .dropDownValueController4 ??=
                                                             FormFieldController<
                                                                 String>(null),
-                                                        options: ['Option 1'],
+                                                        options: const ['Option 1'],
                                                         onChanged: (val) =>
                                                             setState(() => _model
                                                                     .dropDownValue4 =
@@ -1089,7 +1087,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         borderWidth: 0.0,
                                                         borderRadius: 10.0,
                                                         margin:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     13.0,
                                                                     4.0,
@@ -1103,7 +1101,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   3.0,
@@ -1116,7 +1114,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                                 .dropDownValueController5 ??=
                                                             FormFieldController<
                                                                 String>(null),
-                                                        options: ['Option 1'],
+                                                        options: const ['Option 1'],
                                                         onChanged: (val) =>
                                                             setState(() => _model
                                                                     .dropDownValue5 =
@@ -1183,7 +1181,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         borderWidth: 0.0,
                                                         borderRadius: 10.0,
                                                         margin:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     13.0,
                                                                     4.0,
@@ -1197,7 +1195,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   3.0,
@@ -1210,7 +1208,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                                 .dropDownValueController6 ??=
                                                             FormFieldController<
                                                                 String>(null),
-                                                        options: ['Option 1'],
+                                                        options: const ['Option 1'],
                                                         onChanged: (val) =>
                                                             setState(() => _model
                                                                     .dropDownValue6 =
@@ -1277,7 +1275,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         borderWidth: 0.0,
                                                         borderRadius: 10.0,
                                                         margin:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     13.0,
                                                                     4.0,
@@ -1293,7 +1291,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 0.0, 0.0, 0.0),
                                                 child: SingleChildScrollView(
@@ -1310,7 +1308,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                           updateCallback: () =>
                                                               setState(() {}),
                                                           child:
-                                                              FeaturedProductWidget(
+                                                              const FeaturedProductWidget(
                                                             imgUrl:
                                                                 'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/3h2m8h83x8vm/Herbakof.png',
                                                             name: 'Herbakof',
@@ -1327,7 +1325,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         updateCallback: () =>
                                                             setState(() {}),
                                                         child:
-                                                            FeaturedProductWidget(
+                                                            const FeaturedProductWidget(
                                                           imgUrl:
                                                               'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/s4zq14gp0iay/Interlac.png',
                                                           name: 'Interlac',
@@ -1343,7 +1341,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         updateCallback: () =>
                                                             setState(() {}),
                                                         child:
-                                                            FeaturedProductWidget(
+                                                            const FeaturedProductWidget(
                                                           imgUrl:
                                                               'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/2y9k1yda87qp/HerbaVit.png',
                                                           name: 'HerbaVomit',
@@ -1354,12 +1352,12 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 12.0)),
+                                                        const SizedBox(width: 12.0)),
                                                   ),
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 12.0, 0.0, 0.0),
                                                 child: SingleChildScrollView(
@@ -1375,7 +1373,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         updateCallback: () =>
                                                             setState(() {}),
                                                         child:
-                                                            FeaturedProductWidget(
+                                                            const FeaturedProductWidget(
                                                           imgUrl:
                                                               'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/ogzzj16snelz/Stozzon.png',
                                                           name: 'Herbakof',
@@ -1391,7 +1389,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         updateCallback: () =>
                                                             setState(() {}),
                                                         child:
-                                                            FeaturedProductWidget(
+                                                            const FeaturedProductWidget(
                                                           imgUrl:
                                                               'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/juolz3neasi1/Pharmox.png',
                                                           name: 'Interlac',
@@ -1407,7 +1405,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         updateCallback: () =>
                                                             setState(() {}),
                                                         child:
-                                                            FeaturedProductWidget(
+                                                            const FeaturedProductWidget(
                                                           imgUrl:
                                                               'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/nsqwu1eydimz/Ginggo.png',
                                                           name: 'HerbaVomit',
@@ -1418,12 +1416,12 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(width: 12.0)),
+                                                        const SizedBox(width: 12.0)),
                                                   ),
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 27.0, 20.0, 23.0),
                                                 child: FFButtonWidget(
@@ -1435,11 +1433,11 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                     width: double.infinity,
                                                     height: 60.0,
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(24.0, 0.0,
                                                                 24.0, 0.0),
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
                                                     color: FlutterFlowTheme.of(
@@ -1459,7 +1457,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                                                           useGoogleFonts: false,
                                                         ),
                                                     elevation: 3.0,
-                                                    borderSide: BorderSide(
+                                                    borderSide: const BorderSide(
                                                       color: Colors.transparent,
                                                       width: 1.0,
                                                     ),
@@ -1489,7 +1487,7 @@ class _ProductSelectionsWidgetState extends State<ProductSelectionsWidget>
                   wrapWithModel(
                     model: _model.customNavbarModel,
                     updateCallback: () => setState(() {}),
-                    child: CustomNavbarWidget(),
+                    child: const CustomNavbarWidget(),
                   ),
                 ],
               ),

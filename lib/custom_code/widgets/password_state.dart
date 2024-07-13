@@ -1,8 +1,8 @@
 // Automatic FlutterFlow imports
-import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'index.dart'; // Imports other custom widgets
+import '/custom_code/actions/index.dart'; // Imports custom actions
 import 'package:flutter/material.dart';
 // Begin custom widget code
 // DO NOT REMOVE OR MODIFY THE CODE ABOVE!
@@ -81,17 +81,19 @@ class _PasswordStateState extends State<PasswordState> {
     }
 
     return Container(
-      width: widget.width,
-      height: widget.height,
+      width: double.infinity,
+      padding: EdgeInsets.all(8.0),
       child: Column(
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: List.generate(5, (index) {
-              return Container(
-                width: widget.width != null ? (widget.width! / 5) - 4 : 50,
-                height: 3,
-                color: colors[index],
+              return Expanded(
+                child: Container(
+                  margin: EdgeInsets.symmetric(horizontal: 2),
+                  height: 3,
+                  color: colors[index],
+                ),
               );
             }),
           ),

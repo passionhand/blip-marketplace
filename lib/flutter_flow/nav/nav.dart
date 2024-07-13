@@ -1,22 +1,13 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
-import '/backend/backend.dart';
 
 import '/auth/base_auth_user_provider.dart';
 
-import '/backend/push_notifications/push_notifications_handler.dart'
-    show PushNotificationsHandler;
 import '/index.dart';
-import '/main.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -81,228 +72,223 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? HomePageExpWidget() : SignupWidget(),
+          appStateNotifier.loggedIn ? const HomePageExpWidget() : const Splash1Widget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? HomePageExpWidget() : SignupWidget(),
+              appStateNotifier.loggedIn ? const HomePageExpWidget() : const Splash1Widget(),
         ),
         FFRoute(
           name: 'HomePage',
           path: '/homePage',
-          builder: (context, params) => HomePageWidget(),
+          builder: (context, params) => const HomePageWidget(),
         ),
         FFRoute(
           name: 'Splash1',
           path: '/splash1',
-          builder: (context, params) => Splash1Widget(),
+          builder: (context, params) => const Splash1Widget(),
         ),
         FFRoute(
           name: 'Splash2',
           path: '/splash2',
-          builder: (context, params) => Splash2Widget(),
+          builder: (context, params) => const Splash2Widget(),
         ),
         FFRoute(
           name: 'Splash3',
           path: '/splash3',
-          builder: (context, params) => Splash3Widget(),
+          builder: (context, params) => const Splash3Widget(),
         ),
         FFRoute(
           name: 'signup',
           path: '/signup',
-          builder: (context, params) => SignupWidget(),
+          builder: (context, params) => const SignupWidget(),
         ),
         FFRoute(
           name: 'login',
           path: '/login',
-          builder: (context, params) => LoginWidget(),
+          builder: (context, params) => const LoginWidget(),
         ),
         FFRoute(
           name: 'HomePageExp',
           path: '/homePageExp',
-          builder: (context, params) => HomePageExpWidget(),
+          builder: (context, params) => const HomePageExpWidget(),
         ),
         FFRoute(
           name: 'ProductSearch',
           path: '/productSearch',
-          builder: (context, params) => ProductSearchWidget(),
+          builder: (context, params) => const ProductSearchWidget(),
         ),
         FFRoute(
           name: 'ServiceSearch',
           path: '/serviceSearch',
-          builder: (context, params) => ServiceSearchWidget(),
+          builder: (context, params) => const ServiceSearchWidget(),
         ),
         FFRoute(
           name: 'RestSearch',
           path: '/restSearch',
-          builder: (context, params) => RestSearchWidget(),
+          builder: (context, params) => const RestSearchWidget(),
         ),
         FFRoute(
           name: 'SearchResult',
           path: '/searchResult',
-          builder: (context, params) => SearchResultWidget(),
+          builder: (context, params) => const SearchResultWidget(),
         ),
         FFRoute(
           name: 'OrderScreen',
           path: '/orderScreen',
-          builder: (context, params) => OrderScreenWidget(),
+          builder: (context, params) => const OrderScreenWidget(),
         ),
         FFRoute(
           name: 'ProfilePage',
           path: '/profilePage',
-          builder: (context, params) => ProfilePageWidget(),
+          builder: (context, params) => const ProfilePageWidget(),
         ),
         FFRoute(
           name: 'ReadMePage',
           path: '/readMePage',
-          builder: (context, params) => ReadMePageWidget(),
+          builder: (context, params) => const ReadMePageWidget(),
         ),
         FFRoute(
           name: 'SupportPage',
           path: '/supportPage',
-          builder: (context, params) => SupportPageWidget(),
+          builder: (context, params) => const SupportPageWidget(),
         ),
         FFRoute(
           name: 'SupportTicket',
           path: '/supportTicket',
-          builder: (context, params) => SupportTicketWidget(),
+          builder: (context, params) => const SupportTicketWidget(),
         ),
         FFRoute(
           name: 'Settings',
           path: '/settings',
-          builder: (context, params) => SettingsWidget(),
+          builder: (context, params) => const SettingsWidget(),
         ),
         FFRoute(
           name: 'Electronic',
           path: '/electronic',
-          builder: (context, params) => ElectronicWidget(),
+          builder: (context, params) => const ElectronicWidget(),
         ),
         FFRoute(
           name: 'Groceries',
           path: '/groceries',
-          builder: (context, params) => GroceriesWidget(),
+          builder: (context, params) => const GroceriesWidget(),
         ),
         FFRoute(
           name: 'PersonalCareItems',
           path: '/personalCareItems',
-          builder: (context, params) => PersonalCareItemsWidget(),
+          builder: (context, params) => const PersonalCareItemsWidget(),
         ),
         FFRoute(
           name: 'Hardware',
           path: '/hardware',
-          builder: (context, params) => HardwareWidget(),
+          builder: (context, params) => const HardwareWidget(),
         ),
         FFRoute(
           name: 'OfficeSupplies',
           path: '/officeSupplies',
-          builder: (context, params) => OfficeSuppliesWidget(),
+          builder: (context, params) => const OfficeSuppliesWidget(),
         ),
         FFRoute(
           name: 'HouseholdSupplies',
           path: '/householdSupplies',
-          builder: (context, params) => HouseholdSuppliesWidget(),
+          builder: (context, params) => const HouseholdSuppliesWidget(),
         ),
         FFRoute(
           name: 'FoodBeverages',
           path: '/foodBeverages',
-          builder: (context, params) => FoodBeveragesWidget(),
+          builder: (context, params) => const FoodBeveragesWidget(),
         ),
         FFRoute(
           name: 'FlowersGifts',
           path: '/flowersGifts',
-          builder: (context, params) => FlowersGiftsWidget(),
+          builder: (context, params) => const FlowersGiftsWidget(),
         ),
         FFRoute(
           name: 'PetSupplies',
           path: '/petSupplies',
-          builder: (context, params) => PetSuppliesWidget(),
+          builder: (context, params) => const PetSuppliesWidget(),
         ),
         FFRoute(
           name: 'MedicalSupplies',
           path: '/medicalSupplies',
-          builder: (context, params) => MedicalSuppliesWidget(),
+          builder: (context, params) => const MedicalSuppliesWidget(),
         ),
         FFRoute(
           name: 'ProductSelections',
           path: '/productSelections',
-          builder: (context, params) => ProductSelectionsWidget(),
+          builder: (context, params) => const ProductSelectionsWidget(),
         ),
         FFRoute(
           name: 'ProductSelection',
           path: '/productSelection',
-          builder: (context, params) => ProductSelectionWidget(),
+          builder: (context, params) => const ProductSelectionWidget(),
         ),
         FFRoute(
           name: 'ConstructionServices',
           path: '/constructionServices',
-          builder: (context, params) => ConstructionServicesWidget(),
+          builder: (context, params) => const ConstructionServicesWidget(),
         ),
         FFRoute(
           name: 'CourierServices',
           path: '/courierServices',
-          builder: (context, params) => CourierServicesWidget(),
+          builder: (context, params) => const CourierServicesWidget(),
         ),
         FFRoute(
           name: 'popupkeyboard',
           path: '/popupkeyboard',
-          builder: (context, params) => PopupkeyboardWidget(),
+          builder: (context, params) => const PopupkeyboardWidget(),
         ),
         FFRoute(
           name: 'pickuplocation',
           path: '/pickuplocation',
-          builder: (context, params) => PickuplocationWidget(),
+          builder: (context, params) => const PickuplocationWidget(),
         ),
         FFRoute(
           name: 'dropofflocation',
           path: '/dropofflocation',
-          builder: (context, params) => DropofflocationWidget(),
+          builder: (context, params) => const DropofflocationWidget(),
         ),
         FFRoute(
           name: 'confirmation',
           path: '/confirmation',
-          builder: (context, params) => ConfirmationWidget(),
+          builder: (context, params) => const ConfirmationWidget(),
         ),
         FFRoute(
           name: 'securityservice',
           path: '/securityservice',
-          builder: (context, params) => SecurityserviceWidget(),
+          builder: (context, params) => const SecurityserviceWidget(),
         ),
         FFRoute(
           name: 'Constructionconfirmationpage',
           path: '/constructionconfirmationpage',
-          builder: (context, params) => ConstructionconfirmationpageWidget(),
+          builder: (context, params) => const ConstructionconfirmationpageWidget(),
         ),
         FFRoute(
           name: 'SecurityService1',
           path: '/securityService1',
-          builder: (context, params) => SecurityService1Widget(),
+          builder: (context, params) => const SecurityService1Widget(),
         ),
         FFRoute(
           name: 'DeploymentRequest',
           path: '/deploymentRequest',
-          builder: (context, params) => DeploymentRequestWidget(),
+          builder: (context, params) => const DeploymentRequestWidget(),
         ),
         FFRoute(
           name: 'Notification',
           path: '/notification',
-          builder: (context, params) => NotificationWidget(),
+          builder: (context, params) => const NotificationWidget(),
         ),
         FFRoute(
           name: 'Payment',
           path: '/payment',
-          builder: (context, params) => PaymentWidget(),
+          builder: (context, params) => const PaymentWidget(),
         ),
         FFRoute(
           name: 'googlepay',
           path: '/googlepay',
-          builder: (context, params) => GooglepayWidget(),
-        ),
-        FFRoute(
-          name: 'droneDeploy',
-          path: '/droneDeploy',
-          builder: (context, params) => DroneDeployWidget(),
+          builder: (context, params) => const GooglepayWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -421,7 +407,6 @@ class FFParameters {
     String paramName,
     ParamType type, {
     bool isList = false,
-    List<String>? collectionNamePath,
   }) {
     if (futureParamValues.containsKey(paramName)) {
       return futureParamValues[paramName];
@@ -439,7 +424,6 @@ class FFParameters {
       param,
       type,
       isList,
-      collectionNamePath: collectionNamePath,
     );
   }
 }
@@ -473,7 +457,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.uri.toString());
-            return '/signup';
+            return '/splash1';
           }
           return null;
         },
@@ -498,7 +482,7 @@ class FFRoute {
                     ),
                   ),
                 )
-              : PushNotificationsHandler(child: page);
+              : page;
 
           final transitionInfo = state.transitionInfo;
           return transitionInfo.hasTransition
@@ -540,7 +524,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

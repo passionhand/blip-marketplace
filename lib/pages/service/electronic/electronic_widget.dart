@@ -4,10 +4,7 @@ import '/components/menu_item_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'electronic_model.dart';
 export 'electronic_model.dart';
 
@@ -59,7 +56,7 @@ class _ElectronicWidgetState extends State<ElectronicWidget> {
                 borderRadius: 30.0,
                 borderWidth: 1.0,
                 buttonSize: 60.0,
-                icon: Icon(
+                icon: const Icon(
                   Icons.chevron_left,
                   color: Colors.white,
                   size: 24.0,
@@ -80,30 +77,31 @@ class _ElectronicWidgetState extends State<ElectronicWidget> {
                       useGoogleFonts: false,
                     ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 0.0,
             ),
             body: Stack(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               children: [
                 SingleChildScrollView(
+                  primary: false,
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 10.0, 20.0, 20.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 15.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.menuItemModel1,
                                 updateCallback: () => setState(() {}),
-                                child: MenuItemWidget(
+                                child: const MenuItemWidget(
                                   imgwidth: 22.0,
                                   imgheight: 39.0,
                                   imgpath:
@@ -114,30 +112,32 @@ class _ElectronicWidgetState extends State<ElectronicWidget> {
                                 ),
                               ),
                             ),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 26.0, 0.0),
-                              child: wrapWithModel(
-                                model: _model.menuItemModel2,
-                                updateCallback: () => setState(() {}),
-                                child: MenuItemWidget(
-                                  imgwidth: 47.0,
-                                  imgheight: 32.0,
-                                  imgpath:
-                                      'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/k1dnyndwcdba/Laptops.png',
-                                  itemName: 'Laptops\n',
-                                  componentWidth: 79.0,
-                                  componentHeight: 83.0,
+                            Flexible(
+                              child: Padding(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 26.0, 0.0),
+                                child: wrapWithModel(
+                                  model: _model.menuItemModel2,
+                                  updateCallback: () => setState(() {}),
+                                  child: const MenuItemWidget(
+                                    imgwidth: 47.0,
+                                    imgheight: 32.0,
+                                    imgpath:
+                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/k1dnyndwcdba/Laptops.png',
+                                    itemName: 'Laptops\n',
+                                    componentWidth: 79.0,
+                                    componentHeight: 83.0,
+                                  ),
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 25.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.menuItemModel3,
                                 updateCallback: () => setState(() {}),
-                                child: MenuItemWidget(
+                                child: const MenuItemWidget(
                                   imgwidth: 44.0,
                                   imgheight: 38.0,
                                   imgpath:
@@ -149,11 +149,11 @@ class _ElectronicWidgetState extends State<ElectronicWidget> {
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(-1.0, 0.0),
+                              alignment: const AlignmentDirectional(-1.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.menuItemModel4,
                                 updateCallback: () => setState(() {}),
-                                child: MenuItemWidget(
+                                child: const MenuItemWidget(
                                   imgwidth: 39.0,
                                   imgheight: 39.0,
                                   imgpath:
@@ -173,7 +173,7 @@ class _ElectronicWidgetState extends State<ElectronicWidget> {
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(0.0),
                             bottomRight: Radius.circular(0.0),
                             topLeft: Radius.circular(30.0),
@@ -186,37 +186,40 @@ class _ElectronicWidgetState extends State<ElectronicWidget> {
                           ),
                         ),
                         child: Stack(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 30.0, 0.0, 86.0),
                               child: SingleChildScrollView(
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
-                                    Align(
-                                      alignment:
-                                          AlignmentDirectional(-1.0, -1.0),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            23.0, 0.0, 0.0, 0.0),
-                                        child: Text(
-                                          'Featured Products',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Segoe UI',
-                                                fontSize: 20.0,
-                                                letterSpacing: 0.0,
-                                                fontWeight: FontWeight.w600,
-                                                useGoogleFonts: false,
-                                              ),
+                                    Flexible(
+                                      child: Align(
+                                        alignment:
+                                            const AlignmentDirectional(-1.0, -1.0),
+                                        child: Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  23.0, 0.0, 0.0, 0.0),
+                                          child: Text(
+                                            'Featured Products',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Segoe UI',
+                                                  fontSize: 20.0,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.w600,
+                                                  useGoogleFonts: false,
+                                                ),
+                                          ),
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           23.0, 0.0, 0.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -235,7 +238,7 @@ class _ElectronicWidgetState extends State<ElectronicWidget> {
                                                       .featuredProductModel1,
                                                   updateCallback: () =>
                                                       setState(() {}),
-                                                  child: FeaturedProductWidget(
+                                                  child: const FeaturedProductWidget(
                                                     imgUrl:
                                                         'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/41tklbbtdvmg/Frame_48.png',
                                                     name: 'Smartphones',
@@ -250,7 +253,7 @@ class _ElectronicWidgetState extends State<ElectronicWidget> {
                                                       .featuredProductModel2,
                                                   updateCallback: () =>
                                                       setState(() {}),
-                                                  child: FeaturedProductWidget(
+                                                  child: const FeaturedProductWidget(
                                                     imgUrl:
                                                         'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/kk3fi2514xes/Frame_48_(1).png',
                                                     name: 'Earphones',
@@ -265,7 +268,7 @@ class _ElectronicWidgetState extends State<ElectronicWidget> {
                                                       .featuredProductModel3,
                                                   updateCallback: () =>
                                                       setState(() {}),
-                                                  child: FeaturedProductWidget(
+                                                  child: const FeaturedProductWidget(
                                                     imgUrl:
                                                         'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/s84i210h6sh4/95a93fb8e7450c5eed33eed45cff91ae.png',
                                                     name: 'Smart Home ',
@@ -275,10 +278,10 @@ class _ElectronicWidgetState extends State<ElectronicWidget> {
                                                     soldOut: false,
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(width: 13.0)),
+                                              ].divide(const SizedBox(width: 13.0)),
                                             ),
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 354.0,
                                             child: Divider(
                                               height: 0.0,
@@ -296,7 +299,7 @@ class _ElectronicWidgetState extends State<ElectronicWidget> {
                                                       .featuredProductModel4,
                                                   updateCallback: () =>
                                                       setState(() {}),
-                                                  child: FeaturedProductWidget(
+                                                  child: const FeaturedProductWidget(
                                                     imgUrl:
                                                         'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/g6i5y1di9m42/Frame_48_(3).png',
                                                     name: 'Rice Cooker',
@@ -311,7 +314,7 @@ class _ElectronicWidgetState extends State<ElectronicWidget> {
                                                       .featuredProductModel5,
                                                   updateCallback: () =>
                                                       setState(() {}),
-                                                  child: FeaturedProductWidget(
+                                                  child: const FeaturedProductWidget(
                                                     imgUrl:
                                                         'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/872odycr0to9/Frame_48_(4).png',
                                                     name: 'Speaker',
@@ -326,7 +329,7 @@ class _ElectronicWidgetState extends State<ElectronicWidget> {
                                                       .featuredProductModel6,
                                                   updateCallback: () =>
                                                       setState(() {}),
-                                                  child: FeaturedProductWidget(
+                                                  child: const FeaturedProductWidget(
                                                     imgUrl:
                                                         'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/rvgsqier4j01/f28e597c7c47eef3bc9436c570836af7.png',
                                                     name: 'Washing Machine',
@@ -336,10 +339,10 @@ class _ElectronicWidgetState extends State<ElectronicWidget> {
                                                     soldOut: false,
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(width: 13.0)),
+                                              ].divide(const SizedBox(width: 13.0)),
                                             ),
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 354.0,
                                             child: Divider(
                                               height: 0.0,
@@ -350,33 +353,36 @@ class _ElectronicWidgetState extends State<ElectronicWidget> {
                                         ],
                                       ),
                                     ),
-                                    Align(
-                                      alignment:
-                                          AlignmentDirectional(-1.0, -1.0),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            28.0, 23.0, 0.0, 0.0),
-                                        child: Text(
-                                          'Promotions',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Segoe UI',
-                                                fontSize: 20.0,
-                                                letterSpacing: 0.0,
-                                                fontWeight: FontWeight.w600,
-                                                useGoogleFonts: false,
-                                              ),
+                                    Flexible(
+                                      child: Align(
+                                        alignment:
+                                            const AlignmentDirectional(-1.0, -1.0),
+                                        child: Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  28.0, 23.0, 0.0, 0.0),
+                                          child: Text(
+                                            'Promotions',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Segoe UI',
+                                                  fontSize: 20.0,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.w600,
+                                                  useGoogleFonts: false,
+                                                ),
+                                          ),
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 15.0, 0.0, 15.0),
                                       child: Container(
                                         width: 350.0,
                                         height: 111.0,
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           color: Color(0xFFDCD3E2),
                                           borderRadius: BorderRadius.only(
                                             bottomLeft: Radius.circular(15.0),
@@ -388,7 +394,7 @@ class _ElectronicWidgetState extends State<ElectronicWidget> {
                                         child: Stack(
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       198.0, 0.0, 0.0, 0.0),
                                               child: ClipRRect(
@@ -403,7 +409,7 @@ class _ElectronicWidgetState extends State<ElectronicWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       165.0, 16.0, 0.0, 0.0),
                                               child: ClipRRect(
@@ -418,10 +424,10 @@ class _ElectronicWidgetState extends State<ElectronicWidget> {
                                               ),
                                             ),
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   -1.0, -1.0),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 16.0, 0.0, 0.0),
                                                 child: Text(
@@ -458,7 +464,7 @@ class _ElectronicWidgetState extends State<ElectronicWidget> {
                 wrapWithModel(
                   model: _model.customNavbarModel,
                   updateCallback: () => setState(() {}),
-                  child: CustomNavbarWidget(),
+                  child: const CustomNavbarWidget(),
                 ),
               ],
             ),

@@ -1,12 +1,12 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:flutter/gestures.dart';
+import '/custom_code/actions/index.dart' as actions;
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'login_model.dart';
 export 'login_model.dart';
@@ -47,6 +47,8 @@ class _LoginWidgetState extends State<LoginWidget> {
 
   @override
   Widget build(BuildContext context) {
+    context.watch<FFAppState>();
+
     return Title(
         title: 'login',
         color: FlutterFlowTheme.of(context).primary.withAlpha(0XFF),
@@ -64,14 +66,14 @@ class _LoginWidgetState extends State<LoginWidget> {
                 color: Colors.black,
                 image: DecorationImage(
                   fit: BoxFit.fitWidth,
-                  alignment: AlignmentDirectional(0.0, -1.0),
+                  alignment: const AlignmentDirectional(0.0, -1.0),
                   image: Image.asset(
                     'assets/images/back1.png',
                   ).image,
                 ),
               ),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 50.0, 20.0, 15.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 50.0, 20.0, 15.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -124,12 +126,12 @@ class _LoginWidgetState extends State<LoginWidget> {
                           children: [
                             Container(
                               decoration: BoxDecoration(
-                                color: Color(0xE6FFFFFF),
+                                color: const Color(0xE6FFFFFF),
                                 borderRadius: BorderRadius.circular(10.0),
                                 shape: BoxShape.rectangle,
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(20.0),
+                                padding: const EdgeInsets.all(20.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment:
@@ -149,7 +151,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 14.0, 0.0, 0.0),
                                       child: TextFormField(
                                         controller: _model.emailTextController,
@@ -163,7 +165,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                   .labelSmall
                                                   .override(
                                                     fontFamily: 'Segoe UI',
-                                                    color: Color(0xFF95A1AC),
+                                                    color: const Color(0xFF95A1AC),
                                                     letterSpacing: 0.0,
                                                     useGoogleFonts: false,
                                                   ),
@@ -172,12 +174,12 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                   .labelSmall
                                                   .override(
                                                     fontFamily: 'Segoe UI',
-                                                    color: Color(0xFF95A1AC),
+                                                    color: const Color(0xFF95A1AC),
                                                     letterSpacing: 0.0,
                                                     useGoogleFonts: false,
                                                   ),
                                           enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFE3E3E3),
                                               width: 1.0,
                                             ),
@@ -218,7 +220,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           filled: true,
                                           fillColor: Colors.white,
                                           contentPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   15.0, 8.0, 0.0, 8.0),
                                         ),
                                         style: FlutterFlowTheme.of(context)
@@ -237,7 +239,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 13.0, 0.0, 0.0),
                                       child: TextFormField(
                                         controller:
@@ -252,7 +254,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                   .labelSmall
                                                   .override(
                                                     fontFamily: 'Segoe UI',
-                                                    color: Color(0xFF95A1AC),
+                                                    color: const Color(0xFF95A1AC),
                                                     letterSpacing: 0.0,
                                                     useGoogleFonts: false,
                                                   ),
@@ -265,7 +267,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                     useGoogleFonts: false,
                                                   ),
                                           enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0xFFE3E3E3),
                                               width: 1.0,
                                             ),
@@ -306,7 +308,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           filled: true,
                                           fillColor: Colors.white,
                                           contentPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   15.0, 8.0, 0.0, 8.0),
                                           suffixIcon: InkWell(
                                             onTap: () => setState(
@@ -320,7 +322,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                   ? Icons.visibility_outlined
                                                   : Icons
                                                       .visibility_off_outlined,
-                                              color: Color(0xFF95A1AC),
+                                              color: const Color(0xFF95A1AC),
                                               size: 20.0,
                                             ),
                                           ),
@@ -341,7 +343,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 15.0, 0.0, 0.0),
                                       child: Text(
                                         'Forgot Password?',
@@ -363,7 +365,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 20.0, 0.0, 0.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
@@ -382,17 +384,58 @@ class _LoginWidgetState extends State<LoginWidget> {
                                     return;
                                   }
 
-                                  context.goNamedAuth(
-                                      'HomePageExp', context.mounted);
+                                  logFirebaseEvent('Button_custom_action');
+                                  _model.token =
+                                      await actions.getFirebaseToken();
+                                  logFirebaseEvent('Button_custom_action');
+                                  _model.username =
+                                      await actions.getFirebaseUserName();
+                                  logFirebaseEvent('Button_backend_call');
+                                  _model.loginResponse =
+                                      await OpenAPIDefinitionGroup
+                                          .customersAuthenticateCall
+                                          .call(
+                                    token: _model.token,
+                                    rememberMe: true,
+                                    name: _model.username,
+                                    xApiKey: FFAppState().xapikey,
+                                  );
+
+                                  if ((_model.loginResponse?.succeeded ??
+                                      true)) {
+                                    logFirebaseEvent('Button_navigate_to');
+
+                                    context.pushNamedAuth(
+                                        'HomePageExp', context.mounted);
+                                  } else {
+                                    logFirebaseEvent('Button_show_snack_bar');
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(
+                                        content: Text(
+                                          'login failed',
+                                          style: TextStyle(
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
+                                          ),
+                                        ),
+                                        duration: const Duration(milliseconds: 4000),
+                                        backgroundColor:
+                                            FlutterFlowTheme.of(context)
+                                                .secondary,
+                                      ),
+                                    );
+                                  }
+
+                                  setState(() {});
                                 },
                                 text: 'Login',
                                 options: FFButtonOptions(
                                   height: 50.0,
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       24.0, 15.0, 24.0, 15.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color: Color(0xFFF2DFBB),
+                                  color: const Color(0xFFF2DFBB),
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
@@ -404,7 +447,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                         useGoogleFonts: false,
                                       ),
                                   elevation: 3.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Colors.transparent,
                                     width: 1.0,
                                   ),
@@ -413,7 +456,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 75.0, 0.0, 0.0),
                               child: Text(
                                 'Or Login With',
@@ -429,77 +472,80 @@ class _LoginWidgetState extends State<LoginWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 15.0, 0.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  FaIcon(
+                                  const FaIcon(
                                     FontAwesomeIcons.google,
                                     color: Colors.white,
                                     size: 35.0,
                                   ),
-                                  Icon(
+                                  const Icon(
                                     Icons.apple,
                                     color: Colors.white,
                                     size: 35.0,
                                   ),
-                                  FaIcon(
+                                  const FaIcon(
                                     FontAwesomeIcons.facebook,
                                     color: Color(0xFF1877F2),
                                     size: 35.0,
                                   ),
-                                ].divide(SizedBox(width: 45.0)),
+                                ].divide(const SizedBox(width: 45.0)),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 40.0, 0.0, 0.0),
-                              child: RichText(
-                                textScaler: MediaQuery.of(context).textScaler,
-                                text: TextSpan(
-                                  children: [
-                                    TextSpan(
-                                      text: 'New Member?',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Segoe UI',
-                                            color: Colors.white,
-                                            letterSpacing: 0.0,
-                                            fontWeight: FontWeight.w600,
-                                            useGoogleFonts: false,
-                                          ),
-                                    ),
-                                    TextSpan(
-                                      text: ' Register Now',
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.w600,
-                                        fontSize: 14.0,
-                                      ),
-                                      mouseCursor: SystemMouseCursors.click,
-                                      recognizer: TapGestureRecognizer()
-                                        ..onTap = () async {
-                                          logFirebaseEvent(
-                                              'LOGIN_PAGE_RichTextSpan_mvtm4i9q_ON_TAP');
-                                          logFirebaseEvent(
-                                              'RichTextSpan_navigate_to');
+                              child: InkWell(
+                                splashColor: Colors.transparent,
+                                focusColor: Colors.transparent,
+                                hoverColor: Colors.transparent,
+                                highlightColor: Colors.transparent,
+                                onTap: () async {
+                                  logFirebaseEvent(
+                                      'LOGIN_PAGE_RichText_qw9leoal_ON_TAP');
+                                  logFirebaseEvent('RichText_navigate_to');
 
-                                          context.pushNamed('signup');
-                                        },
-                                    )
-                                  ],
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyMedium
-                                      .override(
-                                        fontFamily: 'Segoe UI',
-                                        letterSpacing: 0.0,
-                                        useGoogleFonts: false,
+                                  context.pushNamed('signup');
+                                },
+                                child: RichText(
+                                  textScaler: MediaQuery.of(context).textScaler,
+                                  text: TextSpan(
+                                    children: [
+                                      TextSpan(
+                                        text: 'New Member?',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Segoe UI',
+                                              color: Colors.white,
+                                              letterSpacing: 0.0,
+                                              fontWeight: FontWeight.w600,
+                                              useGoogleFonts: false,
+                                            ),
                                       ),
+                                      const TextSpan(
+                                        text: ' Register Now',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w600,
+                                          fontSize: 14.0,
+                                        ),
+                                      )
+                                    ],
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Segoe UI',
+                                          letterSpacing: 0.0,
+                                          useGoogleFonts: false,
+                                        ),
+                                  ),
+                                  textAlign: TextAlign.center,
                                 ),
-                                textAlign: TextAlign.center,
                               ),
                             ),
                           ],

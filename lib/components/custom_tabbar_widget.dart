@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'custom_tabbar_model.dart';
 export 'custom_tabbar_model.dart';
 
@@ -49,7 +47,7 @@ class _CustomTabbarWidgetState extends State<CustomTabbarWidget>
     return Column(
       children: [
         Align(
-          alignment: Alignment(0.0, 0),
+          alignment: const Alignment(0.0, 0),
           child: FlutterFlowButtonTabBar(
             useToggleButtonStyle: false,
             labelStyle: FlutterFlowTheme.of(context).titleMedium.override(
@@ -58,7 +56,7 @@ class _CustomTabbarWidgetState extends State<CustomTabbarWidget>
                   letterSpacing: 0.0,
                   useGoogleFonts: false,
                 ),
-            unselectedLabelStyle: TextStyle(),
+            unselectedLabelStyle: const TextStyle(),
             labelColor: Colors.white,
             unselectedLabelColor: FlutterFlowTheme.of(context).primary,
             backgroundColor: FlutterFlowTheme.of(context).primary,
@@ -68,7 +66,7 @@ class _CustomTabbarWidgetState extends State<CustomTabbarWidget>
             borderWidth: 0.0,
             borderRadius: 25.0,
             elevation: 100.0,
-            tabs: [
+            tabs: const [
               Tab(
                 text: 'Medical',
               ),

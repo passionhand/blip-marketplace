@@ -1,18 +1,10 @@
 import '/components/custom_navbar_widget.dart';
 import '/components/featured_product_widget.dart';
 import '/components/search_widget.dart';
-import '/flutter_flow/flutter_flow_button_tabbar.dart';
-import '/flutter_flow/flutter_flow_drop_down.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'product_selections_widget.dart' show ProductSelectionsWidget;
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class ProductSelectionsModel extends FlutterFlowModel<ProductSelectionsWidget> {
   ///  State fields for stateful widgets in this page.

@@ -59,4 +59,3 @@ export '/deployment_request/deployment_request_widget.dart'
 export '/notification/notification_widget.dart' show NotificationWidget;
 export '/payment/payment_widget.dart' show PaymentWidget;
 export '/googlepay/googlepay_widget.dart' show GooglepayWidget;
-export '/drone_deploy/drone_deploy_widget.dart' show DroneDeployWidget;

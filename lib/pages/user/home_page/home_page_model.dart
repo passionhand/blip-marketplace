@@ -1,16 +1,7 @@
 import '/components/service_item_widget.dart';
-import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'home_page_widget.dart' show HomePageWidget;
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter_animate/flutter_animate.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class HomePageModel extends FlutterFlowModel<HomePageWidget> {
   ///  State fields for stateful widgets in this page.
@@ -40,6 +31,12 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
   late ServiceItemModel serviceItemModel11;
   // Model for ServiceItem component.
   late ServiceItemModel serviceItemModel12;
+  // Model for ServiceItem component.
+  late ServiceItemModel serviceItemModel13;
+  // Model for ServiceItem component.
+  late ServiceItemModel serviceItemModel14;
+  // Model for ServiceItem component.
+  late ServiceItemModel serviceItemModel15;
 
   @override
   void initState(BuildContext context) {
@@ -55,6 +52,9 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
     serviceItemModel10 = createModel(context, () => ServiceItemModel());
     serviceItemModel11 = createModel(context, () => ServiceItemModel());
     serviceItemModel12 = createModel(context, () => ServiceItemModel());
+    serviceItemModel13 = createModel(context, () => ServiceItemModel());
+    serviceItemModel14 = createModel(context, () => ServiceItemModel());
+    serviceItemModel15 = createModel(context, () => ServiceItemModel());
   }
 
   @override
@@ -72,5 +72,8 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
     serviceItemModel10.dispose();
     serviceItemModel11.dispose();
     serviceItemModel12.dispose();
+    serviceItemModel13.dispose();
+    serviceItemModel14.dispose();
+    serviceItemModel15.dispose();
   }
 }

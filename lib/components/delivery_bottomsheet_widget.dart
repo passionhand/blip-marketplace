@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'delivery_bottomsheet_model.dart';
 export 'delivery_bottomsheet_model.dart';
 
@@ -49,7 +47,7 @@ class _DeliveryBottomsheetWidgetState extends State<DeliveryBottomsheetWidget> {
         borderRadius: BorderRadius.circular(30.0),
       ),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(20.0, 15.0, 20.0, 25.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(20.0, 15.0, 20.0, 25.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -68,12 +66,12 @@ class _DeliveryBottomsheetWidgetState extends State<DeliveryBottomsheetWidget> {
                 ),
               ],
             ),
-            Divider(
+            const Divider(
               thickness: 0.5,
               color: Color(0xFF16283E),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -89,7 +87,7 @@ class _DeliveryBottomsheetWidgetState extends State<DeliveryBottomsheetWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -99,7 +97,7 @@ class _DeliveryBottomsheetWidgetState extends State<DeliveryBottomsheetWidget> {
                           size: 24.0,
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
                             '4517 Washington Ave. Manchester, Kentucky 39495',
@@ -117,7 +115,7 @@ class _DeliveryBottomsheetWidgetState extends State<DeliveryBottomsheetWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
                     child: Text(
                       'Contact Number',
                       style: FlutterFlowTheme.of(context).bodySmall.override(
@@ -130,7 +128,7 @@ class _DeliveryBottomsheetWidgetState extends State<DeliveryBottomsheetWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -140,7 +138,7 @@ class _DeliveryBottomsheetWidgetState extends State<DeliveryBottomsheetWidget> {
                           size: 24.0,
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
                             '0823 255 4356',
@@ -156,7 +154,7 @@ class _DeliveryBottomsheetWidgetState extends State<DeliveryBottomsheetWidget> {
                       ],
                     ),
                   ),
-                  Divider(
+                  const Divider(
                     thickness: 0.6,
                     color: Color(0xFF16283E),
                   ),
@@ -180,7 +178,7 @@ class _DeliveryBottomsheetWidgetState extends State<DeliveryBottomsheetWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
                       child: Text(
                         '${valueOrDefault<String>(
                           _model.ratingBarValue?.toString(),
@@ -196,23 +194,23 @@ class _DeliveryBottomsheetWidgetState extends State<DeliveryBottomsheetWidget> {
                     RatingBar.builder(
                       onRatingUpdate: (newValue) =>
                           setState(() => _model.ratingBarValue = newValue),
-                      itemBuilder: (context, index) => Icon(
+                      itemBuilder: (context, index) => const Icon(
                         Icons.star_rounded,
                         color: Color(0xFFFFC700),
                       ),
                       direction: Axis.horizontal,
                       initialRating: _model.ratingBarValue ??= 3.0,
-                      unratedColor: Color(0xFFE6E6E6),
+                      unratedColor: const Color(0xFFE6E6E6),
                       itemCount: 5,
                       itemSize: 10.0,
-                      glowColor: Color(0xFFFFC700),
+                      glowColor: const Color(0xFFFFC700),
                     ),
                   ],
                 ),
               ],
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,

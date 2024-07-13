@@ -4,11 +4,8 @@ import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'product_search_model.dart';
 export 'product_search_model.dart';
 
@@ -99,7 +96,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                         useGoogleFonts: false,
                       ),
                   enabledBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                       color: Color(0x00000000),
                       width: 0.0,
                     ),
@@ -128,7 +125,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                   ),
                   filled: true,
                   fillColor: FlutterFlowTheme.of(context).accent4,
-                  suffixIcon: Icon(
+                  suffixIcon: const Icon(
                     Icons.search_rounded,
                   ),
                 ),
@@ -141,7 +138,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
               ),
               actions: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
                   child: Icon(
                     Icons.shopping_cart_outlined,
                     color: FlutterFlowTheme.of(context).primaryText,
@@ -153,7 +150,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
               elevation: 0.0,
             ),
             body: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(20.0, 15.0, 20.0, 10.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(20.0, 15.0, 20.0, 10.0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
@@ -161,7 +158,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                     child: Column(
                       children: [
                         Align(
-                          alignment: Alignment(-1.0, 0),
+                          alignment: const Alignment(-1.0, 0),
                           child: FlutterFlowButtonTabBar(
                             useToggleButtonStyle: false,
                             isScrollable: true,
@@ -172,7 +169,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                   letterSpacing: 0.0,
                                   useGoogleFonts: false,
                                 ),
-                            unselectedLabelStyle: TextStyle(),
+                            unselectedLabelStyle: const TextStyle(),
                             labelColor:
                                 FlutterFlowTheme.of(context).primaryBackground,
                             unselectedLabelColor:
@@ -182,9 +179,9 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                             borderWidth: 0.0,
                             borderRadius: 500.0,
                             elevation: 0.0,
-                            labelPadding: EdgeInsetsDirectional.fromSTEB(
+                            labelPadding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 0.0, 20.0, 0.0),
-                            tabs: [
+                            tabs: const [
                               Tab(
                                 text: 'Food',
                               ),
@@ -206,7 +203,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                             controller: _model.tabBarController,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 15.0, 0.0, 0.0),
                                 child: SingleChildScrollView(
                                   child: Column(
@@ -223,7 +220,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                       .dropDownValueController1 ??=
                                                   FormFieldController<String>(
                                                       null),
-                                              options: ['Option 1'],
+                                              options: const ['Option 1'],
                                               onChanged: (val) => setState(() =>
                                                   _model.dropDownValue1 = val),
                                               width: 300.0,
@@ -256,7 +253,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                               borderColor: Colors.transparent,
                                               borderWidth: 0.0,
                                               borderRadius: 10.0,
-                                              margin: EdgeInsetsDirectional
+                                              margin: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 4.0, 16.0, 4.0),
                                               hidesUnderline: true,
@@ -271,7 +268,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                       .dropDownValueController2 ??=
                                                   FormFieldController<String>(
                                                       null),
-                                              options: ['Option 1'],
+                                              options: const ['Option 1'],
                                               onChanged: (val) => setState(() =>
                                                   _model.dropDownValue2 = val),
                                               width: 300.0,
@@ -304,7 +301,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                               borderColor: Colors.transparent,
                                               borderWidth: 0.0,
                                               borderRadius: 10.0,
-                                              margin: EdgeInsetsDirectional
+                                              margin: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 4.0, 16.0, 4.0),
                                               hidesUnderline: true,
@@ -319,7 +316,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                       .dropDownValueController3 ??=
                                                   FormFieldController<String>(
                                                       null),
-                                              options: ['Option 1'],
+                                              options: const ['Option 1'],
                                               onChanged: (val) => setState(() =>
                                                   _model.dropDownValue3 = val),
                                               width: 300.0,
@@ -352,7 +349,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                               borderColor: Colors.transparent,
                                               borderWidth: 0.0,
                                               borderRadius: 10.0,
-                                              margin: EdgeInsetsDirectional
+                                              margin: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 4.0, 16.0, 4.0),
                                               hidesUnderline: true,
@@ -361,10 +358,10 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                               isMultiSelect: false,
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 15.0)),
+                                        ].divide(const SizedBox(width: 15.0)),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 20.0, 0.0, 0.0),
                                         child: SingleChildScrollView(
                                           scrollDirection: Axis.horizontal,
@@ -376,7 +373,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                     .featuredProductsModel1,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductsWidget(
+                                                child: const FeaturedProductsWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/s1xx6qrdmo9a/burger2.png',
                                                   name: 'Burger',
@@ -391,7 +388,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                     .featuredProductsModel2,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductsWidget(
+                                                child: const FeaturedProductsWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/q4ps4vg9um64/pizza.png',
                                                   name: 'Pizza',
@@ -406,7 +403,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                     .featuredProductsModel3,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductsWidget(
+                                                child: const FeaturedProductsWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/juk4hh5qrc10/chip.png',
                                                   name: 'French Firies',
@@ -416,12 +413,12 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                   soldOut: true,
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 15.0)),
+                                            ].divide(const SizedBox(width: 15.0)),
                                           ),
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 20.0, 0.0, 0.0),
                                         child: SingleChildScrollView(
                                           scrollDirection: Axis.horizontal,
@@ -433,7 +430,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                     .featuredProductsModel4,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductsWidget(
+                                                child: const FeaturedProductsWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/s1xx6qrdmo9a/burger2.png',
                                                   name: 'Burger',
@@ -448,7 +445,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                     .featuredProductsModel5,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductsWidget(
+                                                child: const FeaturedProductsWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/q4ps4vg9um64/pizza.png',
                                                   name: 'Pizza',
@@ -463,7 +460,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                     .featuredProductsModel6,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductsWidget(
+                                                child: const FeaturedProductsWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/juk4hh5qrc10/chip.png',
                                                   name: 'French Firies',
@@ -473,7 +470,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                   soldOut: true,
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 15.0)),
+                                            ].divide(const SizedBox(width: 15.0)),
                                           ),
                                         ),
                                       ),
@@ -482,7 +479,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 15.0, 0.0, 0.0),
                                 child: SingleChildScrollView(
                                   child: Column(
@@ -499,7 +496,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                       .dropDownValueController4 ??=
                                                   FormFieldController<String>(
                                                       null),
-                                              options: ['Option 1'],
+                                              options: const ['Option 1'],
                                               onChanged: (val) => setState(() =>
                                                   _model.dropDownValue4 = val),
                                               width: 300.0,
@@ -532,7 +529,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                               borderColor: Colors.transparent,
                                               borderWidth: 0.0,
                                               borderRadius: 10.0,
-                                              margin: EdgeInsetsDirectional
+                                              margin: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 4.0, 16.0, 4.0),
                                               hidesUnderline: true,
@@ -547,7 +544,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                       .dropDownValueController5 ??=
                                                   FormFieldController<String>(
                                                       null),
-                                              options: ['Option 1'],
+                                              options: const ['Option 1'],
                                               onChanged: (val) => setState(() =>
                                                   _model.dropDownValue5 = val),
                                               width: 300.0,
@@ -580,7 +577,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                               borderColor: Colors.transparent,
                                               borderWidth: 0.0,
                                               borderRadius: 10.0,
-                                              margin: EdgeInsetsDirectional
+                                              margin: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 4.0, 16.0, 4.0),
                                               hidesUnderline: true,
@@ -595,7 +592,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                       .dropDownValueController6 ??=
                                                   FormFieldController<String>(
                                                       null),
-                                              options: ['Option 1'],
+                                              options: const ['Option 1'],
                                               onChanged: (val) => setState(() =>
                                                   _model.dropDownValue6 = val),
                                               width: 300.0,
@@ -628,7 +625,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                               borderColor: Colors.transparent,
                                               borderWidth: 0.0,
                                               borderRadius: 10.0,
-                                              margin: EdgeInsetsDirectional
+                                              margin: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 4.0, 16.0, 4.0),
                                               hidesUnderline: true,
@@ -637,10 +634,10 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                               isMultiSelect: false,
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 15.0)),
+                                        ].divide(const SizedBox(width: 15.0)),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 20.0, 0.0, 0.0),
                                         child: SingleChildScrollView(
                                           scrollDirection: Axis.horizontal,
@@ -652,7 +649,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                     .featuredProductsModel7,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductsWidget(
+                                                child: const FeaturedProductsWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/s1xx6qrdmo9a/burger2.png',
                                                   name: 'Burger',
@@ -667,7 +664,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                     .featuredProductsModel8,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductsWidget(
+                                                child: const FeaturedProductsWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/q4ps4vg9um64/pizza.png',
                                                   name: 'Pizza',
@@ -682,7 +679,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                     .featuredProductsModel9,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductsWidget(
+                                                child: const FeaturedProductsWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/juk4hh5qrc10/chip.png',
                                                   name: 'French Firies',
@@ -692,12 +689,12 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                   soldOut: true,
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 15.0)),
+                                            ].divide(const SizedBox(width: 15.0)),
                                           ),
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 20.0, 0.0, 0.0),
                                         child: SingleChildScrollView(
                                           scrollDirection: Axis.horizontal,
@@ -709,7 +706,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                     .featuredProductsModel10,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductsWidget(
+                                                child: const FeaturedProductsWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/s1xx6qrdmo9a/burger2.png',
                                                   name: 'Burger',
@@ -724,7 +721,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                     .featuredProductsModel11,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductsWidget(
+                                                child: const FeaturedProductsWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/q4ps4vg9um64/pizza.png',
                                                   name: 'Pizza',
@@ -739,7 +736,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                     .featuredProductsModel12,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductsWidget(
+                                                child: const FeaturedProductsWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/juk4hh5qrc10/chip.png',
                                                   name: 'French Firies',
@@ -749,7 +746,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                   soldOut: true,
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 15.0)),
+                                            ].divide(const SizedBox(width: 15.0)),
                                           ),
                                         ),
                                       ),
@@ -758,7 +755,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 15.0, 0.0, 0.0),
                                 child: SingleChildScrollView(
                                   child: Column(
@@ -775,7 +772,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                       .dropDownValueController7 ??=
                                                   FormFieldController<String>(
                                                       null),
-                                              options: ['Option 1'],
+                                              options: const ['Option 1'],
                                               onChanged: (val) => setState(() =>
                                                   _model.dropDownValue7 = val),
                                               width: 300.0,
@@ -808,7 +805,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                               borderColor: Colors.transparent,
                                               borderWidth: 0.0,
                                               borderRadius: 10.0,
-                                              margin: EdgeInsetsDirectional
+                                              margin: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 4.0, 16.0, 4.0),
                                               hidesUnderline: true,
@@ -823,7 +820,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                       .dropDownValueController8 ??=
                                                   FormFieldController<String>(
                                                       null),
-                                              options: ['Option 1'],
+                                              options: const ['Option 1'],
                                               onChanged: (val) => setState(() =>
                                                   _model.dropDownValue8 = val),
                                               width: 300.0,
@@ -856,7 +853,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                               borderColor: Colors.transparent,
                                               borderWidth: 0.0,
                                               borderRadius: 10.0,
-                                              margin: EdgeInsetsDirectional
+                                              margin: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 4.0, 16.0, 4.0),
                                               hidesUnderline: true,
@@ -871,7 +868,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                       .dropDownValueController9 ??=
                                                   FormFieldController<String>(
                                                       null),
-                                              options: ['Option 1'],
+                                              options: const ['Option 1'],
                                               onChanged: (val) => setState(() =>
                                                   _model.dropDownValue9 = val),
                                               width: 300.0,
@@ -904,7 +901,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                               borderColor: Colors.transparent,
                                               borderWidth: 0.0,
                                               borderRadius: 10.0,
-                                              margin: EdgeInsetsDirectional
+                                              margin: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 4.0, 16.0, 4.0),
                                               hidesUnderline: true,
@@ -913,10 +910,10 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                               isMultiSelect: false,
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 15.0)),
+                                        ].divide(const SizedBox(width: 15.0)),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 20.0, 0.0, 0.0),
                                         child: SingleChildScrollView(
                                           scrollDirection: Axis.horizontal,
@@ -928,7 +925,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                     .featuredProductsModel13,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductsWidget(
+                                                child: const FeaturedProductsWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/s1xx6qrdmo9a/burger2.png',
                                                   name: 'Burger',
@@ -943,7 +940,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                     .featuredProductsModel14,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductsWidget(
+                                                child: const FeaturedProductsWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/q4ps4vg9um64/pizza.png',
                                                   name: 'Pizza',
@@ -958,7 +955,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                     .featuredProductsModel15,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductsWidget(
+                                                child: const FeaturedProductsWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/juk4hh5qrc10/chip.png',
                                                   name: 'French Firies',
@@ -968,12 +965,12 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                   soldOut: true,
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 15.0)),
+                                            ].divide(const SizedBox(width: 15.0)),
                                           ),
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 20.0, 0.0, 0.0),
                                         child: SingleChildScrollView(
                                           scrollDirection: Axis.horizontal,
@@ -985,7 +982,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                     .featuredProductsModel16,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductsWidget(
+                                                child: const FeaturedProductsWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/s1xx6qrdmo9a/burger2.png',
                                                   name: 'Burger',
@@ -1000,7 +997,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                     .featuredProductsModel17,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductsWidget(
+                                                child: const FeaturedProductsWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/q4ps4vg9um64/pizza.png',
                                                   name: 'Pizza',
@@ -1015,7 +1012,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                     .featuredProductsModel18,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductsWidget(
+                                                child: const FeaturedProductsWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/juk4hh5qrc10/chip.png',
                                                   name: 'French Firies',
@@ -1025,7 +1022,7 @@ class _ProductSearchWidgetState extends State<ProductSearchWidget>
                                                   soldOut: true,
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 15.0)),
+                                            ].divide(const SizedBox(width: 15.0)),
                                           ),
                                         ),
                                       ),

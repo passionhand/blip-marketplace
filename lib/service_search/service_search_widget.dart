@@ -3,11 +3,8 @@ import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'service_search_model.dart';
 export 'service_search_model.dart';
 
@@ -82,12 +79,12 @@ class _ServiceSearchWidgetState extends State<ServiceSearchWidget> {
                       useGoogleFonts: false,
                     ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 0.0,
             ),
             body: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
               child: SingleChildScrollView(
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
@@ -98,7 +95,7 @@ class _ServiceSearchWidgetState extends State<ServiceSearchWidget> {
                         FlutterFlowDropDown<String>(
                           controller: _model.dropDownValueController ??=
                               FormFieldController<String>(null),
-                          options: ['Option 1'],
+                          options: const ['Option 1'],
                           onChanged: (val) =>
                               setState(() => _model.dropDownValue = val),
                           width: 120.0,
@@ -115,12 +112,12 @@ class _ServiceSearchWidgetState extends State<ServiceSearchWidget> {
                             color: FlutterFlowTheme.of(context).secondaryText,
                             size: 24.0,
                           ),
-                          fillColor: Color(0xFFF5F5F5),
+                          fillColor: const Color(0xFFF5F5F5),
                           elevation: 2.0,
                           borderColor: Colors.transparent,
                           borderWidth: 2.0,
                           borderRadius: 50.0,
-                          margin: EdgeInsetsDirectional.fromSTEB(
+                          margin: const EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           hidesUnderline: true,
                           isOverButton: true,
@@ -129,7 +126,7 @@ class _ServiceSearchWidgetState extends State<ServiceSearchWidget> {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 8.0, 0.0, 8.0, 0.0),
                             child: TextFormField(
                               controller: _model.textController,
@@ -182,10 +179,10 @@ class _ServiceSearchWidgetState extends State<ServiceSearchWidget> {
                                   borderRadius: BorderRadius.circular(50.0),
                                 ),
                                 filled: true,
-                                fillColor: Color(0xFFF5F5F5),
-                                contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                fillColor: const Color(0xFFF5F5F5),
+                                contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                     15.0, 0.0, 0.0, 0.0),
-                                suffixIcon: Icon(
+                                suffixIcon: const Icon(
                                   Icons.search_outlined,
                                 ),
                               ),
@@ -206,11 +203,11 @@ class _ServiceSearchWidgetState extends State<ServiceSearchWidget> {
                     Flexible(
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
                         child: GridView(
                           padding: EdgeInsets.zero,
                           gridDelegate:
-                              SliverGridDelegateWithFixedCrossAxisCount(
+                              const SliverGridDelegateWithFixedCrossAxisCount(
                             crossAxisCount: 3,
                             crossAxisSpacing: 10.0,
                             mainAxisSpacing: 10.0,
@@ -226,9 +223,8 @@ class _ServiceSearchWidgetState extends State<ServiceSearchWidget> {
                                 image:
                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/o47uhjdhpx83/service1.svg',
                                 service: 'Medical\nSupplies',
-                                backColor:
+                                backgroundColor:
                                     FlutterFlowTheme.of(context).alternate,
-                                showFav: true,
                               ),
                             ),
                             wrapWithModel(
@@ -238,9 +234,8 @@ class _ServiceSearchWidgetState extends State<ServiceSearchWidget> {
                                 image:
                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/lyquxc1q1nwh/service2.svg',
                                 service: 'Food &\nBeverages',
-                                backColor:
+                                backgroundColor:
                                     FlutterFlowTheme.of(context).alternate,
-                                showFav: true,
                               ),
                             ),
                             wrapWithModel(
@@ -250,9 +245,8 @@ class _ServiceSearchWidgetState extends State<ServiceSearchWidget> {
                                 image:
                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/vfzeyf3tj3t6/service3.svg',
                                 service: 'Flowers and\nGifts',
-                                backColor:
+                                backgroundColor:
                                     FlutterFlowTheme.of(context).alternate,
-                                showFav: true,
                               ),
                             ),
                             wrapWithModel(
@@ -262,9 +256,8 @@ class _ServiceSearchWidgetState extends State<ServiceSearchWidget> {
                                 image:
                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/2fgc3gdh8yhv/service4.svg',
                                 service: 'Pet Supplies',
-                                backColor:
+                                backgroundColor:
                                     FlutterFlowTheme.of(context).alternate,
-                                showFav: true,
                               ),
                             ),
                             wrapWithModel(
@@ -274,9 +267,8 @@ class _ServiceSearchWidgetState extends State<ServiceSearchWidget> {
                                 image:
                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/pf8gcxslnimv/service5.svg',
                                 service: 'Electronics',
-                                backColor:
+                                backgroundColor:
                                     FlutterFlowTheme.of(context).alternate,
-                                showFav: true,
                               ),
                             ),
                             wrapWithModel(
@@ -286,9 +278,8 @@ class _ServiceSearchWidgetState extends State<ServiceSearchWidget> {
                                 image:
                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/slaux4318dgn/service6.svg',
                                 service: 'Groceries',
-                                backColor:
+                                backgroundColor:
                                     FlutterFlowTheme.of(context).alternate,
-                                showFav: true,
                               ),
                             ),
                           ],
@@ -298,11 +289,11 @@ class _ServiceSearchWidgetState extends State<ServiceSearchWidget> {
                     Flexible(
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                         child: GridView(
                           padding: EdgeInsets.zero,
                           gridDelegate:
-                              SliverGridDelegateWithFixedCrossAxisCount(
+                              const SliverGridDelegateWithFixedCrossAxisCount(
                             crossAxisCount: 3,
                             crossAxisSpacing: 10.0,
                             mainAxisSpacing: 10.0,
@@ -318,9 +309,8 @@ class _ServiceSearchWidgetState extends State<ServiceSearchWidget> {
                                 image:
                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/o47uhjdhpx83/service1.svg',
                                 service: 'Service1',
-                                backColor:
+                                backgroundColor:
                                     FlutterFlowTheme.of(context).alternate,
-                                showFav: false,
                               ),
                             ),
                             wrapWithModel(
@@ -330,9 +320,8 @@ class _ServiceSearchWidgetState extends State<ServiceSearchWidget> {
                                 image:
                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/pf8gcxslnimv/service5.svg',
                                 service: 'Service2',
-                                backColor:
+                                backgroundColor:
                                     FlutterFlowTheme.of(context).alternate,
-                                showFav: false,
                               ),
                             ),
                             wrapWithModel(
@@ -342,9 +331,8 @@ class _ServiceSearchWidgetState extends State<ServiceSearchWidget> {
                                 image:
                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/slaux4318dgn/service6.svg',
                                 service: 'Service3',
-                                backColor:
+                                backgroundColor:
                                     FlutterFlowTheme.of(context).alternate,
-                                showFav: false,
                               ),
                             ),
                           ],

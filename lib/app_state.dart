@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import '/backend/backend.dart';
-import 'backend/api_requests/api_manager.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'flutter_flow/flutter_flow_util.dart';
 
 class FFAppState extends ChangeNotifier {
   static FFAppState _instance = FFAppState._internal();
@@ -24,21 +20,9 @@ class FFAppState extends ChangeNotifier {
     notifyListeners();
   }
 
-  String _email = '';
-  String get email => _email;
-  set email(String value) {
-    _email = value;
-  }
-
-  String _password = '';
-  String get password => _password;
-  set password(String value) {
-    _password = value;
-  }
-
-  String _username = '';
-  String get username => _username;
-  set username(String value) {
-    _username = value;
+  String _xapikey = 'blip-api';
+  String get xapikey => _xapikey;
+  set xapikey(String value) {
+    _xapikey = value;
   }
 }

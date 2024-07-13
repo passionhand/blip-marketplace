@@ -5,8 +5,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'deployment_request_model.dart';
 export 'deployment_request_model.dart';
 
@@ -61,7 +59,7 @@ class _DeploymentRequestWidgetState extends State<DeploymentRequestWidget> {
                 borderRadius: 30.0,
                 borderWidth: 1.0,
                 buttonSize: 54.0,
-                icon: Icon(
+                icon: const Icon(
                   Icons.chevron_left,
                   color: Colors.white,
                   size: 24.0,
@@ -82,21 +80,21 @@ class _DeploymentRequestWidgetState extends State<DeploymentRequestWidget> {
                       useGoogleFonts: false,
                     ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 0.0,
             ),
             body: Stack(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 60.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 60.0),
                   child: Container(
                     width: double.infinity,
                     height: double.infinity,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(0.0),
                         bottomRight: Radius.circular(0.0),
                         topLeft: Radius.circular(30.0),
@@ -105,20 +103,20 @@ class _DeploymentRequestWidgetState extends State<DeploymentRequestWidget> {
                     ),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                       child: SingleChildScrollView(
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(-1.0, 0.0),
+                              alignment: const AlignmentDirectional(-1.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(-1.0, 0.0),
+                                    alignment: const AlignmentDirectional(-1.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           20.0, 0.0, 0.0, 5.0),
                                       child: Text(
                                         'Welcome',
@@ -135,9 +133,9 @@ class _DeploymentRequestWidgetState extends State<DeploymentRequestWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(-1.0, 0.0),
+                                    alignment: const AlignmentDirectional(-1.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           20.0, 0.0, 0.0, 7.0),
                                       child: Text(
                                         'Eric Budiman',
@@ -154,7 +152,7 @@ class _DeploymentRequestWidgetState extends State<DeploymentRequestWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         20.0, 0.0, 20.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -163,7 +161,7 @@ class _DeploymentRequestWidgetState extends State<DeploymentRequestWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 4.0),
                                           child: Text(
                                             'Live Location',
@@ -195,12 +193,12 @@ class _DeploymentRequestWidgetState extends State<DeploymentRequestWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 9.0, 0.0, 16.0),
                               child: Container(
                                 width: double.infinity,
                                 height: 250.0,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0xFFE5E5E5),
                                 ),
                                 child: FlutterFlowGoogleMap(
@@ -208,7 +206,7 @@ class _DeploymentRequestWidgetState extends State<DeploymentRequestWidget> {
                                   onCameraIdle: (latLng) =>
                                       _model.googleMapsCenter = latLng,
                                   initialLocation: _model.googleMapsCenter ??=
-                                      LatLng(13.106061, -59.613158),
+                                      const LatLng(13.106061, -59.613158),
                                   markerColor: GoogleMarkerColor.violet,
                                   mapType: MapType.normal,
                                   style: GoogleMapStyle.standard,
@@ -225,7 +223,7 @@ class _DeploymentRequestWidgetState extends State<DeploymentRequestWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 0.0, 20.0, 0.0),
                               child: FFButtonWidget(
                                 onPressed: () {
@@ -235,11 +233,11 @@ class _DeploymentRequestWidgetState extends State<DeploymentRequestWidget> {
                                 options: FFButtonOptions(
                                   width: double.infinity,
                                   height: 60.0,
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       24.0, 0.0, 24.0, 0.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color: Color(0xFFF22D02),
+                                  color: const Color(0xFFF22D02),
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
@@ -251,7 +249,7 @@ class _DeploymentRequestWidgetState extends State<DeploymentRequestWidget> {
                                         useGoogleFonts: false,
                                       ),
                                   elevation: 3.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Colors.transparent,
                                     width: 1.0,
                                   ),
@@ -260,13 +258,13 @@ class _DeploymentRequestWidgetState extends State<DeploymentRequestWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 23.0, 20.0, 24.0),
                               child: Container(
                                 width: double.infinity,
                                 height: 146.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFFF5F5F5),
+                                  color: const Color(0xFFF5F5F5),
                                   borderRadius: BorderRadius.circular(15.0),
                                 ),
                                 child: Column(
@@ -274,9 +272,9 @@ class _DeploymentRequestWidgetState extends State<DeploymentRequestWidget> {
                                   children: [
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-1.0, 0.0),
+                                          const AlignmentDirectional(-1.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             12.0, 10.0, 0.0, 0.0),
                                         child: Text(
                                           'Last Deployment',
@@ -293,7 +291,7 @@ class _DeploymentRequestWidgetState extends State<DeploymentRequestWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           12.0, 9.0, 12.0, 5.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -325,7 +323,7 @@ class _DeploymentRequestWidgetState extends State<DeploymentRequestWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           12.0, 5.0, 12.0, 5.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -357,7 +355,7 @@ class _DeploymentRequestWidgetState extends State<DeploymentRequestWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           12.0, 5.0, 12.0, 5.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -414,7 +412,7 @@ class _DeploymentRequestWidgetState extends State<DeploymentRequestWidget> {
                 wrapWithModel(
                   model: _model.customNavbarModel,
                   updateCallback: () => setState(() {}),
-                  child: CustomNavbarWidget(),
+                  child: const CustomNavbarWidget(),
                 ),
               ],
             ),

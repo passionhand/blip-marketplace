@@ -2,10 +2,7 @@ import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'notification_model.dart';
 export 'notification_model.dart';
 
@@ -85,7 +82,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                       useGoogleFonts: false,
                     ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 0.0,
             ),
@@ -96,7 +93,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                   child: Column(
                     children: [
                       Align(
-                        alignment: Alignment(0.0, 0),
+                        alignment: const Alignment(0.0, 0),
                         child: FlutterFlowButtonTabBar(
                           useToggleButtonStyle: false,
                           labelStyle:
@@ -106,10 +103,10 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                     letterSpacing: 0.0,
                                     useGoogleFonts: false,
                                   ),
-                          unselectedLabelStyle: TextStyle(),
+                          unselectedLabelStyle: const TextStyle(),
                           labelColor:
                               FlutterFlowTheme.of(context).primaryBackground,
-                          unselectedLabelColor: Color(0xFF252525),
+                          unselectedLabelColor: const Color(0xFF252525),
                           backgroundColor: FlutterFlowTheme.of(context).primary,
                           unselectedBackgroundColor:
                               FlutterFlowTheme.of(context).alternate,
@@ -118,10 +115,10 @@ class _NotificationWidgetState extends State<NotificationWidget>
                           borderWidth: 0.0,
                           borderRadius: 8.0,
                           elevation: 0.0,
-                          buttonMargin: EdgeInsetsDirectional.fromSTEB(
+                          buttonMargin: const EdgeInsetsDirectional.fromSTEB(
                               8.0, 0.0, 8.0, 0.0),
-                          padding: EdgeInsets.all(4.0),
-                          tabs: [
+                          padding: const EdgeInsets.all(4.0),
+                          tabs: const [
                             Tab(
                               text: 'All',
                             ),
@@ -143,15 +140,15 @@ class _NotificationWidgetState extends State<NotificationWidget>
                           controller: _model.tabBarController,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 10.0, 0.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(-1.0, 0.0),
+                                    alignment: const AlignmentDirectional(-1.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           12.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         'Mark all as read',
@@ -169,7 +166,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         1.0, 16.0, 0.0, 33.0),
                                     child: ListView(
                                       padding: EdgeInsets.zero,
@@ -179,29 +176,29 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                         Container(
                                           width: double.infinity,
                                           height: 119.0,
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             color: Color(0xFFEEEEEE),
                                           ),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, -1.0),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 15.0, 0.0, 0.0),
                                                   child: Container(
                                                     width: 24.0,
                                                     height: 24.0,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       color: Color(0xFF252525),
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: Text(
                                                         '!',
@@ -228,7 +225,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                               ),
                                               Expanded(
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           9.0, 0.0, 12.0, 0.0),
                                                   child: Column(
@@ -237,7 +234,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     15.0,
@@ -291,11 +288,11 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                       ),
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 -1.0, 0.0),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       9.0,
@@ -335,7 +332,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 21.0),
                                                 child: Row(
@@ -344,11 +341,11 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                   children: [
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               -1.0, -1.0),
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     12.0,
                                                                     15.0,
@@ -358,7 +355,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                           width: 24.0,
                                                           height: 24.0,
                                                           decoration:
-                                                              BoxDecoration(
+                                                              const BoxDecoration(
                                                             color: Color(
                                                                 0xFF252525),
                                                             shape:
@@ -366,7 +363,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Text(
                                                               '!',
@@ -394,7 +391,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                     Expanded(
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     9.0,
                                                                     0.0,
@@ -406,7 +403,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                           children: [
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           15.0,
@@ -459,12 +456,12 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                             ),
                                                             Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       -1.0,
                                                                       0.0),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             9.0,
@@ -493,7 +490,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                   ],
                                                 ),
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 width: 353.0,
                                                 child: Divider(
                                                   height: 1.0,
@@ -514,7 +511,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
-                                              SizedBox(
+                                              const SizedBox(
                                                 width: 353.0,
                                                 child: Divider(
                                                   height: 1.0,
@@ -523,7 +520,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 21.0),
                                                 child: Row(
@@ -532,11 +529,11 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                   children: [
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               -1.0, -1.0),
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     12.0,
                                                                     15.0,
@@ -546,7 +543,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                           width: 24.0,
                                                           height: 24.0,
                                                           decoration:
-                                                              BoxDecoration(
+                                                              const BoxDecoration(
                                                             color: Color(
                                                                 0xFF252525),
                                                             shape:
@@ -554,7 +551,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Text(
                                                               '!',
@@ -582,7 +579,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                     Expanded(
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     9.0,
                                                                     0.0,
@@ -594,7 +591,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                           children: [
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           15.0,
@@ -647,12 +644,12 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                                             ),
                                                             Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       -1.0,
                                                                       0.0),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             9.0,
@@ -691,7 +688,7 @@ class _NotificationWidgetState extends State<NotificationWidget>
                                     width: 355.0,
                                     height: 144.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFF676464),
+                                      color: const Color(0xFF676464),
                                       image: DecorationImage(
                                         fit: BoxFit.cover,
                                         image: Image.asset(

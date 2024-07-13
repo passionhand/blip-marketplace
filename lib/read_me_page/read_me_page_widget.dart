@@ -3,8 +3,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'read_me_page_model.dart';
 export 'read_me_page_model.dart';
 
@@ -52,7 +50,7 @@ class _ReadMePageWidgetState extends State<ReadMePageWidget> {
               backgroundColor: FlutterFlowTheme.of(context).primary,
               automaticallyImplyLeading: false,
               title: Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Text(
                   'Terms and Conditions',
                   style: FlutterFlowTheme.of(context).headlineMedium.override(
@@ -64,12 +62,12 @@ class _ReadMePageWidgetState extends State<ReadMePageWidget> {
                       ),
                 ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: false,
               elevation: 0.0,
             ),
             body: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
               child: SingleChildScrollView(
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
@@ -81,7 +79,7 @@ class _ReadMePageWidgetState extends State<ReadMePageWidget> {
                         borderRadius: BorderRadius.circular(30.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 36.0, 20.0, 50.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -93,7 +91,7 @@ class _ReadMePageWidgetState extends State<ReadMePageWidget> {
                               onLinkTap: (url, _, __) => launchURL(url!),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 32.0, 0.0, 0.0),
                               child: FFButtonWidget(
                                 onPressed: () {
@@ -101,9 +99,9 @@ class _ReadMePageWidgetState extends State<ReadMePageWidget> {
                                 },
                                 text: 'I ACCEPT',
                                 options: FFButtonOptions(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 20.0, 0.0, 20.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
                                   color: FlutterFlowTheme.of(context).primary,
                                   textStyle: FlutterFlowTheme.of(context)
@@ -117,7 +115,7 @@ class _ReadMePageWidgetState extends State<ReadMePageWidget> {
                                         useGoogleFonts: false,
                                       ),
                                   elevation: 3.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Colors.transparent,
                                     width: 1.0,
                                   ),

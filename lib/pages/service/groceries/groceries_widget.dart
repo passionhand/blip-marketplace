@@ -4,10 +4,7 @@ import '/components/menu_item_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'groceries_model.dart';
 export 'groceries_model.dart';
 
@@ -59,7 +56,7 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                 borderRadius: 30.0,
                 borderWidth: 1.0,
                 buttonSize: 54.0,
-                icon: Icon(
+                icon: const Icon(
                   Icons.chevron_left,
                   color: Colors.white,
                   size: 24.0,
@@ -80,31 +77,32 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                       useGoogleFonts: false,
                     ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 0.0,
             ),
             body: Stack(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
               children: [
                 SingleChildScrollView(
+                  primary: false,
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 10.0, 20.0, 20.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 17.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.menuItemModel1,
                                 updateCallback: () => setState(() {}),
-                                child: MenuItemWidget(
+                                child: const MenuItemWidget(
                                   imgwidth: 37.0,
                                   imgheight: 37.0,
                                   imgpath:
@@ -116,12 +114,12 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 17.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.menuItemModel2,
                                 updateCallback: () => setState(() {}),
-                                child: MenuItemWidget(
+                                child: const MenuItemWidget(
                                   imgwidth: 41.0,
                                   imgheight: 33.0,
                                   imgpath:
@@ -133,12 +131,12 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 17.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.menuItemModel3,
                                 updateCallback: () => setState(() {}),
-                                child: MenuItemWidget(
+                                child: const MenuItemWidget(
                                   imgwidth: 51.0,
                                   imgheight: 35.0,
                                   imgpath:
@@ -152,7 +150,7 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                             wrapWithModel(
                               model: _model.menuItemModel4,
                               updateCallback: () => setState(() {}),
-                              child: MenuItemWidget(
+                              child: const MenuItemWidget(
                                 imgwidth: 52.0,
                                 imgheight: 40.0,
                                 imgpath:
@@ -171,7 +169,7 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(0.0),
                             bottomRight: Radius.circular(0.0),
                             topLeft: Radius.circular(30.0),
@@ -179,7 +177,7 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 30.0, 0.0, 86.0),
                           child: SingleChildScrollView(
                             child: Column(
@@ -188,9 +186,9 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, -1.0),
+                                  alignment: const AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         23.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       'Featured Products',
@@ -207,7 +205,7 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       23.0, 0.0, 0.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -227,7 +225,7 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                                                   _model.featuredProductModel1,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/ncund8z8abrb/Freshfruit.png',
                                                 name: 'Fresh Fruits',
@@ -242,7 +240,7 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                                                   _model.featuredProductModel2,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/tl2x1nij5o6i/Milk_and_Cheese.png',
                                                 name: 'Milk and Cheese',
@@ -257,7 +255,7 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                                                   _model.featuredProductModel3,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FeaturedProductWidget(
+                                              child: const FeaturedProductWidget(
                                                 imgUrl:
                                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/00sdkh30joxe/Chips_Cookies.png',
                                                 name: 'Chips Cookies',
@@ -267,10 +265,10 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                                                 soldOut: false,
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 17.0)),
+                                          ].divide(const SizedBox(width: 17.0)),
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 354.0,
                                         child: Divider(
                                           height: 0.0,
@@ -282,7 +280,7 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       23.0, 0.0, 0.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -291,7 +289,7 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 17.0, 0.0, 0.0),
                                         child: SingleChildScrollView(
                                           scrollDirection: Axis.horizontal,
@@ -305,7 +303,7 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                                                     .featuredProductModel4,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductWidget(
+                                                child: const FeaturedProductWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/1lqxvh3j7xsp/Egg.png',
                                                   name: 'Egg',
@@ -320,7 +318,7 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                                                     .featuredProductModel5,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductWidget(
+                                                child: const FeaturedProductWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/u2nxkh7stmsd/Meat.png',
                                                   name: 'Meat',
@@ -335,7 +333,7 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                                                     .featuredProductModel6,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FeaturedProductWidget(
+                                                child: const FeaturedProductWidget(
                                                   imgUrl:
                                                       'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/blip-25vawb/assets/yklx43iioeeq/Snack.png',
                                                   name: 'Snack',
@@ -345,11 +343,11 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                                                   soldOut: false,
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 17.0)),
+                                            ].divide(const SizedBox(width: 17.0)),
                                           ),
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 354.0,
                                         child: Divider(
                                           height: 0.0,
@@ -361,9 +359,9 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, -1.0),
+                                  alignment: const AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         23.0, 25.0, 0.0, 0.0),
                                     child: Text(
                                       'Promotions',
@@ -380,13 +378,13 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 15.0, 0.0, 22.0),
                                   child: Container(
                                     width: 350.0,
                                     height: 111.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFF9BCEE4),
+                                      color: const Color(0xFF9BCEE4),
                                       image: DecorationImage(
                                         fit: BoxFit.cover,
                                         image: Image.asset(
@@ -399,10 +397,10 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   138.0, 0.0, 0.0, 0.0),
                                           child: ClipRRect(
-                                            borderRadius: BorderRadius.only(
+                                            borderRadius: const BorderRadius.only(
                                               bottomLeft: Radius.circular(0.0),
                                               bottomRight:
                                                   Radius.circular(15.0),
@@ -410,7 +408,7 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                                               topRight: Radius.circular(15.0),
                                             ),
                                             child: Image.asset(
-                                              'assets/images/Default_Blog_Image_1200_x_628_px_43.png',
+                                              'assets/images/Cat_Litter.png',
                                               width: 0.0,
                                               height: 117.0,
                                               fit: BoxFit.cover,
@@ -419,7 +417,7 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   21.0, 15.0, 0.0, 0.0),
                                           child: Text(
                                             'Weekly \ndeals on fresh \nproduce ',
@@ -449,7 +447,7 @@ class _GroceriesWidgetState extends State<GroceriesWidget> {
                 wrapWithModel(
                   model: _model.customNavbarModel,
                   updateCallback: () => setState(() {}),
-                  child: CustomNavbarWidget(),
+                  child: const CustomNavbarWidget(),
                 ),
               ],
             ),

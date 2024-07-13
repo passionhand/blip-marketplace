@@ -4,9 +4,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pointer_interceptor/pointer_interceptor.dart';
-import 'package:provider/provider.dart';
 import 'dropofflocation_model.dart';
 export 'dropofflocation_model.dart';
 
@@ -63,7 +61,7 @@ class _DropofflocationWidgetState extends State<DropofflocationWidget> {
                 borderRadius: 30.0,
                 borderWidth: 1.0,
                 buttonSize: 54.0,
-                icon: Icon(
+                icon: const Icon(
                   Icons.chevron_left,
                   color: Colors.white,
                   size: 24.0,
@@ -84,7 +82,7 @@ class _DropofflocationWidgetState extends State<DropofflocationWidget> {
                       useGoogleFonts: false,
                     ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 0.0,
             ),
@@ -93,7 +91,7 @@ class _DropofflocationWidgetState extends State<DropofflocationWidget> {
               children: [
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 16.0),
+                      const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 16.0),
                   child: TextFormField(
                     controller: _model.textController,
                     focusNode: _model.textFieldFocusNode,
@@ -115,7 +113,7 @@ class _DropofflocationWidgetState extends State<DropofflocationWidget> {
                                 useGoogleFonts: false,
                               ),
                       enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0xFFF5F5F5),
                           width: 2.0,
                         ),
@@ -145,7 +143,7 @@ class _DropofflocationWidgetState extends State<DropofflocationWidget> {
                       filled: true,
                       fillColor: FlutterFlowTheme.of(context).primaryBackground,
                       contentPadding:
-                          EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                       suffixIcon: Icon(
                         Icons.search,
                         color: FlutterFlowTheme.of(context).primary,
@@ -161,7 +159,7 @@ class _DropofflocationWidgetState extends State<DropofflocationWidget> {
                   ),
                 ),
                 ClipRRect(
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(5.0),
                     bottomRight: Radius.circular(5.0),
                     topLeft: Radius.circular(30.0),
@@ -170,7 +168,7 @@ class _DropofflocationWidgetState extends State<DropofflocationWidget> {
                   child: Container(
                     width: double.infinity,
                     height: 732.0,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Color(0x5CFFFFFF),
                       borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(5.0),
@@ -186,7 +184,7 @@ class _DropofflocationWidgetState extends State<DropofflocationWidget> {
                           onCameraIdle: (latLng) =>
                               _model.googleMapsCenter = latLng,
                           initialLocation: _model.googleMapsCenter ??=
-                              LatLng(13.106061, -59.613158),
+                              const LatLng(13.106061, -59.613158),
                           markerColor: GoogleMarkerColor.violet,
                           mapType: MapType.normal,
                           style: GoogleMapStyle.standard,
@@ -201,11 +199,11 @@ class _DropofflocationWidgetState extends State<DropofflocationWidget> {
                           centerMapOnMarkerTap: true,
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 0.82),
+                          alignment: const AlignmentDirectional(0.0, 0.82),
                           child: PointerInterceptor(
                             intercepting: isWeb,
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 0.0, 20.0, 40.0),
                               child: FFButtonWidget(
                                 onPressed: () {
@@ -215,9 +213,9 @@ class _DropofflocationWidgetState extends State<DropofflocationWidget> {
                                 options: FFButtonOptions(
                                   width: double.infinity,
                                   height: 60.0,
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       24.0, 0.0, 24.0, 0.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
                                   color: FlutterFlowTheme.of(context).primary,
                                   textStyle: FlutterFlowTheme.of(context)
@@ -231,7 +229,7 @@ class _DropofflocationWidgetState extends State<DropofflocationWidget> {
                                         useGoogleFonts: false,
                                       ),
                                   elevation: 3.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Colors.transparent,
                                     width: 1.0,
                                   ),
