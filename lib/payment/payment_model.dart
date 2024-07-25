@@ -31,6 +31,8 @@ class PaymentModel extends FlutterFlowModel<PaymentWidget> {
   FocusNode? textFieldFocusNode4;
   TextEditingController? textController4;
   String? Function(BuildContext, String?)? textController4Validator;
+  // Stores action output result for [Stripe Payment] action in Button widget.
+  String? paymentId;
 
   @override
   void initState(BuildContext context) {}

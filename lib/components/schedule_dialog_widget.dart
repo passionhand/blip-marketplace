@@ -1,9 +1,11 @@
+import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_choice_chips.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'schedule_dialog_model.dart';
 export 'schedule_dialog_model.dart';
 
@@ -14,8 +16,11 @@ class ScheduleDialogWidget extends StatefulWidget {
   State<ScheduleDialogWidget> createState() => _ScheduleDialogWidgetState();
 }
 
-class _ScheduleDialogWidgetState extends State<ScheduleDialogWidget> {
+class _ScheduleDialogWidgetState extends State<ScheduleDialogWidget>
+    with TickerProviderStateMixin {
   late ScheduleDialogModel _model;
+
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void setState(VoidCallback callback) {
@@ -28,7 +33,32 @@ class _ScheduleDialogWidgetState extends State<ScheduleDialogWidget> {
     super.initState();
     _model = createModel(context, () => ScheduleDialogModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    animationsMap.addAll({
+      'columnOnPageLoadAnimation1': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          ScaleEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(1.0, 1.0),
+            end: const Offset(1.0, 1.0),
+          ),
+        ],
+      ),
+      'columnOnPageLoadAnimation2': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          ScaleEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(1.0, 1.0),
+            end: const Offset(1.0, 1.0),
+          ),
+        ],
+      ),
+    });
   }
 
   @override
@@ -450,7 +480,7 @@ class _ScheduleDialogWidgetState extends State<ScheduleDialogWidget> {
                     ),
                   ],
                 ),
-              ),
+              ).animateOnPageLoad(animationsMap['columnOnPageLoadAnimation2']!),
             ),
           ),
           FFButtonWidget(
@@ -486,7 +516,7 @@ class _ScheduleDialogWidgetState extends State<ScheduleDialogWidget> {
             ),
           ),
         ],
-      ),
+      ).animateOnPageLoad(animationsMap['columnOnPageLoadAnimation1']!),
     );
   }
 }

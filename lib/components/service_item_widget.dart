@@ -1,7 +1,9 @@
 import '/auth/base_auth_user_provider.dart';
+import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'service_item_model.dart';
 export 'service_item_model.dart';
 
@@ -21,8 +23,11 @@ class ServiceItemWidget extends StatefulWidget {
   State<ServiceItemWidget> createState() => _ServiceItemWidgetState();
 }
 
-class _ServiceItemWidgetState extends State<ServiceItemWidget> {
+class _ServiceItemWidgetState extends State<ServiceItemWidget>
+    with TickerProviderStateMixin {
   late ServiceItemModel _model;
+
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void setState(VoidCallback callback) {
@@ -35,7 +40,20 @@ class _ServiceItemWidgetState extends State<ServiceItemWidget> {
     super.initState();
     _model = createModel(context, () => ServiceItemModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    animationsMap.addAll({
+      'columnOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
+    });
   }
 
   @override
@@ -130,7 +148,7 @@ class _ServiceItemWidgetState extends State<ServiceItemWidget> {
             ),
           ),
         ],
-      ),
+      ).animateOnPageLoad(animationsMap['columnOnPageLoadAnimation']!),
     );
   }
 }

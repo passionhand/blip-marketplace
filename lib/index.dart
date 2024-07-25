@@ -7,18 +7,17 @@ export '/pages/user/signup/signup_widget.dart' show SignupWidget;
 export '/pages/user/login/login_widget.dart' show LoginWidget;
 export '/pages/user/home_page_exp/home_page_exp_widget.dart'
     show HomePageExpWidget;
-export '/product_search/product_search_widget.dart' show ProductSearchWidget;
 export '/service_search/service_search_widget.dart' show ServiceSearchWidget;
 export '/pages/service/rest_search/rest_search_widget.dart'
     show RestSearchWidget;
 export '/search_result/search_result_widget.dart' show SearchResultWidget;
 export '/order_screen/order_screen_widget.dart' show OrderScreenWidget;
 export '/profile_page/profile_page_widget.dart' show ProfilePageWidget;
-export '/read_me_page/read_me_page_widget.dart' show ReadMePageWidget;
+export '/pages/user/terms_and_conditions/terms_and_conditions_widget.dart'
+    show TermsAndConditionsWidget;
 export '/support_page/support_page_widget.dart' show SupportPageWidget;
 export '/support_ticket/support_ticket_widget.dart' show SupportTicketWidget;
 export '/settings/settings_widget.dart' show SettingsWidget;
-export '/pages/service/electronic/electronic_widget.dart' show ElectronicWidget;
 export '/pages/service/groceries/groceries_widget.dart' show GroceriesWidget;
 export '/pages/service/personal_care_items/personal_care_items_widget.dart'
     show PersonalCareItemsWidget;
@@ -59,3 +58,10 @@ export '/deployment_request/deployment_request_widget.dart'
 export '/notification/notification_widget.dart' show NotificationWidget;
 export '/payment/payment_widget.dart' show PaymentWidget;
 export '/googlepay/googlepay_widget.dart' show GooglepayWidget;
+export '/notificatios_settings/notificatios_settings_widget.dart'
+    show NotificatiosSettingsWidget;
+export '/phonenumberverification/phonenumberverification_widget.dart'
+    show PhonenumberverificationWidget;
+export '/pages/user/home_page_exp_copy/home_page_exp_copy_widget.dart'
+    show HomePageExpCopyWidget;
+export '/pages/service/electronic/electronic_widget.dart' show ElectronicWidget;

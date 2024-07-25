@@ -1,7 +1,9 @@
+import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'input_note_model.dart';
 export 'input_note_model.dart';
 
@@ -12,8 +14,11 @@ class InputNoteWidget extends StatefulWidget {
   State<InputNoteWidget> createState() => _InputNoteWidgetState();
 }
 
-class _InputNoteWidgetState extends State<InputNoteWidget> {
+class _InputNoteWidgetState extends State<InputNoteWidget>
+    with TickerProviderStateMixin {
   late InputNoteModel _model;
+
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void setState(VoidCallback callback) {
@@ -29,7 +34,20 @@ class _InputNoteWidgetState extends State<InputNoteWidget> {
     _model.emailAddressTextController ??= TextEditingController();
     _model.emailAddressFocusNode ??= FocusNode();
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    animationsMap.addAll({
+      'columnOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
+    });
   }
 
   @override
@@ -136,7 +154,7 @@ class _InputNoteWidgetState extends State<InputNoteWidget> {
                 ),
               ),
             ],
-          ),
+          ).animateOnPageLoad(animationsMap['columnOnPageLoadAnimation']!),
         ),
       ),
     );

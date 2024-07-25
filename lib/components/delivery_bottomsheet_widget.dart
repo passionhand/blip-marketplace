@@ -26,8 +26,6 @@ class _DeliveryBottomsheetWidgetState extends State<DeliveryBottomsheetWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => DeliveryBottomsheetModel());
-
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

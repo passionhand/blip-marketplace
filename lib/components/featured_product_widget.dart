@@ -1,6 +1,8 @@
+import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'featured_product_model.dart';
 export 'featured_product_model.dart';
 
@@ -24,8 +26,11 @@ class FeaturedProductWidget extends StatefulWidget {
   State<FeaturedProductWidget> createState() => _FeaturedProductWidgetState();
 }
 
-class _FeaturedProductWidgetState extends State<FeaturedProductWidget> {
+class _FeaturedProductWidgetState extends State<FeaturedProductWidget>
+    with TickerProviderStateMixin {
   late FeaturedProductModel _model;
+
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void setState(VoidCallback callback) {
@@ -38,7 +43,80 @@ class _FeaturedProductWidgetState extends State<FeaturedProductWidget> {
     super.initState();
     _model = createModel(context, () => FeaturedProductModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    animationsMap.addAll({
+      'columnOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
+      'imageOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
+      'textOnPageLoadAnimation1': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
+      'textOnPageLoadAnimation2': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
+      'textOnPageLoadAnimation3': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
+      'textOnPageLoadAnimation4': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
+    });
   }
 
   @override
@@ -63,25 +141,16 @@ class _FeaturedProductWidgetState extends State<FeaturedProductWidget> {
               height: 140.0,
               child: Stack(
                 children: [
-                  Align(
-                    alignment: const AlignmentDirectional(0.0, 0.0),
-                    child: Container(
-                      width: double.infinity,
-                      height: double.infinity,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20.0),
-                      ),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(20.0),
-                        child: Image.asset(
-                          'assets/images/Frame_48.png',
-                          width: 140.0,
-                          height: 140.0,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(20.0),
+                    child: Image.network(
+                      widget.imgUrl!,
+                      width: 140.0,
+                      height: 140.0,
+                      fit: BoxFit.cover,
                     ),
-                  ),
+                  ).animateOnPageLoad(
+                      animationsMap['imageOnPageLoadAnimation']!),
                   if (widget.soldOut == true)
                     Align(
                       alignment: const AlignmentDirectional(0.0, 0.0),
@@ -147,19 +216,20 @@ class _FeaturedProductWidgetState extends State<FeaturedProductWidget> {
               children: [
                 Flexible(
                   child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 3.0, 0.0, 0.0),
                     child: Text(
                       valueOrDefault<String>(
                         widget.name,
-                        'productName',
+                        'Product Name',
                       ),
-                      style: FlutterFlowTheme.of(context).bodyLarge.override(
+                      style: FlutterFlowTheme.of(context).bodySmall.override(
                             fontFamily: 'Segoe UI',
+                            fontSize: 18.0,
                             letterSpacing: 0.0,
                             useGoogleFonts: false,
                           ),
-                    ),
+                    ).animateOnPageLoad(
+                        animationsMap['textOnPageLoadAnimation1']!),
                   ),
                 ),
                 Flexible(
@@ -176,7 +246,8 @@ class _FeaturedProductWidgetState extends State<FeaturedProductWidget> {
                             letterSpacing: 0.0,
                             useGoogleFonts: false,
                           ),
-                    ),
+                    ).animateOnPageLoad(
+                        animationsMap['textOnPageLoadAnimation2']!),
                   ),
                 ),
                 Flexible(
@@ -198,7 +269,8 @@ class _FeaturedProductWidgetState extends State<FeaturedProductWidget> {
                                       fontWeight: FontWeight.bold,
                                       useGoogleFonts: false,
                                     ),
-                          ),
+                          ).animateOnPageLoad(
+                              animationsMap['textOnPageLoadAnimation3']!),
                         ),
                         Flexible(
                           child: Padding(
@@ -214,7 +286,8 @@ class _FeaturedProductWidgetState extends State<FeaturedProductWidget> {
                                     letterSpacing: 0.0,
                                     useGoogleFonts: false,
                                   ),
-                            ),
+                            ).animateOnPageLoad(
+                                animationsMap['textOnPageLoadAnimation4']!),
                           ),
                         ),
                       ],
@@ -225,7 +298,7 @@ class _FeaturedProductWidgetState extends State<FeaturedProductWidget> {
             ),
           ),
         ],
-      ),
+      ).animateOnPageLoad(animationsMap['columnOnPageLoadAnimation']!),
     );
   }
 }

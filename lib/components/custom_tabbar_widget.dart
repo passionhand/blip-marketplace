@@ -1,7 +1,9 @@
+import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'custom_tabbar_model.dart';
 export 'custom_tabbar_model.dart';
 
@@ -15,6 +17,8 @@ class CustomTabbarWidget extends StatefulWidget {
 class _CustomTabbarWidgetState extends State<CustomTabbarWidget>
     with TickerProviderStateMixin {
   late CustomTabbarModel _model;
+
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void setState(VoidCallback callback) {
@@ -32,7 +36,20 @@ class _CustomTabbarWidgetState extends State<CustomTabbarWidget>
       length: 4,
       initialIndex: 0,
     )..addListener(() => setState(() {}));
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    animationsMap.addAll({
+      'tabBarOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+    });
   }
 
   @override
@@ -130,6 +147,6 @@ class _CustomTabbarWidgetState extends State<CustomTabbarWidget>
           ),
         ),
       ],
-    );
+    ).animateOnPageLoad(animationsMap['tabBarOnPageLoadAnimation']!);
   }
 }

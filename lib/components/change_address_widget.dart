@@ -1,7 +1,9 @@
+import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'change_address_model.dart';
 export 'change_address_model.dart';
 
@@ -17,8 +19,11 @@ class ChangeAddressWidget extends StatefulWidget {
   State<ChangeAddressWidget> createState() => _ChangeAddressWidgetState();
 }
 
-class _ChangeAddressWidgetState extends State<ChangeAddressWidget> {
+class _ChangeAddressWidgetState extends State<ChangeAddressWidget>
+    with TickerProviderStateMixin {
   late ChangeAddressModel _model;
+
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void setState(VoidCallback callback) {
@@ -31,7 +36,80 @@ class _ChangeAddressWidgetState extends State<ChangeAddressWidget> {
     super.initState();
     _model = createModel(context, () => ChangeAddressModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    animationsMap.addAll({
+      'columnOnPageLoadAnimation1': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 1240.0.ms,
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'columnOnPageLoadAnimation2': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
+      'columnOnPageLoadAnimation3': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
+      'dividerOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
+      'buttonOnPageLoadAnimation1': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
+      'buttonOnPageLoadAnimation2': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
+    });
   }
 
   @override
@@ -156,7 +234,8 @@ class _ChangeAddressWidgetState extends State<ChangeAddressWidget> {
                           ],
                         ),
                       ],
-                    ),
+                    ).animateOnPageLoad(
+                        animationsMap['columnOnPageLoadAnimation2']!),
                   ),
                 ),
                 Container(
@@ -238,15 +317,17 @@ class _ChangeAddressWidgetState extends State<ChangeAddressWidget> {
                           ],
                         ),
                       ],
-                    ),
+                    ).animateOnPageLoad(
+                        animationsMap['columnOnPageLoadAnimation3']!),
                   ),
                 ),
-                const Opacity(
+                Opacity(
                   opacity: 0.5,
-                  child: Divider(
+                  child: const Divider(
                     thickness: 0.5,
                     color: Color(0xFF16283E),
-                  ),
+                  ).animateOnPageLoad(
+                      animationsMap['dividerOnPageLoadAnimation']!),
                 ),
                 FFButtonWidget(
                   onPressed: () {
@@ -284,7 +365,8 @@ class _ChangeAddressWidgetState extends State<ChangeAddressWidget> {
                       topRight: Radius.circular(0.0),
                     ),
                   ),
-                ),
+                ).animateOnPageLoad(
+                    animationsMap['buttonOnPageLoadAnimation1']!),
               ],
             ),
           ),
@@ -320,10 +402,10 @@ class _ChangeAddressWidgetState extends State<ChangeAddressWidget> {
                   topRight: Radius.circular(0.0),
                 ),
               ),
-            ),
+            ).animateOnPageLoad(animationsMap['buttonOnPageLoadAnimation2']!),
           ),
         ],
-      ),
+      ).animateOnPageLoad(animationsMap['columnOnPageLoadAnimation1']!),
     );
   }
 }

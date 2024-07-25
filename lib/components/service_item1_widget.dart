@@ -1,6 +1,8 @@
+import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'service_item1_model.dart';
 export 'service_item1_model.dart';
 
@@ -26,8 +28,11 @@ class ServiceItem1Widget extends StatefulWidget {
   State<ServiceItem1Widget> createState() => _ServiceItem1WidgetState();
 }
 
-class _ServiceItem1WidgetState extends State<ServiceItem1Widget> {
+class _ServiceItem1WidgetState extends State<ServiceItem1Widget>
+    with TickerProviderStateMixin {
   late ServiceItem1Model _model;
+
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void setState(VoidCallback callback) {
@@ -40,7 +45,32 @@ class _ServiceItem1WidgetState extends State<ServiceItem1Widget> {
     super.initState();
     _model = createModel(context, () => ServiceItem1Model());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    animationsMap.addAll({
+      'columnOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
+      'imageOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
+    });
   }
 
   @override
@@ -67,7 +97,7 @@ class _ServiceItem1WidgetState extends State<ServiceItem1Widget> {
               height: widget.imgheight,
               fit: BoxFit.cover,
             ),
-          ),
+          ).animateOnPageLoad(animationsMap['imageOnPageLoadAnimation']!),
           Flexible(
             child: Text(
               valueOrDefault<String>(
@@ -85,7 +115,7 @@ class _ServiceItem1WidgetState extends State<ServiceItem1Widget> {
             ),
           ),
         ],
-      ),
+      ).animateOnPageLoad(animationsMap['columnOnPageLoadAnimation']!),
     );
   }
 }

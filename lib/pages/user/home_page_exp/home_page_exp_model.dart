@@ -1,3 +1,5 @@
+import '/components/address_widget.dart';
+import '/components/custom_navbar_widget.dart';
 import '/components/featured_products_widget.dart';
 import '/components/service_item_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -32,6 +34,10 @@ class HomePageExpModel extends FlutterFlowModel<HomePageExpWidget> {
   late FeaturedProductsModel featuredProductsModel5;
   // Model for FeaturedProducts component.
   late FeaturedProductsModel featuredProductsModel6;
+  // Model for customNavbar component.
+  late CustomNavbarModel customNavbarModel;
+  // Model for Address component.
+  late AddressModel addressModel;
 
   @override
   void initState(BuildContext context) {
@@ -53,6 +59,8 @@ class HomePageExpModel extends FlutterFlowModel<HomePageExpWidget> {
         createModel(context, () => FeaturedProductsModel());
     featuredProductsModel6 =
         createModel(context, () => FeaturedProductsModel());
+    customNavbarModel = createModel(context, () => CustomNavbarModel());
+    addressModel = createModel(context, () => AddressModel());
   }
 
   @override
@@ -70,5 +78,7 @@ class HomePageExpModel extends FlutterFlowModel<HomePageExpWidget> {
     featuredProductsModel4.dispose();
     featuredProductsModel5.dispose();
     featuredProductsModel6.dispose();
+    customNavbarModel.dispose();
+    addressModel.dispose();
   }
 }

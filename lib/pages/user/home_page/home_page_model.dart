@@ -1,3 +1,5 @@
+import '/backend/api_requests/api_calls.dart';
+import '/components/address_widget.dart';
 import '/components/service_item_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'home_page_widget.dart' show HomePageWidget;
@@ -7,6 +9,10 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
+  // Stores action output result for [Backend Call - API (getCategories)] action in HomePage widget.
+  ApiCallResponse? getCategoriesResult;
+  // Model for Address component.
+  late AddressModel addressModel;
   // Model for ServiceItem component.
   late ServiceItemModel serviceItemModel1;
   // Model for ServiceItem component.
@@ -40,6 +46,7 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
 
   @override
   void initState(BuildContext context) {
+    addressModel = createModel(context, () => AddressModel());
     serviceItemModel1 = createModel(context, () => ServiceItemModel());
     serviceItemModel2 = createModel(context, () => ServiceItemModel());
     serviceItemModel3 = createModel(context, () => ServiceItemModel());
@@ -60,6 +67,7 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
   @override
   void dispose() {
     unfocusNode.dispose();
+    addressModel.dispose();
     serviceItemModel1.dispose();
     serviceItemModel2.dispose();
     serviceItemModel3.dispose();

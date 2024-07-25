@@ -24,6 +24,14 @@ class SignupModel extends FlutterFlowModel<SignupWidget> {
   String? token;
   // Stores action output result for [Backend Call - API (customersAuthenticate)] action in Button widget.
   ApiCallResponse? signupResult;
+  // Stores action output result for [Custom Action - getFirebaseToken] action in Container widget.
+  String? tokenGoogle;
+  // Stores action output result for [Backend Call - API (customersAuthenticate)] action in Container widget.
+  ApiCallResponse? signupResultGoogle;
+  // Stores action output result for [Custom Action - getFirebaseToken] action in Container widget.
+  String? tokenApple;
+  // Stores action output result for [Backend Call - API (customersAuthenticate)] action in Container widget.
+  ApiCallResponse? signupResultApple;
 
   @override
   void initState(BuildContext context) {

@@ -37,20 +37,23 @@ class OpenAPIDefinitionGroup {
   static GetS3PresignedUrlCall getS3PresignedUrlCall = GetS3PresignedUrlCall();
   static PingCall pingCall = PingCall();
   static SignOutCall signOutCall = SignOutCall();
+  static ProductsSearchCall productsSearchCall = ProductsSearchCall();
 }
 
 class VerifyPhoneNumberWithCodeCall {
   Future<ApiCallResponse> call({
     String? token = '',
     String? uuid = '',
+    int? phonenumber,
   }) async {
     final baseUrl = OpenAPIDefinitionGroup.getBaseUrl();
 
-    const ffApiRequestBody = '''
+    final ffApiRequestBody = '''
 {
   "countryCode": 0,
-  "phoneNumber": 0,
-  "code": ""
+  "phoneNumber": $phonenumber,
+  "code": "",
+  "customerUuid": "$uuid"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'verifyPhoneNumberWithCode',
@@ -290,14 +293,17 @@ class RequestPhoneNumberVerificationCall {
   Future<ApiCallResponse> call({
     String? token = '',
     String? uuid = '',
+    int? phonenumber,
+    String? hash = '',
   }) async {
     final baseUrl = OpenAPIDefinitionGroup.getBaseUrl();
 
-    const ffApiRequestBody = '''
+    final ffApiRequestBody = '''
 {
+  "customerUuid": "$uuid",
   "countryCode": 0,
-  "phoneNumber": 0,
-  "hash": ""
+  "phoneNumber": $phonenumber,
+  "hash": "$hash"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'requestPhoneNumberVerification',
@@ -663,7 +669,238 @@ class SignOutCall {
   }
 }
 
+class ProductsSearchCall {
+  Future<ApiCallResponse> call({
+    String? token = '',
+    int? pageSize = 20,
+    int? pageNumber = 0,
+  }) async {
+    final baseUrl = OpenAPIDefinitionGroup.getBaseUrl();
+
+    return ApiManager.instance.makeApiCall(
+      callName: 'productsSearch',
+      apiUrl:
+          '$baseUrl/products/search/?pageSize=$pageSize&pageNumber=$pageNumber',
+      callType: ApiCallType.POST,
+      headers: {
+        'token': '$token',
+      },
+      params: {},
+      bodyType: BodyType.JSON,
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+}
+
 /// End OpenAPI definition Group Code
+
+/// Start GraphQL query Group Code
+
+class GraphQLQueryGroup {
+  static String getBaseUrl() => 'https://graphql.blip-delivery.com/v1/';
+  static Map<String, String> headers = {};
+  static GetCategoriesCall getCategoriesCall = GetCategoriesCall();
+  static GetProductsCall getProductsCall = GetProductsCall();
+  static ShowCategoryProductsCall showCategoryProductsCall =
+      ShowCategoryProductsCall();
+  static GetSubCategoryProductsCall getSubCategoryProductsCall =
+      GetSubCategoryProductsCall();
+  static GetFeaturedProductsbySubcategoryCall
+      getFeaturedProductsbySubcategoryCall =
+      GetFeaturedProductsbySubcategoryCall();
+  static GetCustomerProfileCall getCustomerProfileCall =
+      GetCustomerProfileCall();
+}
+
+class GetCategoriesCall {
+  Future<ApiCallResponse> call({
+    String? token = '',
+  }) async {
+    final baseUrl = GraphQLQueryGroup.getBaseUrl();
+
+    const ffApiRequestBody = '''
+{
+  "query": "query GetCategories { categories { id uuid name description iconUrl: icon_url subCategories: sub_categories { id uuid name description iconUrl: icon_url } } }"
+}''';
+    return ApiManager.instance.makeApiCall(
+      callName: 'getCategories',
+      apiUrl: '$baseUrl/graphql',
+      callType: ApiCallType.POST,
+      headers: {
+        'Authorization': 'Bearer $token',
+      },
+      params: {},
+      body: ffApiRequestBody,
+      bodyType: BodyType.JSON,
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+}
+
+class GetProductsCall {
+  Future<ApiCallResponse> call({
+    String? token = '',
+  }) async {
+    final baseUrl = GraphQLQueryGroup.getBaseUrl();
+
+    const ffApiRequestBody = '''
+{
+  "query": "query GetProducts { products { id uuid name price pricing_type image_url description created_at active updated_at stock_quantity weight_in_lbs_per_item } }"
+}''';
+    return ApiManager.instance.makeApiCall(
+      callName: 'getProducts',
+      apiUrl: '${baseUrl}graphql',
+      callType: ApiCallType.POST,
+      headers: {
+        'Authorization': 'Bearer $token',
+      },
+      params: {},
+      body: ffApiRequestBody,
+      bodyType: BodyType.JSON,
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+}
+
+class ShowCategoryProductsCall {
+  Future<ApiCallResponse> call({
+    String? token = '',
+    String? uuid = '',
+  }) async {
+    final baseUrl = GraphQLQueryGroup.getBaseUrl();
+
+    final ffApiRequestBody = '''
+{
+  "query": "query MyQuery { products(where: {products_categories: {category: {uuid: {_eq: \\"$uuid\\"}}}}) { id uuid name image_url price pricing_type stock_quantity updated_at weight_in_lbs_per_item } }"
+}''';
+    return ApiManager.instance.makeApiCall(
+      callName: 'showCategoryProducts',
+      apiUrl: '${baseUrl}graphql',
+      callType: ApiCallType.POST,
+      headers: {
+        'Authorization': 'Bearer $token',
+      },
+      params: {},
+      body: ffApiRequestBody,
+      bodyType: BodyType.JSON,
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+}
+
+class GetSubCategoryProductsCall {
+  Future<ApiCallResponse> call({
+    String? token = '',
+    String? uuid = '',
+  }) async {
+    final baseUrl = GraphQLQueryGroup.getBaseUrl();
+
+    final ffApiRequestBody = '''
+{
+  "query": "query MyQuery { products(where: {uuid: {_eq: \\"$uuid\\"}}) { id uuid name image_url price pricing_type updated_at stock_quantity weight_in_lbs_per_item featured description created_at active } }"
+}''';
+    return ApiManager.instance.makeApiCall(
+      callName: 'getSubCategoryProducts',
+      apiUrl: '$baseUrl/graphql',
+      callType: ApiCallType.POST,
+      headers: {
+        'Authorization': 'Bearer $token',
+      },
+      params: {},
+      body: ffApiRequestBody,
+      bodyType: BodyType.JSON,
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+}
+
+class GetFeaturedProductsbySubcategoryCall {
+  Future<ApiCallResponse> call({
+    String? token = '',
+    String? uuid = '',
+  }) async {
+    final baseUrl = GraphQLQueryGroup.getBaseUrl();
+
+    final ffApiRequestBody = '''
+{
+  "query": "query MyQuery { products(where: {products_subcategories: {sub_category: {uuid: {_eq: \\"$uuid\\"}}}, featured: {_eq: true}}) { id uuid name image_url price pricing_type updated_at stock_quantity weight_in_lbs_per_item featured description created_at active } }"
+}''';
+    return ApiManager.instance.makeApiCall(
+      callName: 'getFeaturedProductsbySubcategory',
+      apiUrl: '$baseUrl/graphql',
+      callType: ApiCallType.POST,
+      headers: {
+        'Authorization': 'Bearer $token',
+      },
+      params: {},
+      body: ffApiRequestBody,
+      bodyType: BodyType.JSON,
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+}
+
+class GetCustomerProfileCall {
+  Future<ApiCallResponse> call({
+    String? token = '',
+  }) async {
+    final baseUrl = GraphQLQueryGroup.getBaseUrl();
+
+    const ffApiRequestBody = '''
+{
+  "query": "query MyQuery { customers { id uuid name email phone_number status role active address { id uuid street street2 state city country latitude longitude zipcode timezone updated_at created_at } allow_location_access allow_usage_data_share app_theme app_update_notification order_update_notification promotion_notification } }"
+}''';
+    return ApiManager.instance.makeApiCall(
+      callName: 'getCustomerProfile',
+      apiUrl: '$baseUrl/graphql',
+      callType: ApiCallType.POST,
+      headers: {
+        'Authorization': 'Bearer $token',
+      },
+      params: {},
+      body: ffApiRequestBody,
+      bodyType: BodyType.JSON,
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+}
+
+/// End GraphQL query Group Code
 
 class ApiPagingParams {
   int nextPageNumber = 0;

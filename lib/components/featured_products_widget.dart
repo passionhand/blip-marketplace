@@ -1,6 +1,8 @@
+import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'featured_products_model.dart';
 export 'featured_products_model.dart';
 
@@ -24,8 +26,11 @@ class FeaturedProductsWidget extends StatefulWidget {
   State<FeaturedProductsWidget> createState() => _FeaturedProductsWidgetState();
 }
 
-class _FeaturedProductsWidgetState extends State<FeaturedProductsWidget> {
+class _FeaturedProductsWidgetState extends State<FeaturedProductsWidget>
+    with TickerProviderStateMixin {
   late FeaturedProductsModel _model;
+
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void setState(VoidCallback callback) {
@@ -38,7 +43,20 @@ class _FeaturedProductsWidgetState extends State<FeaturedProductsWidget> {
     super.initState();
     _model = createModel(context, () => FeaturedProductsModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    animationsMap.addAll({
+      'columnOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
+    });
   }
 
   @override
@@ -64,24 +82,13 @@ class _FeaturedProductsWidgetState extends State<FeaturedProductsWidget> {
               height: 140.0,
               child: Stack(
                 children: [
-                  Align(
-                    alignment: const AlignmentDirectional(0.0, 0.0),
-                    child: Container(
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(20.0),
+                    child: Image.network(
+                      widget.imgUrl!,
                       width: double.infinity,
                       height: double.infinity,
-                      decoration: BoxDecoration(
-                        color: const Color(0x32000000),
-                        borderRadius: BorderRadius.circular(20.0),
-                      ),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(20.0),
-                        child: Image.network(
-                          widget.imgUrl!,
-                          width: 140.0,
-                          height: 140.0,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
+                      fit: BoxFit.cover,
                     ),
                   ),
                   if (valueOrDefault<bool>(
@@ -233,7 +240,7 @@ class _FeaturedProductsWidgetState extends State<FeaturedProductsWidget> {
             ),
           ),
         ],
-      ),
+      ).animateOnPageLoad(animationsMap['columnOnPageLoadAnimation']!),
     );
   }
 }

@@ -25,4 +25,10 @@ class FFAppState extends ChangeNotifier {
   set xapikey(String value) {
     _xapikey = value;
   }
+
+  bool _firstLogin = true;
+  bool get firstLogin => _firstLogin;
+  set firstLogin(bool value) {
+    _firstLogin = value;
+  }
 }

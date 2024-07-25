@@ -83,7 +83,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'HomePage',
           path: '/homePage',
-          builder: (context, params) => const HomePageWidget(),
+          builder: (context, params) => HomePageWidget(
+            showbottomsheet: params.getParam(
+              'showbottomsheet',
+              ParamType.bool,
+            ),
+          ),
         ),
         FFRoute(
           name: 'Splash1',
@@ -116,11 +121,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const HomePageExpWidget(),
         ),
         FFRoute(
-          name: 'ProductSearch',
-          path: '/productSearch',
-          builder: (context, params) => const ProductSearchWidget(),
-        ),
-        FFRoute(
           name: 'ServiceSearch',
           path: '/serviceSearch',
           builder: (context, params) => const ServiceSearchWidget(),
@@ -146,9 +146,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const ProfilePageWidget(),
         ),
         FFRoute(
-          name: 'ReadMePage',
-          path: '/readMePage',
-          builder: (context, params) => const ReadMePageWidget(),
+          name: 'TermsAndConditions',
+          path: '/termsAndConditions',
+          builder: (context, params) => const TermsAndConditionsWidget(),
         ),
         FFRoute(
           name: 'SupportPage',
@@ -164,11 +164,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Settings',
           path: '/settings',
           builder: (context, params) => const SettingsWidget(),
-        ),
-        FFRoute(
-          name: 'Electronic',
-          path: '/electronic',
-          builder: (context, params) => const ElectronicWidget(),
         ),
         FFRoute(
           name: 'Groceries',
@@ -289,6 +284,26 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'googlepay',
           path: '/googlepay',
           builder: (context, params) => const GooglepayWidget(),
+        ),
+        FFRoute(
+          name: 'NotificatiosSettings',
+          path: '/notificatiosSettings',
+          builder: (context, params) => const NotificatiosSettingsWidget(),
+        ),
+        FFRoute(
+          name: 'phonenumberverification',
+          path: '/phonenumberverification',
+          builder: (context, params) => const PhonenumberverificationWidget(),
+        ),
+        FFRoute(
+          name: 'HomePageExpCopy',
+          path: '/homePageExpCopy',
+          builder: (context, params) => const HomePageExpCopyWidget(),
+        ),
+        FFRoute(
+          name: 'Electronic',
+          path: '/electronic',
+          builder: (context, params) => const ElectronicWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -471,14 +486,14 @@ class FFRoute {
                 )
               : builder(context, ffParams);
           final child = appStateNotifier.loading
-              ? Center(
-                  child: SizedBox(
-                    width: 50.0,
-                    height: 50.0,
-                    child: CircularProgressIndicator(
-                      valueColor: AlwaysStoppedAnimation<Color>(
-                        FlutterFlowTheme.of(context).primary,
-                      ),
+              ? Container(
+                  color: FlutterFlowTheme.of(context).primary,
+                  child: Center(
+                    child: Image.asset(
+                      'assets/images/Loader.gif',
+                      width: 250.0,
+                      height: 250.0,
+                      fit: BoxFit.cover,
                     ),
                   ),
                 )
@@ -524,7 +539,11 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(
+        hasTransition: true,
+        transitionType: PageTransitionType.fade,
+        duration: Duration(milliseconds: 300),
+      );
 }
 
 class RootPageContext {

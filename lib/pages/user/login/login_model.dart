@@ -18,10 +18,16 @@ class LoginModel extends FlutterFlowModel<LoginWidget> {
   String? Function(BuildContext, String?)? passwordTextControllerValidator;
   // Stores action output result for [Custom Action - getFirebaseToken] action in Button widget.
   String? token;
-  // Stores action output result for [Custom Action - getFirebaseUserName] action in Button widget.
-  String? username;
   // Stores action output result for [Backend Call - API (customersAuthenticate)] action in Button widget.
   ApiCallResponse? loginResponse;
+  // Stores action output result for [Custom Action - getFirebaseToken] action in Container widget.
+  String? tokenGoogle;
+  // Stores action output result for [Backend Call - API (customersAuthenticate)] action in Container widget.
+  ApiCallResponse? loginResponseGoogle;
+  // Stores action output result for [Custom Action - getFirebaseToken] action in Container widget.
+  String? tokenApple;
+  // Stores action output result for [Backend Call - API (customersAuthenticate)] action in Container widget.
+  ApiCallResponse? loginResponseApple;
 
   @override
   void initState(BuildContext context) {
